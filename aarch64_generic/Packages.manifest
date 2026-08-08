@@ -1,11 +1,11 @@
 Package: airconnect
-Version: 1.11.1-r1
+Version: 1.11.2-r1
 Depends: libc
 Source: /feed/airconnect
 SourceName: airconnect
 License: MIT
 Section: multimedia
-SourceDateEpoch: 1786020053
+SourceDateEpoch: 1786186810
 URL: https://github.com/philippe44/AirConnect
 Maintainer: sbwml <admin@cooluc.com>
 Architecture: aarch64_generic
@@ -236,7 +236,7 @@ Depends: libc, airconnect
 Source: /feed/luci-app-airconnect
 SourceName: luci-app-airconnect
 Section: luci
-SourceDateEpoch: 1786020053
+SourceDateEpoch: 1785861107
 URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
@@ -391,15 +391,15 @@ Installed-Size: 61440
 Description:  LuCI Support for nikki
 
 Package: luci-app-openclash
-Version: 0.47.088
+Version: 0.47.133
 Depends: libc, dnsmasq-full, bash, curl, ca-bundle, ip-full, ruby, ruby-yaml, kmod-tun, unzip
-Source: /feed/helloworld/luci-app-openclash
+Source: package/luci-app-openclash
 SourceName: luci-app-openclash
 Section: opt
-SourceDateEpoch: 1775826272
+SourceDateEpoch: 1662173734
 Maintainer: vernesong
 Architecture: all
-Installed-Size: 10803200
+Installed-Size: 9192796
 Description:  A LuCI support for clash
 
 Package: luci-app-openlist2
@@ -468,16 +468,16 @@ Installed-Size: 2488320
 Description:  SS/SSR/V2Ray/Trojan/NaiveProxy/Tuic/ShadowTLS/Hysteria/Socks5/Clash LuCI interface
 
 Package: luci-i18n-airconnect-zh-cn
-Version: 26.218.45653~14447ff
+Version: 26.216.59507~71e1bd6
 Depends: libc, luci-app-airconnect
 Source: /feed/luci-app-airconnect
 SourceName: luci-app-airconnect
 Section: luci
-SourceDateEpoch: 1786020053
+SourceDateEpoch: 1785861107
 Maintainer: sbwml <admin@cooluc.com>
 Architecture: all
 Installed-Size: 10240
-Description:  Translation for luci-app-airconnect - 简体中文 (Chinese Simplified)
+Description:  Translation for luci-app-airconnect - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-argon-config-es
 Version: 26.217.50438~639f3a1

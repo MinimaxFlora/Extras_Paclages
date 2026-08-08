@@ -1,18 +1,18 @@
 Package: airconnect
-Version: 1.11.1-r1
+Version: 1.11.2-r1
 Depends: libc
 Source: /feed/airconnect
 SourceName: airconnect
 License: MIT
 Section: multimedia
-SourceDateEpoch: 1786020053
+SourceDateEpoch: 1786186810
 URL: https://github.com/philippe44/AirConnect
 Maintainer: sbwml <admin@cooluc.com>
 Architecture: aarch64_generic
 Installed-Size: 14397440
-Filename: aarch64_generic/airconnect_1.11.1-r1_aarch64_generic.ipk
-Size: 6048878
-SHA256sum: 204d7bab6a8c4170a331890c61dfa4dffcf8577973ffe2224bec4894fddd9249
+Filename: aarch64_generic/airconnect_1.11.2-r1_aarch64_generic.ipk
+Size: 6048757
+SHA256sum: 8ba6f76e7c57ec3fd1ece986d269f6af7b1bbe389680df19a23a0878d87b491a
 Description:  Use AirPlay to stream to UPnP/Sonos & Chromecast devices
 
 Package: bandix-plus
@@ -281,14 +281,14 @@ Depends: libc, airconnect
 Source: /feed/luci-app-airconnect
 SourceName: luci-app-airconnect
 Section: luci
-SourceDateEpoch: 1786020053
+SourceDateEpoch: 1785861107
 URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 20480
 Filename: aarch64_generic/luci-app-airconnect_1.0.3-r1_all.ipk
-Size: 2718
-SHA256sum: 35311b147c4e3d8c397f665b8fd805b62437aca4127648c796614cb8b6ff0dd7
+Size: 2721
+SHA256sum: 9421f92fad036123ca24d76e3ff346427a379f1aafd51167716d3968a9776916
 Description:  LuCI support for AirConnect
 
 Package: luci-app-argon-config
@@ -472,18 +472,18 @@ SHA256sum: 83c8db58853566b35bc5ac0e0388c6e66febf43d781077fffced2c6411d5efc8
 Description:  LuCI Support for nikki
 
 Package: luci-app-openclash
-Version: 0.47.088
+Version: 0.47.133
 Depends: libc, dnsmasq-full, bash, curl, ca-bundle, ip-full, ruby, ruby-yaml, kmod-tun, unzip
-Source: /feed/helloworld/luci-app-openclash
+Source: package/luci-app-openclash
 SourceName: luci-app-openclash
 Section: opt
-SourceDateEpoch: 1775826272
+SourceDateEpoch: 1662173734
 Maintainer: vernesong
 Architecture: all
-Installed-Size: 10803200
-Filename: aarch64_generic/luci-app-openclash_0.47.088_all.ipk
-Size: 3887191
-SHA256sum: 7264569b9dcd9c22c3f5f77b7c746b01f27f621d2e5973eb849d53b0b517c222
+Installed-Size: 9192796
+Filename: aarch64_generic/luci-app-openclash_0.47.133_all.ipk
+Size: 9173397
+SHA256sum: c2490630043ea7e3db91a8f0d079088bc39c6aab4dc283d292f302064f891b90
 Description:  A LuCI support for clash
 
 Package: luci-app-openlist2
@@ -567,19 +567,19 @@ SHA256sum: a28ee36e8cdb1b0d104779b6dfbffe12adc9f1d327d792f24df2ce13fa745391
 Description:  SS/SSR/V2Ray/Trojan/NaiveProxy/Tuic/ShadowTLS/Hysteria/Socks5/Clash LuCI interface
 
 Package: luci-i18n-airconnect-zh-cn
-Version: 26.218.45653~14447ff
+Version: 26.216.59507~71e1bd6
 Depends: libc, luci-app-airconnect
 Source: /feed/luci-app-airconnect
 SourceName: luci-app-airconnect
 Section: luci
-SourceDateEpoch: 1786020053
+SourceDateEpoch: 1785861107
 Maintainer: sbwml <admin@cooluc.com>
 Architecture: all
 Installed-Size: 10240
-Filename: aarch64_generic/luci-i18n-airconnect-zh-cn_26.218.45653~14447ff_all.ipk
+Filename: aarch64_generic/luci-i18n-airconnect-zh-cn_26.216.59507~71e1bd6_all.ipk
 Size: 1610
-SHA256sum: 5bc51e04c948d7f2ac69acb08142397e3b90f0cc7bec73f67461a4223e45736a
-Description:  Translation for luci-app-airconnect - 简体中文 (Chinese Simplified)
+SHA256sum: 9b5c56039973f7b297ebbe9b54d3e020d18087d0dafbb4d21364e9d9a69986d2
+Description:  Translation for luci-app-airconnect - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-argon-config-es
 Version: 26.217.50438~639f3a1
