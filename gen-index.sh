@@ -10,15 +10,17 @@
 #    ./gen-index.sh x86_64                # 只处理指定架构
 #    ./gen-index.sh --dir /path/to/repo   # 指定仓库目录（默认脚本所在目录）
 #
+#  工具:
+#    优先使用项目内 tools/ 目录（usign / apk / mkhash / ipkg-make-index.sh），
+#    无需下载 ImageBuilder。若 tools/ 缺失，则回退到 ImageBuilder
+#    （可用 IB_PATH 指定，否则自动搜索常见路径）。
+#
 #  密钥:
 #    公钥自动从 GitHub 拉取（key/key-build.pem + key/key-build.pub）
 #    私钥必须本地存在（用于签名）:
 #      key/key-build         usign 私钥（Ed25519）→ 签 ipk
 #      key/key-build.ec.key  EC P-256 私钥        → 签 apk
 #    私钥路径可用环境变量覆盖: KEY_BUILD / KEY_BUILD_EC
-#
-#  依赖: ImageBuilder（含 usign / apk / mkhash / ipkg-make-index.sh）
-#        可用 IB_PATH 指定，否则自动搜索常见路径
 # =============================================================================
 set -uo pipefail
 
@@ -27,7 +29,7 @@ set -uo pipefail
 # -----------------------------------------------------------------------------
 KEY_RAW_URL="https://github.com/MinimaxFlora/Extras_Paclages/raw/refs/heads/master/key"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-REPO_DIR="${1:-$SCRIPT_DIR}"
+REPO_DIR="$SCRIPT_DIR"
 
 # 支持 --dir 参数
 if [ "${1:-}" = "--dir" ]; then
@@ -43,8 +45,9 @@ KEY_BUILD="${KEY_BUILD:-$KEY_DIR/key-build}"          # usign 私钥（签名 ip
 KEY_BUILD_EC="${KEY_BUILD_EC:-$KEY_DIR/key-build.ec.key}"  # EC 私钥（签名 apk）
 
 # -----------------------------------------------------------------------------
-# 查找 ImageBuilder
+# 定位工具：优先项目内 tools/，回退 ImageBuilder
 # -----------------------------------------------------------------------------
+TOOLS_DIR="$SCRIPT_DIR/tools"
 find_ib() {
   if [ -n "${IB_PATH:-}" ] && [ -d "$IB_PATH" ]; then
     echo "$IB_PATH"; return 0
@@ -53,25 +56,34 @@ find_ib() {
   for d in \
     /tmp/fwtest/.imagebuilder/openwrt-imagebuilder-* \
     "$HOME/.imagebuilder"/openwrt-imagebuilder-* \
-    /opt/openwrt-imagebuilder-* \
-    "$SCRIPT_DIR"/../openwrt-imagebuilder-*; do
+    /opt/openwrt-imagebuilder-*; do
     [ -d "$d" ] && { echo "$d"; return 0; }
   done
   return 1
 }
 
-IB=$(find_ib) || {
-  echo "::error::未找到 ImageBuilder，请设置 IB_PATH=/path/to/openwrt-imagebuilder" >&2
-  exit 1
+resolve_tool() {
+  # $1 = 工具名（usign/apk/mkhash），优先 tools/，否则 ImageBuilder host bin
+  if [ -x "$TOOLS_DIR/$1" ]; then
+    echo "$TOOLS_DIR/$1"; return 0
+  fi
+  local IB
+  IB=$(find_ib) || return 1
+  if [ -x "$IB/staging_dir/host/bin/$1" ]; then
+    echo "$IB/staging_dir/host/bin/$1"; return 0
+  fi
+  return 1
 }
-USIGN="$IB/staging_dir/host/bin/usign"
-APK="$IB/staging_dir/host/bin/apk"
-MKHASH="$IB/staging_dir/host/bin/mkhash"
-IPKG_INDEX="$IB/scripts/ipkg-make-index.sh"
 
-for tool in "$USIGN" "$APK" "$MKHASH" "$IPKG_INDEX"; do
-  [ -e "$tool" ] || { echo "::error::缺少工具: $tool" >&2; exit 1; }
-done
+USIGN=$(resolve_tool usign) || { echo "::error::缺少 usign 工具（tools/ 或 ImageBuilder）" >&2; exit 1; }
+APK=$(resolve_tool apk)   || { echo "::error::缺少 apk 工具（tools/ 或 ImageBuilder）" >&2; exit 1; }
+MKHASH=$(resolve_tool mkhash) || { echo "::error::缺少 mkhash 工具（tools/ 或 ImageBuilder）" >&2; exit 1; }
+
+IPKG_INDEX="$TOOLS_DIR/ipkg-make-index.sh"
+if [ ! -f "$IPKG_INDEX" ]; then
+  IB=$(find_ib) || { echo "::error::缺少 ipkg-make-index.sh（tools/ 或 ImageBuilder）" >&2; exit 1; }
+  IPKG_INDEX="$IB/scripts/ipkg-make-index.sh"
+fi
 
 # -----------------------------------------------------------------------------
 # 密钥准备：拉取公钥（验证用），检查私钥（签名用）
@@ -86,9 +98,9 @@ for f in key-build.pem key-build.pub; do
   fi
 done
 
-HAVE_USIGN_KEY=0; HAVE_EC_KEY=0
-[ -s "$KEY_BUILD" ] && HAVE_USIGN_KEY=1
-[ -s "$KEY_BUILD_EC" ] && HAVE_EC_KEY=1
+HAVE_USIGN_KEY=*** HAVE_EC_KEY=***
+[ -s "$KEY_BUILD" ] && HAVE_USIGN_KEY=***
+[ -s "$KEY_BUILD_EC" ] && HAVE_EC_KEY=***
 [ "$HAVE_USIGN_KEY" = 1 ] || echo "::warning::缺少 usign 私钥 $KEY_BUILD → ipk 索引将不签名"
 [ "$HAVE_EC_KEY" = 1 ]   || echo "::warning::缺少 EC 私钥 $KEY_BUILD_EC → apk 索引将不签名"
 
@@ -174,7 +186,7 @@ else
   TARGETS=()
   for d in */; do
     d="${d%/}"
-    case "$d" in key|.git|scripts) continue ;; esac
+    case "$d" in key|tools|.git|scripts) continue ;; esac
     if ls "$d"/*.ipk >/dev/null 2>&1 || ls "$d"/*.apk >/dev/null 2>&1; then
       TARGETS+=("$d")
     fi
@@ -183,7 +195,9 @@ fi
 
 echo "================================================"
 echo "  Extras_Paclages 索引生成"
-echo "  ImageBuilder : $IB"
+echo "  工具来源     : $([ -x "$TOOLS_DIR/usign" ] && echo "项目内 tools/（无需 ImageBuilder）" || echo "ImageBuilder")"
+echo "  usign        : $USIGN"
+echo "  apk          : $APK"
 echo "  处理架构     : ${TARGETS[*]:-（无）}"
 echo "  usign 私钥   : $([ "$HAVE_USIGN_KEY" = 1 ] && echo 有 || echo 无)"
 echo "  EC 私钥      : $([ "$HAVE_EC_KEY" = 1 ] && echo 有 || echo 无)"
