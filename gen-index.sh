@@ -98,11 +98,11 @@ for f in key-build.pem key-build.pub; do
   fi
 done
 
-HAVE_USIGN_KEY=*** HAVE_EC_KEY=***
-[ -s "$KEY_BUILD" ] && HAVE_USIGN_KEY=***
-[ -s "$KEY_BUILD_EC" ] && HAVE_EC_KEY=***
-[ "$HAVE_USIGN_KEY" = 1 ] || echo "::warning::缺少 usign 私钥 $KEY_BUILD → ipk 索引将不签名"
-[ "$HAVE_EC_KEY" = 1 ]   || echo "::warning::缺少 EC 私钥 $KEY_BUILD_EC → apk 索引将不签名"
+HAVE_USIGN_KEY="no" HAVE_EC_KEY="no"
+[ -s "$KEY_BUILD" ] && HAVE_USIGN_KEY="yes"
+[ -s "$KEY_BUILD_EC" ] && HAVE_EC_KEY="yes"
+[ "$HAVE_USIGN_KEY" = yes ] || echo "::warning::缺少 usign 私钥 $KEY_BUILD → ipk 索引将不签名"
+[ "$HAVE_EC_KEY" = yes ]   || echo "::warning::缺少 EC 私钥 $KEY_BUILD_EC → apk 索引将不签名"
 
 # -----------------------------------------------------------------------------
 # 工具函数
@@ -128,7 +128,7 @@ gen_ipk_index() {
   gzip -9c "$dir/Packages" > "$dir/Packages.gz"
 
   # 4) Packages.sig（usign）
-  if [ "$HAVE_USIGN_KEY" = 1 ]; then
+  if [ "$HAVE_USIGN_KEY" = yes ]; then
     "$USIGN" -S -s "$KEY_BUILD" -m "$dir/Packages" -x "$dir/Packages.sig"
     "$USIGN" -V -p "$KEY_PUB" -m "$dir/Packages" -x "$dir/Packages.sig" >/dev/null \
       && echo "  Packages.sig: usign 签名验证 OK" \
@@ -143,7 +143,7 @@ gen_apk_index() {
   [ "$n" -gt 0 ] || { echo "  (无 apk，跳过)"; return; }
 
   # 1) packages.adb（EC 签名）
-  if [ "$HAVE_EC_KEY" = 1 ]; then
+  if [ "$HAVE_EC_KEY" = yes ]; then
     (cd "$dir" && "$APK" --sign-key "$KEY_BUILD_EC" mkndx --allow-untrusted \
       --pkgname-spec '${name}-${version}.apk' -o packages.adb *.apk 2>&1 \
       | grep -vE '^WARNING' | head -2)
@@ -199,8 +199,8 @@ echo "  工具来源     : $([ -x "$TOOLS_DIR/usign" ] && echo "项目内 tools/
 echo "  usign        : $USIGN"
 echo "  apk          : $APK"
 echo "  处理架构     : ${TARGETS[*]:-（无）}"
-echo "  usign 私钥   : $([ "$HAVE_USIGN_KEY" = 1 ] && echo 有 || echo 无)"
-echo "  EC 私钥      : $([ "$HAVE_EC_KEY" = 1 ] && echo 有 || echo 无)"
+echo "  usign 私钥   : $([ "$HAVE_USIGN_KEY" = yes ] && echo 有 || echo 无)"
+echo "  EC 私钥      : $([ "$HAVE_EC_KEY" = yes ] && echo 有 || echo 无)"
 echo "================================================"
 
 for arch in "${TARGETS[@]}"; do
