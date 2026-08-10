@@ -1,0 +1,142 @@
+name: Sync Packages
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 16 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-packages-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  REPO: MinimaxFlora/Extras_Paclages
+  SOURCE_REPO: MinimaxFlora/openwrt_package
+  ARCHS: x86_64 aarch64_generic aarch64_cortex-a53
+
+jobs:
+  sync:
+    name: Sync ipk/apk packages
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: 'Checkout (master: scripts + tools + keys)'
+        uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Download packages from releases
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p downloads
+          for arch in $ARCHS; do
+            mkdir -p "downloads/$arch"
+            gh release download "$arch" \
+              --repo "$SOURCE_REPO" \
+              --dir "downloads/$arch" \
+              --pattern '*.ipk' --pattern '*.apk' \
+              || echo "::warning::$arch 无 release 资产，跳过"
+          done
+          echo "=== 下载结果 ==="
+          find downloads -type f | sort
+          echo "=== 数量统计 ==="
+          echo "ipk: $(find downloads -name '*.ipk' | wc -l)  apk: $(find downloads -name '*.apk' | wc -l)"
+
+      - name: Prepare signing keys
+        run: |
+          # 公钥已在仓库，私钥从 secrets 注入（可选，无私钥则不签名）
+          if [ -n "${{ secrets.KEY_BUILD }}" ]; then
+            echo "${{ secrets.KEY_BUILD }}" > key/key-build
+            chmod 600 key/key-build
+            echo "usign 私钥已注入"
+          else
+            echo "::warning::未配置 KEY_BUILD，ipk 索引将不签名"
+          fi
+          if [ -n "${{ secrets.KEY_BUILD_EC }}" ]; then
+            echo "${{ secrets.KEY_BUILD_EC }}" > key/key-build.ec.key
+            chmod 600 key/key-build.ec.key
+            echo "EC 私钥已注入"
+          else
+            echo "::warning::未配置 KEY_BUILD_EC，apk 索引将不签名"
+          fi
+
+      - name: Prepare ipk branch
+        run: |
+          git clone https://github.com/$REPO.git /tmp/repo-ipk
+          cd /tmp/repo-ipk
+          git fetch origin ipk:refs/remotes/origin/ipk 2>/dev/null || true
+          if git rev-parse --verify origin/ipk >/dev/null 2>&1; then
+            git checkout -b ipk origin/ipk
+          else
+            git checkout --orphan ipk
+            git rm -rf . 2>/dev/null || true
+          fi
+          cp -r "$GITHUB_WORKSPACE/gen-index.sh" "$GITHUB_WORKSPACE/tools" "$GITHUB_WORKSPACE/key" ./
+
+      - name: Prepare apk branch
+        run: |
+          git clone https://github.com/$REPO.git /tmp/repo-apk
+          cd /tmp/repo-apk
+          git fetch origin apk:refs/remotes/origin/apk 2>/dev/null || true
+          if git rev-parse --verify origin/apk >/dev/null 2>&1; then
+            git checkout -b apk origin/apk
+          else
+            git checkout --orphan apk
+            git rm -rf . 2>/dev/null || true
+          fi
+          cp -r "$GITHUB_WORKSPACE/gen-index.sh" "$GITHUB_WORKSPACE/tools" "$GITHUB_WORKSPACE/key" ./
+
+      # ---- 按插件名去重：目标目录中有同名插件（任意版本）则先删旧再放新 ----
+      - name: Sync packages (dedupe by plugin name)
+        run: |
+          python3 "$GITHUB_WORKSPACE/.github/scripts/sync_packages.py" \
+            "$GITHUB_WORKSPACE/downloads" \
+            /tmp/repo-ipk \
+            /tmp/repo-apk
+
+      - name: Generate index & push (ipk)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd /tmp/repo-ipk
+          ./gen-index.sh
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "ipk 无变更"
+          else
+            git commit -m "sync: update ipk packages and index"
+            git push "https://x-access-token:${GH_TOKEN}@github.com/$REPO.git" ipk
+            echo "ipk 已推送"
+          fi
+
+      - name: Generate index & push (apk)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd /tmp/repo-apk
+          ./gen-index.sh
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "apk 无变更"
+          else
+            git commit -m "sync: update apk packages and index"
+            git push "https://x-access-token:${GH_TOKEN}@github.com/$REPO.git" apk
+            echo "apk 已推送"
+          fi
+
+      - name: Summary
+        run: |
+          echo "===================="
+          echo "  ipk 分支内容:"
+          find /tmp/repo-ipk -maxdepth 2 -name '*.ipk' | sort
+          echo "  apk 分支内容:"
+          find /tmp/repo-apk -maxdepth 2 -name '*.apk' | sort
+          echo "===================="
