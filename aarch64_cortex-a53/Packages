@@ -93,24 +93,6 @@ SHA256sum: 5883dda51c16fd1871c11a12c4fbf5c97da7bbf8d25f59a36c6a410f2ecf82d2
 Description:  daed is a backend of dae, provides a method to bundle arbitrary
  frontend, dae and geodata into one binary.
 
-Package: dns2socks
-Version: 2.1-r2
-Depends: libc, libpthread
-Source: /feed/helloworld/dns2socks
-SourceName: dns2socks
-License: BSD-3-Clause
-Section: net
-SourceDateEpoch: 1762750310
-URL: http://dns2socks.sourceforge.net/
-Maintainer: ghostmaker
-Architecture: aarch64_cortex-a53
-Installed-Size: 71680
-Filename: aarch64_cortex-a53/dns2socks_2.1-r2_aarch64_cortex-a53.ipk
-Size: 11824
-SHA256sum: efffc411796c32fe2e327f7e6f6bbe402512e98e13861f2e87376223873280d5
-Description:  This is a command line utility to resolve DNS requests via
- a SOCKS tunnel like Tor or a HTTP proxy.
-
 Package: dns2socks-rust
 Version: 0.2.3-r1
 Depends: libc
@@ -128,6 +110,24 @@ Filename: aarch64_cortex-a53/dns2socks-rust_0.2.3-r1_aarch64_cortex-a53.ipk
 Size: 1012980
 SHA256sum: 0bf1bab3c8410c57dfd3ac86b0bba49798fe8358bbe5f8d766841d3240990f90
 Description:  This is a DNS server that forwards DNS requests to a SOCKS5 server.
+
+Package: dns2socks
+Version: 2.1-r2
+Depends: libc, libpthread
+Source: /feed/helloworld/dns2socks
+SourceName: dns2socks
+License: BSD-3-Clause
+Section: net
+SourceDateEpoch: 1762750310
+URL: http://dns2socks.sourceforge.net/
+Maintainer: ghostmaker
+Architecture: aarch64_cortex-a53
+Installed-Size: 71680
+Filename: aarch64_cortex-a53/dns2socks_2.1-r2_aarch64_cortex-a53.ipk
+Size: 11824
+SHA256sum: efffc411796c32fe2e327f7e6f6bbe402512e98e13861f2e87376223873280d5
+Description:  This is a command line utility to resolve DNS requests via
+ a SOCKS tunnel like Tor or a HTTP proxy.
 
 Package: dns2tcp
 Version: 1.1.2-r1
@@ -533,6 +533,23 @@ Filename: aarch64_cortex-a53/luci-app-passwall_26.8.1-r1_all.ipk
 Size: 839420
 SHA256sum: 36fd353d24b42c2e6e04c1d8a8555652bbc6f04dc9851b2f5ccf27b5049512b5
 Description:  LuCI support for PassWall
+
+Package: luci-app-quickfile
+Version: 1.0.0-r1
+Depends: libc, luci-nginx, quickfile
+Source: /feed/luci-app-quickfile
+SourceName: luci-app-quickfile
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1786303041
+URL: https://github.com/openwrt/luci
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 10240
+Filename: aarch64_cortex-a53/luci-app-quickfile_1.0.0-r1_all.ipk
+Size: 1669
+SHA256sum: b828076d9ec297c468f7f368da0aca094ef9e2809db364f1ee73456aa1ce8c2e
+Description:  LuCI File Manager module
 
 Package: luci-app-ramfree
 Version: 1.0-r1
@@ -948,20 +965,6 @@ Size: 5329
 SHA256sum: b3e8d7d85aa6594d968c981f2bb022d3cd3c660cfbd8c583d08fb5c7a245f338
 Description:  Translation for luci-app-bandix-plus - 繁體中文 (Chinese Traditional)
 
-Package: luci-i18n-daed-zh-cn
-Version: 25.036.30618~b090b46
-Depends: libc, luci-app-daed
-Source: /feed/helloworld/luci-app-daed
-SourceName: luci-app-daed
-Section: luci
-SourceDateEpoch: 1773554510
-Architecture: all
-Installed-Size: 10240
-Filename: aarch64_cortex-a53/luci-i18n-daed-zh-cn_25.036.30618~b090b46_all.ipk
-Size: 1679
-SHA256sum: 33b06ddca9bb65f4bcd9e9b0353a0d00d0f38ffb2293bf2f752f3e0d3c828b10
-Description:  Translation for luci-app-daed - 简体中文 (Simplified Chinese)
-
 Package: luci-i18n-dae-zh-cn
 Version: 26.074.18101~3304670
 Depends: libc, luci-app-dae
@@ -977,6 +980,20 @@ Filename: aarch64_cortex-a53/luci-i18n-dae-zh-cn_26.074.18101~3304670_all.ipk
 Size: 1798
 SHA256sum: 2f90f32985f4ba4fb51437f67b55e401e33dcaf0773cb8c56488303296ff266a
 Description:  Translation for luci-app-dae - 简体中文 (Simplified Chinese)
+
+Package: luci-i18n-daed-zh-cn
+Version: 25.036.30618~b090b46
+Depends: libc, luci-app-daed
+Source: /feed/helloworld/luci-app-daed
+SourceName: luci-app-daed
+Section: luci
+SourceDateEpoch: 1773554510
+Architecture: all
+Installed-Size: 10240
+Filename: aarch64_cortex-a53/luci-i18n-daed-zh-cn_25.036.30618~b090b46_all.ipk
+Size: 1679
+SHA256sum: 33b06ddca9bb65f4bcd9e9b0353a0d00d0f38ffb2293bf2f752f3e0d3c828b10
+Description:  Translation for luci-app-daed - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-diskman-zh-cn
 Version: 26.218.45653~8761094
@@ -1108,6 +1125,20 @@ Size: 3630
 SHA256sum: 09ba2cc130c38446ac8de4915acad44a86f2480de432181da47b1e597fec6b9b
 Description:  Translation for luci-app-openlist2 - 简体中文 (Chinese Simplified)
 
+Package: luci-i18n-passwall-zh-cn
+Version: 26.8.1
+Depends: libc, luci-app-passwall
+Source: /feed/helloworld/luci-app-passwall
+SourceName: luci-app-passwall
+Section: luci
+SourceDateEpoch: 1786042923
+Architecture: all
+Installed-Size: 51200
+Filename: aarch64_cortex-a53/luci-i18n-passwall-zh-cn_26.8.1_all.ipk
+Size: 18084
+SHA256sum: f736e82c9980d9d84b5d3cf9a82795b418e6a1a449671ac4d1407c221e010bf8
+Description:  Translation for luci-app-passwall - 简体中文 (Simplified Chinese)
+
 Package: luci-i18n-passwall2-fa
 Version: 26.7.16
 Depends: libc, luci-app-passwall2
@@ -1164,19 +1195,21 @@ Size: 20153
 SHA256sum: 0f27dea8520af8e86b643a9f9e8b674ea15205cea8a6932cc9f90df5833a844d
 Description:  Translation for luci-app-passwall2 - 正體中文 (Traditional Chinese)
 
-Package: luci-i18n-passwall-zh-cn
-Version: 26.8.1
-Depends: libc, luci-app-passwall
-Source: /feed/helloworld/luci-app-passwall
-SourceName: luci-app-passwall
+Package: luci-i18n-quickfile-zh-cn
+Version: 26.221.69441~0f2ef3d
+Depends: libc, luci-app-quickfile
+Source: /feed/luci-app-quickfile
+SourceName: luci-app-quickfile
+License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1786042923
+SourceDateEpoch: 1786303041
+Maintainer: sbwml <admin@cooluc.com>
 Architecture: all
-Installed-Size: 51200
-Filename: aarch64_cortex-a53/luci-i18n-passwall-zh-cn_26.8.1_all.ipk
-Size: 18084
-SHA256sum: f736e82c9980d9d84b5d3cf9a82795b418e6a1a449671ac4d1407c221e010bf8
-Description:  Translation for luci-app-passwall - 简体中文 (Simplified Chinese)
+Installed-Size: 10240
+Filename: aarch64_cortex-a53/luci-i18n-quickfile-zh-cn_26.221.69441.0f2ef3d_all.ipk
+Size: 1194
+SHA256sum: 94b74a1f62407e1885f21dbee571b6513e0615b0e982ab1794261ba134f17db4
+Description:  Translation for luci-app-quickfile - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-ramfree-zh-cn
 Version: 26.217.60940~fef2dc6
@@ -1473,6 +1506,22 @@ Description:  pdnsd, is an IPv6 capable proxy DNS server with permanent caching 
  can't be configured to change that behaviour, to prevent the often
  minute-long hangs (or even crashes) that result from stalled dns queries.
 
+Package: quickfile
+Version: 1.0.25-r1
+Depends: libc
+Source: /feed/quickfile
+SourceName: quickfile
+Section: net
+SourceDateEpoch: 1786303051
+URL: https://git.cooluc.com/sbwml/quickfile
+Maintainer: sbwml <admin@cooluc.com>
+Architecture: aarch64_cortex-a53
+Installed-Size: 5150720
+Filename: aarch64_cortex-a53/quickfile_1.0.25-r1_aarch64_cortex-a53.ipk
+Size: 5139739
+SHA256sum: 01db7f5923e7908a3081da14a383f4fa2f072703ce5456092cba5c653f1ce374
+Description:  Lightweight web-based file manager for OpenWrt/LuCI with minimal resource usage.
+
 Package: redsocks2
 Version: 0.71-r1
 Depends: libc, libevent2-7, libopenssl3
@@ -1490,6 +1539,23 @@ Size: 61006
 SHA256sum: bbac711d56c11c49e294a068b766e4722cffa60b4724dd6a818866a951bf683c
 Description:  This is a modified version of original redsocks.
  Transparent redirector of any TCP/UDP connection to proxy.
+
+Package: shadow-tls
+Version: 0.2.25-r1
+Depends: libc
+Source: /feed/helloworld/shadow-tls
+SourceName: shadow-tls
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1704981439
+URL: https://github.com/ihciah/shadow-tls
+Maintainer: FluffyTigerFear
+Architecture: aarch64_cortex-a53
+Installed-Size: 3870720
+Filename: aarch64_cortex-a53/shadow-tls_0.2.25-r1_aarch64_cortex-a53.ipk
+Size: 1968031
+SHA256sum: 193c4a97249da27454f58e9ad405407c0a2e90fc94f732ba0c27353c9cf72ea6
+Description:  A proxy to expose real tls handshake to the firewall.
 
 Package: shadowsocks-libev-config
 Version: 3.3.5-r12
@@ -1605,91 +1671,6 @@ Size: 44629
 SHA256sum: bee61bf21ce103c2297cdedadfd2d99e44a197ce3d1e64d6c689153c3301e594
 Description:  shadowsocks-libev ss-tunnel
 
-Package: shadowsocksr-libev-ssr-check
-Version: 2.5.6-r11
-Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib, libopenssl-legacy
-Source: /feed/helloworld/shadowsocksr-libev
-SourceName: shadowsocksr-libev
-License: GPL-3.0
-LicenseFiles: LICENSE
-Section: net
-SourceDateEpoch: 1778746523
-URL: https://github.com/shadowsocksrr/shadowsocksr-libev
-Architecture: aarch64_cortex-a53
-Installed-Size: 71680
-Filename: aarch64_cortex-a53/shadowsocksr-libev-ssr-check_2.5.6-r11_aarch64_cortex-a53.ipk
-Size: 3374
-SHA256sum: 9161374c42d9e2661968576f620805674fad533668cf54d1b40b22e7587a76b1
-Description:  shadowsocksr-libev ssr-check
-
-Package: shadowsocksr-libev-ssr-local
-Version: 2.5.6-r11
-Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib, libopenssl-legacy
-Source: /feed/helloworld/shadowsocksr-libev
-SourceName: shadowsocksr-libev
-License: GPL-3.0
-LicenseFiles: LICENSE
-Section: net
-SourceDateEpoch: 1778746523
-URL: https://github.com/shadowsocksrr/shadowsocksr-libev
-Architecture: aarch64_cortex-a53
-Installed-Size: 204800
-Filename: aarch64_cortex-a53/shadowsocksr-libev-ssr-local_2.5.6-r11_aarch64_cortex-a53.ipk
-Size: 63607
-SHA256sum: 79c3a3722f6116b524790eb1e9110ea703cbccce5219e673e6b217fb457a5ec3
-Description:  shadowsocksr-libev ssr-local
-
-Package: shadowsocksr-libev-ssr-nat
-Version: 2.5.6-r11
-Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib, libopenssl-legacy
-Source: /feed/helloworld/shadowsocksr-libev
-SourceName: shadowsocksr-libev
-License: GPL-3.0
-LicenseFiles: LICENSE
-Section: net
-SourceDateEpoch: 1778746523
-URL: https://github.com/shadowsocksrr/shadowsocksr-libev
-Architecture: aarch64_cortex-a53
-Installed-Size: 10240
-Filename: aarch64_cortex-a53/shadowsocksr-libev-ssr-nat_2.5.6-r11_aarch64_cortex-a53.ipk
-Size: 3028
-SHA256sum: d56e3d85f922c7d5d780120ff345d675b5e0a0e2a296a7a05e87e182f2274f4e
-Description:  shadowsocksr-libev ssr-nat
-
-Package: shadowsocksr-libev-ssr-redir
-Version: 2.5.6-r11
-Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib, libopenssl-legacy
-Source: /feed/helloworld/shadowsocksr-libev
-SourceName: shadowsocksr-libev
-License: GPL-3.0
-LicenseFiles: LICENSE
-Section: net
-SourceDateEpoch: 1778746523
-URL: https://github.com/shadowsocksrr/shadowsocksr-libev
-Architecture: aarch64_cortex-a53
-Installed-Size: 143360
-Filename: aarch64_cortex-a53/shadowsocksr-libev-ssr-redir_2.5.6-r11_aarch64_cortex-a53.ipk
-Size: 57074
-SHA256sum: f42affcda3d0f4b904e19611054c1f9c52a5c3fe9fe34e5aa20d58f0db548449
-Description:  shadowsocksr-libev ssr-redir
-
-Package: shadowsocksr-libev-ssr-server
-Version: 2.5.6-r11
-Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib, libopenssl-legacy
-Source: /feed/helloworld/shadowsocksr-libev
-SourceName: shadowsocksr-libev
-License: GPL-3.0
-LicenseFiles: LICENSE
-Section: net
-SourceDateEpoch: 1778746523
-URL: https://github.com/shadowsocksrr/shadowsocksr-libev
-Architecture: aarch64_cortex-a53
-Installed-Size: 204800
-Filename: aarch64_cortex-a53/shadowsocksr-libev-ssr-server_2.5.6-r11_aarch64_cortex-a53.ipk
-Size: 67093
-SHA256sum: ae65d4fb19a123fc23ba487770a205901eea18647d81ca3e2cf12e5225e7e42d
-Description:  shadowsocksr-libev ssr-server
-
 Package: shadowsocks-rust-sslocal
 Version: 1.24.0-r1
 Depends: libc
@@ -1780,22 +1761,90 @@ Size: 1069390
 SHA256sum: e830a346c9c5d4fc77c3f43c71ecb1e75583b9e738379e09a06f5ad1c5d9e02b
 Description:  shadowsocks-rust ssurl
 
-Package: shadow-tls
-Version: 0.2.25-r1
-Depends: libc
-Source: /feed/helloworld/shadow-tls
-SourceName: shadow-tls
+Package: shadowsocksr-libev-ssr-check
+Version: 2.5.6-r11
+Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib, libopenssl-legacy
+Source: /feed/helloworld/shadowsocksr-libev
+SourceName: shadowsocksr-libev
+License: GPL-3.0
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1704981439
-URL: https://github.com/ihciah/shadow-tls
-Maintainer: FluffyTigerFear
+SourceDateEpoch: 1778746523
+URL: https://github.com/shadowsocksrr/shadowsocksr-libev
 Architecture: aarch64_cortex-a53
-Installed-Size: 3870720
-Filename: aarch64_cortex-a53/shadow-tls_0.2.25-r1_aarch64_cortex-a53.ipk
-Size: 1968031
-SHA256sum: 193c4a97249da27454f58e9ad405407c0a2e90fc94f732ba0c27353c9cf72ea6
-Description:  A proxy to expose real tls handshake to the firewall.
+Installed-Size: 71680
+Filename: aarch64_cortex-a53/shadowsocksr-libev-ssr-check_2.5.6-r11_aarch64_cortex-a53.ipk
+Size: 3374
+SHA256sum: 9161374c42d9e2661968576f620805674fad533668cf54d1b40b22e7587a76b1
+Description:  shadowsocksr-libev ssr-check
+
+Package: shadowsocksr-libev-ssr-local
+Version: 2.5.6-r11
+Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib, libopenssl-legacy
+Source: /feed/helloworld/shadowsocksr-libev
+SourceName: shadowsocksr-libev
+License: GPL-3.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1778746523
+URL: https://github.com/shadowsocksrr/shadowsocksr-libev
+Architecture: aarch64_cortex-a53
+Installed-Size: 204800
+Filename: aarch64_cortex-a53/shadowsocksr-libev-ssr-local_2.5.6-r11_aarch64_cortex-a53.ipk
+Size: 63607
+SHA256sum: 79c3a3722f6116b524790eb1e9110ea703cbccce5219e673e6b217fb457a5ec3
+Description:  shadowsocksr-libev ssr-local
+
+Package: shadowsocksr-libev-ssr-nat
+Version: 2.5.6-r11
+Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib, libopenssl-legacy
+Source: /feed/helloworld/shadowsocksr-libev
+SourceName: shadowsocksr-libev
+License: GPL-3.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1778746523
+URL: https://github.com/shadowsocksrr/shadowsocksr-libev
+Architecture: aarch64_cortex-a53
+Installed-Size: 10240
+Filename: aarch64_cortex-a53/shadowsocksr-libev-ssr-nat_2.5.6-r11_aarch64_cortex-a53.ipk
+Size: 3028
+SHA256sum: d56e3d85f922c7d5d780120ff345d675b5e0a0e2a296a7a05e87e182f2274f4e
+Description:  shadowsocksr-libev ssr-nat
+
+Package: shadowsocksr-libev-ssr-redir
+Version: 2.5.6-r11
+Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib, libopenssl-legacy
+Source: /feed/helloworld/shadowsocksr-libev
+SourceName: shadowsocksr-libev
+License: GPL-3.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1778746523
+URL: https://github.com/shadowsocksrr/shadowsocksr-libev
+Architecture: aarch64_cortex-a53
+Installed-Size: 143360
+Filename: aarch64_cortex-a53/shadowsocksr-libev-ssr-redir_2.5.6-r11_aarch64_cortex-a53.ipk
+Size: 57074
+SHA256sum: f42affcda3d0f4b904e19611054c1f9c52a5c3fe9fe34e5aa20d58f0db548449
+Description:  shadowsocksr-libev ssr-redir
+
+Package: shadowsocksr-libev-ssr-server
+Version: 2.5.6-r11
+Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib, libopenssl-legacy
+Source: /feed/helloworld/shadowsocksr-libev
+SourceName: shadowsocksr-libev
+License: GPL-3.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1778746523
+URL: https://github.com/shadowsocksrr/shadowsocksr-libev
+Architecture: aarch64_cortex-a53
+Installed-Size: 204800
+Filename: aarch64_cortex-a53/shadowsocksr-libev-ssr-server_2.5.6-r11_aarch64_cortex-a53.ipk
+Size: 67093
+SHA256sum: ae65d4fb19a123fc23ba487770a205901eea18647d81ca3e2cf12e5225e7e42d
+Description:  shadowsocksr-libev ssr-server
 
 Package: simple-obfs-client
 Version: 0.0.5-r1
@@ -1834,28 +1883,6 @@ Size: 34608
 SHA256sum: c4528092c2f0c0d543d89a2069e541b1a58063a861117ff5a53dbd040b1aa37c
 Description:  Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
 
-Package: sing-box
-Version: 1.12.25-r1
-Depends: libc, ca-bundle, kmod-inet-diag, kmod-netlink-diag, kmod-tun
-Conflicts: sing-box-tiny
-Source: /feed/sing-box
-SourceName: sing-box
-License: GPL-3.0-or-later
-LicenseFiles: LICENSE
-Section: net
-Require-User: sing-box=5566:sing-box=5566
-SourceDateEpoch: 1785990759
-URL: https://sing-box.sagernet.org/
-CPE-ID: cpe:/a:sagernet:sing-box
-Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Architecture: aarch64_cortex-a53
-Installed-Size: 41850880
-Filename: aarch64_cortex-a53/sing-box_1.12.25-r1_aarch64_cortex-a53.ipk
-Size: 15024529
-SHA256sum: 02c4a42f083fba804da42a82e84d22f2bbf9eabf664343a4f072fbc205bd3f07
-Description:  Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
- ShadowTLS, Tor, trojan, VLess, VMess, WireGuard and so on.
-
 Package: sing-box-tiny
 Version: 1.12.25-r1
 Depends: libc, ca-bundle, kmod-inet-diag
@@ -1878,6 +1905,28 @@ SHA256sum: e538aeb9fc5e80fde3a02675f3e82f4324142243952c7a2d7b9455cca55f0712
 Description:  Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
  ShadowTLS, Tor, trojan, VLess, VMess, WireGuard and so on.
 
+Package: sing-box
+Version: 1.12.25-r1
+Depends: libc, ca-bundle, kmod-inet-diag, kmod-netlink-diag, kmod-tun
+Conflicts: sing-box-tiny
+Source: /feed/sing-box
+SourceName: sing-box
+License: GPL-3.0-or-later
+LicenseFiles: LICENSE
+Section: net
+Require-User: sing-box=5566:sing-box=5566
+SourceDateEpoch: 1785990759
+URL: https://sing-box.sagernet.org/
+CPE-ID: cpe:/a:sagernet:sing-box
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: aarch64_cortex-a53
+Installed-Size: 41850880
+Filename: aarch64_cortex-a53/sing-box_1.12.25-r1_aarch64_cortex-a53.ipk
+Size: 15024529
+SHA256sum: 02c4a42f083fba804da42a82e84d22f2bbf9eabf664343a4f072fbc205bd3f07
+Description:  Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
+ ShadowTLS, Tor, trojan, VLess, VMess, WireGuard and so on.
+
 Package: tcping
 Version: 0.3-r2
 Depends: libc
@@ -1893,23 +1942,6 @@ Filename: aarch64_cortex-a53/tcping_0.3-r2_aarch64_cortex-a53.ipk
 Size: 4760
 SHA256sum: 6f54661650f2b6cfc5bca82d4343e19eed59437ed1e363aadd68fdfa3c2fb42a
 Description:  tcping measures the latency of a tcp-connection
-
-Package: trojan
-Version: 1.16.0-r2
-Depends: libc, libpthread, libstdcpp6, libopenssl3, boost, boost-program_options, boost-date_time, boost-system
-Source: /feed/helloworld/trojan
-SourceName: trojan
-License: GPL-3.0
-Section: net
-SourceDateEpoch: 1765924532
-URL: https://github.com/trojan-gfw/trojan
-Maintainer: GreaterFire
-Architecture: aarch64_cortex-a53
-Installed-Size: 798720
-Filename: aarch64_cortex-a53/trojan_1.16.0-r2_aarch64_cortex-a53.ipk
-Size: 290855
-SHA256sum: 6829b21268e227edacef549009b46cd42c0fbc8ae4fff40845446d5b26e0d9fe
-Description:  An unidentifiable mechanism that helps you bypass GFW
 
 Package: trojan-plus
 Version: 10.0.3-r2
@@ -1927,6 +1959,23 @@ Filename: aarch64_cortex-a53/trojan-plus_10.0.3-r2_aarch64_cortex-a53.ipk
 Size: 410808
 SHA256sum: 1acc7c1c39b036a048b5223a26b41de674359fb42aa3d8f71dad554343e05042
 Description:  An unidentifiable mechanism that helps you bypass GFW. It's compatible with original trojan with experimental features.
+
+Package: trojan
+Version: 1.16.0-r2
+Depends: libc, libpthread, libstdcpp6, libopenssl3, boost, boost-program_options, boost-date_time, boost-system
+Source: /feed/helloworld/trojan
+SourceName: trojan
+License: GPL-3.0
+Section: net
+SourceDateEpoch: 1765924532
+URL: https://github.com/trojan-gfw/trojan
+Maintainer: GreaterFire
+Architecture: aarch64_cortex-a53
+Installed-Size: 798720
+Filename: aarch64_cortex-a53/trojan_1.16.0-r2_aarch64_cortex-a53.ipk
+Size: 290855
+SHA256sum: 6829b21268e227edacef549009b46cd42c0fbc8ae4fff40845446d5b26e0d9fe
+Description:  An unidentifiable mechanism that helps you bypass GFW
 
 Package: tuic-client
 Version: 1.8.1-r1

@@ -78,21 +78,6 @@ Installed-Size: 42895360
 Description:  daed is a backend of dae, provides a method to bundle arbitrary
  frontend, dae and geodata into one binary.
 
-Package: dns2socks
-Version: 2.1-r2
-Depends: libc, libpthread
-Source: /feed/helloworld/dns2socks
-SourceName: dns2socks
-License: BSD-3-Clause
-Section: net
-SourceDateEpoch: 1762750310
-URL: http://dns2socks.sourceforge.net/
-Maintainer: ghostmaker
-Architecture: aarch64_generic
-Installed-Size: 71680
-Description:  This is a command line utility to resolve DNS requests via
- a SOCKS tunnel like Tor or a HTTP proxy.
-
 Package: dns2socks-rust
 Version: 0.2.3-r1
 Depends: libc
@@ -107,6 +92,21 @@ Maintainer: Zxlhhyccc <zxlhhyccc@gmail.com>
 Architecture: aarch64_generic
 Installed-Size: 2170880
 Description:  This is a DNS server that forwards DNS requests to a SOCKS5 server.
+
+Package: dns2socks
+Version: 2.1-r2
+Depends: libc, libpthread
+Source: /feed/helloworld/dns2socks
+SourceName: dns2socks
+License: BSD-3-Clause
+Section: net
+SourceDateEpoch: 1762750310
+URL: http://dns2socks.sourceforge.net/
+Maintainer: ghostmaker
+Architecture: aarch64_generic
+Installed-Size: 71680
+Description:  This is a command line utility to resolve DNS requests via
+ a SOCKS tunnel like Tor or a HTTP proxy.
 
 Package: dns2tcp
 Version: 1.1.2-r1
@@ -441,6 +441,20 @@ Architecture: all
 Installed-Size: 3133440
 Description:  LuCI support for PassWall
 
+Package: luci-app-quickfile
+Version: 1.0.0-r1
+Depends: libc, luci-nginx, quickfile
+Source: /feed/luci-app-quickfile
+SourceName: luci-app-quickfile
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1786303041
+URL: https://github.com/openwrt/luci
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 10240
+Description:  LuCI File Manager module
+
 Package: luci-app-ramfree
 Version: 1.0-r1
 Depends: libc
@@ -774,17 +788,6 @@ Architecture: all
 Installed-Size: 20480
 Description:  Translation for luci-app-bandix-plus - 繁體中文 (Chinese Traditional)
 
-Package: luci-i18n-daed-zh-cn
-Version: 25.036.30618~b090b46
-Depends: libc, luci-app-daed
-Source: /feed/helloworld/luci-app-daed
-SourceName: luci-app-daed
-Section: luci
-SourceDateEpoch: 1773554510
-Architecture: all
-Installed-Size: 10240
-Description:  Translation for luci-app-daed - 简体中文 (Simplified Chinese)
-
 Package: luci-i18n-dae-zh-cn
 Version: 26.074.18101~3304670
 Depends: libc, luci-app-dae
@@ -797,6 +800,17 @@ Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: all
 Installed-Size: 10240
 Description:  Translation for luci-app-dae - 简体中文 (Simplified Chinese)
+
+Package: luci-i18n-daed-zh-cn
+Version: 25.036.30618~b090b46
+Depends: libc, luci-app-daed
+Source: /feed/helloworld/luci-app-daed
+SourceName: luci-app-daed
+Section: luci
+SourceDateEpoch: 1773554510
+Architecture: all
+Installed-Size: 10240
+Description:  Translation for luci-app-daed - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-diskman-zh-cn
 Version: 26.218.45653~8761094
@@ -901,6 +915,17 @@ Architecture: all
 Installed-Size: 20480
 Description:  Translation for luci-app-openlist2 - 简体中文 (Chinese Simplified)
 
+Package: luci-i18n-passwall-zh-cn
+Version: 26.8.1
+Depends: libc, luci-app-passwall
+Source: /feed/helloworld/luci-app-passwall
+SourceName: luci-app-passwall
+Section: luci
+SourceDateEpoch: 1786042923
+Architecture: all
+Installed-Size: 51200
+Description:  Translation for luci-app-passwall - 简体中文 (Simplified Chinese)
+
 Package: luci-i18n-passwall2-fa
 Version: 26.7.16
 Depends: libc, luci-app-passwall2
@@ -945,16 +970,18 @@ Architecture: all
 Installed-Size: 51200
 Description:  Translation for luci-app-passwall2 - 正體中文 (Traditional Chinese)
 
-Package: luci-i18n-passwall-zh-cn
-Version: 26.8.1
-Depends: libc, luci-app-passwall
-Source: /feed/helloworld/luci-app-passwall
-SourceName: luci-app-passwall
+Package: luci-i18n-quickfile-zh-cn
+Version: 26.221.69441~0f2ef3d
+Depends: libc, luci-app-quickfile
+Source: /feed/luci-app-quickfile
+SourceName: luci-app-quickfile
+License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1786042923
+SourceDateEpoch: 1786303041
+Maintainer: sbwml <admin@cooluc.com>
 Architecture: all
-Installed-Size: 51200
-Description:  Translation for luci-app-passwall - 简体中文 (Simplified Chinese)
+Installed-Size: 10240
+Description:  Translation for luci-app-quickfile - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-ramfree-zh-cn
 Version: 26.217.60940~fef2dc6
@@ -1200,6 +1227,19 @@ Description:  pdnsd, is an IPv6 capable proxy DNS server with permanent caching 
  can't be configured to change that behaviour, to prevent the often
  minute-long hangs (or even crashes) that result from stalled dns queries.
 
+Package: quickfile
+Version: 1.0.25-r1
+Depends: libc
+Source: /feed/quickfile
+SourceName: quickfile
+Section: net
+SourceDateEpoch: 1786303051
+URL: https://git.cooluc.com/sbwml/quickfile
+Maintainer: sbwml <admin@cooluc.com>
+Architecture: aarch64_generic
+Installed-Size: 5150720
+Description:  Lightweight web-based file manager for OpenWrt/LuCI with minimal resource usage.
+
 Package: redsocks2
 Version: 0.71-r1
 Depends: libc, libevent2-7, libopenssl3
@@ -1214,6 +1254,20 @@ Architecture: aarch64_generic
 Installed-Size: 143360
 Description:  This is a modified version of original redsocks.
  Transparent redirector of any TCP/UDP connection to proxy.
+
+Package: shadow-tls
+Version: 0.2.25-r1
+Depends: libc
+Source: /feed/helloworld/shadow-tls
+SourceName: shadow-tls
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1704981439
+URL: https://github.com/ihciah/shadow-tls
+Maintainer: FluffyTigerFear
+Architecture: aarch64_generic
+Installed-Size: 3870720
+Description:  A proxy to expose real tls handshake to the firewall.
 
 Package: shadowsocks-libev-config
 Version: 3.3.5-r12
@@ -1311,76 +1365,6 @@ Architecture: aarch64_generic
 Installed-Size: 143360
 Description:  shadowsocks-libev ss-tunnel
 
-Package: shadowsocksr-libev-ssr-check
-Version: 2.5.6-r11
-Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib, libopenssl-legacy
-Source: /feed/helloworld/shadowsocksr-libev
-SourceName: shadowsocksr-libev
-License: GPL-3.0
-LicenseFiles: LICENSE
-Section: net
-SourceDateEpoch: 1778746523
-URL: https://github.com/shadowsocksrr/shadowsocksr-libev
-Architecture: aarch64_generic
-Installed-Size: 71680
-Description:  shadowsocksr-libev ssr-check
-
-Package: shadowsocksr-libev-ssr-local
-Version: 2.5.6-r11
-Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib, libopenssl-legacy
-Source: /feed/helloworld/shadowsocksr-libev
-SourceName: shadowsocksr-libev
-License: GPL-3.0
-LicenseFiles: LICENSE
-Section: net
-SourceDateEpoch: 1778746523
-URL: https://github.com/shadowsocksrr/shadowsocksr-libev
-Architecture: aarch64_generic
-Installed-Size: 204800
-Description:  shadowsocksr-libev ssr-local
-
-Package: shadowsocksr-libev-ssr-nat
-Version: 2.5.6-r11
-Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib, libopenssl-legacy
-Source: /feed/helloworld/shadowsocksr-libev
-SourceName: shadowsocksr-libev
-License: GPL-3.0
-LicenseFiles: LICENSE
-Section: net
-SourceDateEpoch: 1778746523
-URL: https://github.com/shadowsocksrr/shadowsocksr-libev
-Architecture: aarch64_generic
-Installed-Size: 10240
-Description:  shadowsocksr-libev ssr-nat
-
-Package: shadowsocksr-libev-ssr-redir
-Version: 2.5.6-r11
-Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib, libopenssl-legacy
-Source: /feed/helloworld/shadowsocksr-libev
-SourceName: shadowsocksr-libev
-License: GPL-3.0
-LicenseFiles: LICENSE
-Section: net
-SourceDateEpoch: 1778746523
-URL: https://github.com/shadowsocksrr/shadowsocksr-libev
-Architecture: aarch64_generic
-Installed-Size: 143360
-Description:  shadowsocksr-libev ssr-redir
-
-Package: shadowsocksr-libev-ssr-server
-Version: 2.5.6-r11
-Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib, libopenssl-legacy
-Source: /feed/helloworld/shadowsocksr-libev
-SourceName: shadowsocksr-libev
-License: GPL-3.0
-LicenseFiles: LICENSE
-Section: net
-SourceDateEpoch: 1778746523
-URL: https://github.com/shadowsocksrr/shadowsocksr-libev
-Architecture: aarch64_generic
-Installed-Size: 204800
-Description:  shadowsocksr-libev ssr-server
-
 Package: shadowsocks-rust-sslocal
 Version: 1.24.0-r1
 Depends: libc
@@ -1456,19 +1440,75 @@ Architecture: aarch64_generic
 Installed-Size: 2211840
 Description:  shadowsocks-rust ssurl
 
-Package: shadow-tls
-Version: 0.2.25-r1
-Depends: libc
-Source: /feed/helloworld/shadow-tls
-SourceName: shadow-tls
+Package: shadowsocksr-libev-ssr-check
+Version: 2.5.6-r11
+Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib, libopenssl-legacy
+Source: /feed/helloworld/shadowsocksr-libev
+SourceName: shadowsocksr-libev
+License: GPL-3.0
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1704981439
-URL: https://github.com/ihciah/shadow-tls
-Maintainer: FluffyTigerFear
+SourceDateEpoch: 1778746523
+URL: https://github.com/shadowsocksrr/shadowsocksr-libev
 Architecture: aarch64_generic
-Installed-Size: 3870720
-Description:  A proxy to expose real tls handshake to the firewall.
+Installed-Size: 71680
+Description:  shadowsocksr-libev ssr-check
+
+Package: shadowsocksr-libev-ssr-local
+Version: 2.5.6-r11
+Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib, libopenssl-legacy
+Source: /feed/helloworld/shadowsocksr-libev
+SourceName: shadowsocksr-libev
+License: GPL-3.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1778746523
+URL: https://github.com/shadowsocksrr/shadowsocksr-libev
+Architecture: aarch64_generic
+Installed-Size: 204800
+Description:  shadowsocksr-libev ssr-local
+
+Package: shadowsocksr-libev-ssr-nat
+Version: 2.5.6-r11
+Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib, libopenssl-legacy
+Source: /feed/helloworld/shadowsocksr-libev
+SourceName: shadowsocksr-libev
+License: GPL-3.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1778746523
+URL: https://github.com/shadowsocksrr/shadowsocksr-libev
+Architecture: aarch64_generic
+Installed-Size: 10240
+Description:  shadowsocksr-libev ssr-nat
+
+Package: shadowsocksr-libev-ssr-redir
+Version: 2.5.6-r11
+Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib, libopenssl-legacy
+Source: /feed/helloworld/shadowsocksr-libev
+SourceName: shadowsocksr-libev
+License: GPL-3.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1778746523
+URL: https://github.com/shadowsocksrr/shadowsocksr-libev
+Architecture: aarch64_generic
+Installed-Size: 143360
+Description:  shadowsocksr-libev ssr-redir
+
+Package: shadowsocksr-libev-ssr-server
+Version: 2.5.6-r11
+Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib, libopenssl-legacy
+Source: /feed/helloworld/shadowsocksr-libev
+SourceName: shadowsocksr-libev
+License: GPL-3.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1778746523
+URL: https://github.com/shadowsocksrr/shadowsocksr-libev
+Architecture: aarch64_generic
+Installed-Size: 204800
+Description:  shadowsocksr-libev ssr-server
 
 Package: simple-obfs-client
 Version: 0.0.5-r1
@@ -1501,25 +1541,6 @@ Architecture: aarch64_generic
 Installed-Size: 143360
 Description:  Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
 
-Package: sing-box
-Version: 1.12.25-r1
-Depends: libc, ca-bundle, kmod-inet-diag, kmod-netlink-diag, kmod-tun
-Conflicts: sing-box-tiny
-Source: /feed/sing-box
-SourceName: sing-box
-License: GPL-3.0-or-later
-LicenseFiles: LICENSE
-Section: net
-Require-User: sing-box=5566:sing-box=5566
-SourceDateEpoch: 1785990759
-URL: https://sing-box.sagernet.org/
-CPE-ID: cpe:/a:sagernet:sing-box
-Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Architecture: aarch64_generic
-Installed-Size: 41850880
-Description:  Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
- ShadowTLS, Tor, trojan, VLess, VMess, WireGuard and so on.
-
 Package: sing-box-tiny
 Version: 1.12.25-r1
 Depends: libc, ca-bundle, kmod-inet-diag
@@ -1539,6 +1560,25 @@ Installed-Size: 29747200
 Description:  Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
  ShadowTLS, Tor, trojan, VLess, VMess, WireGuard and so on.
 
+Package: sing-box
+Version: 1.12.25-r1
+Depends: libc, ca-bundle, kmod-inet-diag, kmod-netlink-diag, kmod-tun
+Conflicts: sing-box-tiny
+Source: /feed/sing-box
+SourceName: sing-box
+License: GPL-3.0-or-later
+LicenseFiles: LICENSE
+Section: net
+Require-User: sing-box=5566:sing-box=5566
+SourceDateEpoch: 1785990759
+URL: https://sing-box.sagernet.org/
+CPE-ID: cpe:/a:sagernet:sing-box
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: aarch64_generic
+Installed-Size: 41850880
+Description:  Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
+ ShadowTLS, Tor, trojan, VLess, VMess, WireGuard and so on.
+
 Package: tcping
 Version: 0.3-r2
 Depends: libc
@@ -1551,20 +1591,6 @@ URL: https://github.com/jlyo/tcping
 Architecture: aarch64_generic
 Installed-Size: 71680
 Description:  tcping measures the latency of a tcp-connection
-
-Package: trojan
-Version: 1.16.0-r2
-Depends: libc, libpthread, libstdcpp6, libopenssl3, boost, boost-program_options, boost-date_time, boost-system
-Source: /feed/helloworld/trojan
-SourceName: trojan
-License: GPL-3.0
-Section: net
-SourceDateEpoch: 1765924532
-URL: https://github.com/trojan-gfw/trojan
-Maintainer: GreaterFire
-Architecture: aarch64_generic
-Installed-Size: 798720
-Description:  An unidentifiable mechanism that helps you bypass GFW
 
 Package: trojan-plus
 Version: 10.0.3-r2
@@ -1579,6 +1605,20 @@ Maintainer: Trojan-Plus-Group
 Architecture: aarch64_generic
 Installed-Size: 993280
 Description:  An unidentifiable mechanism that helps you bypass GFW. It's compatible with original trojan with experimental features.
+
+Package: trojan
+Version: 1.16.0-r2
+Depends: libc, libpthread, libstdcpp6, libopenssl3, boost, boost-program_options, boost-date_time, boost-system
+Source: /feed/helloworld/trojan
+SourceName: trojan
+License: GPL-3.0
+Section: net
+SourceDateEpoch: 1765924532
+URL: https://github.com/trojan-gfw/trojan
+Maintainer: GreaterFire
+Architecture: aarch64_generic
+Installed-Size: 798720
+Description:  An unidentifiable mechanism that helps you bypass GFW
 
 Package: tuic-client
 Version: 1.8.1-r1
