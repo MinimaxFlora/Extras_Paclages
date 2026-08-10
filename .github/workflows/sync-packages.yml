@@ -48,7 +48,7 @@ jobs:
 
       - name: Prepare signing keys
         run: |
-          # 公钥已在仓库，私钥从 secrets 注入（可选，无私钥则不签名）
+          # 私钥从 secrets 注入到 master 工作区 key/（可选，无私钥则不签名）
           if [ -n "${{ secrets.KEY_BUILD }}" ]; then
             echo "${{ secrets.KEY_BUILD }}" > key/key-build
             chmod 600 key/key-build
@@ -75,7 +75,9 @@ jobs:
             git checkout --orphan ipk
             git rm -rf . 2>/dev/null || true
           fi
-          cp -r "$GITHUB_WORKSPACE/gen-index.sh" "$GITHUB_WORKSPACE/tools" "$GITHUB_WORKSPACE/key" ./
+          # 清理误入库的脚本/工具/密钥（包分支只应包含包与索引）
+          git rm -r --cached gen-index.sh tools key 2>/dev/null || true
+          rm -rf gen-index.sh tools key
 
       - name: Prepare apk branch
         run: |
@@ -88,7 +90,9 @@ jobs:
             git checkout --orphan apk
             git rm -rf . 2>/dev/null || true
           fi
-          cp -r "$GITHUB_WORKSPACE/gen-index.sh" "$GITHUB_WORKSPACE/tools" "$GITHUB_WORKSPACE/key" ./
+          # 清理误入库的脚本/工具/密钥（包分支只应包含包与索引）
+          git rm -r --cached gen-index.sh tools key 2>/dev/null || true
+          rm -rf gen-index.sh tools key
 
       # ---- 按插件名去重：目标目录中有同名插件（任意版本）则先删旧再放新 ----
       - name: Sync packages (dedupe by plugin name)
@@ -101,9 +105,11 @@ jobs:
       - name: Generate index & push (ipk)
         env:
           GH_TOKEN: ${{ github.token }}
+          KEY_DIR: ${{ github.workspace }}/key
         run: |
           cd /tmp/repo-ipk
-          ./gen-index.sh
+          # 脚本/工具/密钥都在 master 工作区，用 --dir 指定目标分支目录
+          bash "$GITHUB_WORKSPACE/gen-index.sh" --dir /tmp/repo-ipk
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
@@ -118,9 +124,10 @@ jobs:
       - name: Generate index & push (apk)
         env:
           GH_TOKEN: ${{ github.token }}
+          KEY_DIR: ${{ github.workspace }}/key
         run: |
           cd /tmp/repo-apk
-          ./gen-index.sh
+          bash "$GITHUB_WORKSPACE/gen-index.sh" --dir /tmp/repo-apk
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A

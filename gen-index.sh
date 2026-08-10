@@ -38,7 +38,7 @@ if [ "${1:-}" = "--dir" ]; then
 fi
 ARCHS=("$@")   # 空 = 全部架构目录
 
-KEY_DIR="$REPO_DIR/key"
+KEY_DIR="${KEY_DIR:-$REPO_DIR/key}"   # 支持环境变量指定密钥目录（包分支不再需要复制 key/）
 KEY_PEM="$KEY_DIR/key-build.pem"          # EC 公钥（验证用，自动拉取）
 KEY_PUB="$KEY_DIR/key-build.pub"          # usign 公钥（验证用，自动拉取）
 KEY_BUILD="${KEY_BUILD:-$KEY_DIR/key-build}"          # usign 私钥（签名 ipk）
