@@ -33,20 +33,20 @@ Description:  Bandix Plus core service for network traffic monitoring
 
 Package: chinadns-ng
 Version: 2025.08.09-r1
-Depends: libc, ipset
-Source: /feed/helloworld/chinadns-ng
+Depends: libc
+Source: /feed/chinadns-ng
 SourceName: chinadns-ng
 License: AGPL-3.0-only
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1755872993
+SourceDateEpoch: 1786303034
 URL: https://github.com/zfl9/chinadns-ng
 Maintainer: sbwml <admin@cooluc.com>
 Architecture: x86_64
 Installed-Size: 624640
 Filename: x86_64/chinadns-ng_2025.08.09-r1_x86_64.ipk
-Size: 286294
-SHA256sum: 6c9b55a6ee20fd5b576fafa6b8a56e0f6af859850b3a7be006629c7294277df5
+Size: 286290
+SHA256sum: 4f68f63022b899a073175530e538f321874914636c4024b70fba393c5a36bd39
 Description:  ChinaDNS next generation, refactoring with epoll and ipset.
 
 Package: dae
@@ -114,18 +114,18 @@ Description:  This is a DNS server that forwards DNS requests to a SOCKS5 server
 Package: dns2socks
 Version: 2.1-r2
 Depends: libc, libpthread
-Source: /feed/helloworld/dns2socks
+Source: /feed/dns2socks
 SourceName: dns2socks
 License: BSD-3-Clause
 Section: net
-SourceDateEpoch: 1762750310
+SourceDateEpoch: 1786303034
 URL: http://dns2socks.sourceforge.net/
 Maintainer: ghostmaker
 Architecture: x86_64
 Installed-Size: 40960
 Filename: x86_64/dns2socks_2.1-r2_x86_64.ipk
-Size: 11131
-SHA256sum: 1c7a075c6662c2e8848a2c76e5e88ca2bfa5886e25657c1419caee184c306e91
+Size: 11121
+SHA256sum: d1d54f2c1e864ce3b2a1b54d39d0c5563bc117612f00dabd0fed6f4eb6fd4a61
 Description:  This is a command line utility to resolve DNS requests via
  a SOCKS tunnel like Tor or a HTTP proxy.
 
@@ -519,19 +519,19 @@ SHA256sum: fac65cf662b20b89c29eae33be68455b4941e4651c7abf3165417adc6d692763
 Description:  LuCI support for PassWall 2
 
 Package: luci-app-passwall
-Version: 26.8.1-r1
+Version: 26.8.12-r1
 Depends: libc, coreutils, coreutils-base64, coreutils-nohup, coreutils-timeout, curl, chinadns-ng, dns2socks, dnsmasq-full, ip-full, libuci-lua, lua, luci-compat, luci-lib-jsonc, microsocks, resolveip, tcping, lyaml, luci-lua-runtime
-Source: /feed/helloworld/luci-app-passwall
+Source: /feed/luci-app-passwall
 SourceName: luci-app-passwall
 Section: luci
-SourceDateEpoch: 1786042923
+SourceDateEpoch: 1786846049
 URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
-Installed-Size: 3133440
-Filename: x86_64/luci-app-passwall_26.8.1-r1_all.ipk
-Size: 839420
-SHA256sum: 36fd353d24b42c2e6e04c1d8a8555652bbc6f04dc9851b2f5ccf27b5049512b5
+Installed-Size: 3164160
+Filename: x86_64/luci-app-passwall_26.8.12-r1_all.ipk
+Size: 845410
+SHA256sum: 27fe8cf61514e10f7f8275c3cc0b60f2f09cf7dfa55ad44450cb45febc899441
 Description:  LuCI support for PassWall
 
 Package: luci-app-quickfile
@@ -1126,17 +1126,17 @@ SHA256sum: 09ba2cc130c38446ac8de4915acad44a86f2480de432181da47b1e597fec6b9b
 Description:  Translation for luci-app-openlist2 - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-passwall-zh-cn
-Version: 26.8.1
+Version: 26.8.12
 Depends: libc, luci-app-passwall
-Source: /feed/helloworld/luci-app-passwall
+Source: /feed/luci-app-passwall
 SourceName: luci-app-passwall
 Section: luci
-SourceDateEpoch: 1786042923
+SourceDateEpoch: 1786846049
 Architecture: all
 Installed-Size: 51200
-Filename: x86_64/luci-i18n-passwall-zh-cn_26.8.1_all.ipk
-Size: 18084
-SHA256sum: f736e82c9980d9d84b5d3cf9a82795b418e6a1a449671ac4d1407c221e010bf8
+Filename: x86_64/luci-i18n-passwall-zh-cn_26.8.12_all.ipk
+Size: 18033
+SHA256sum: 7224d3219cdcedecaf420b345a04dbb21cf862a56f4da1be93c0546cda7a9e1e
 Description:  Translation for luci-app-passwall - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-passwall2-fa
@@ -1357,6 +1357,26 @@ Size: 6716
 SHA256sum: 23c7c3d72860427ea903150bab1cb0bf0eebbf258e55a9dbfcb156ca8d3f7898
 Description:  A SOCKS5 service that you can run on your remote boxes to tunnel connections
  through them, if for some reason SSH doesn't cut it for you.
+
+Package: microsocks
+Version: 1.0.5-r2
+Depends: libc, libpthread
+Source: /feed/microsocks
+SourceName: microsocks
+License: MIT
+LicenseFiles: COPYING
+Section: net
+SourceDateEpoch: 1786303049
+URL: https://github.com/rofl0r/microsocks
+Maintainer: lean
+Architecture: x86_64
+Installed-Size: 30720
+Filename: x86_64/microsocks_1.0.5-r2_x86_64.ipk
+Size: 8405
+SHA256sum: e77243bb1fabe3c86bb4f54ef822685ff27a7c994cbb1f079a1641df7884aaf6
+Description:  A SOCKS5 service that you can run on your remote boxes to tunnel connections
+ through them, if for some reason SSH doesn't cut it for you.
+ This version supports forwarding rules.
 
 Package: mihomo-alpha
 Version: 2026.07.08
@@ -1926,6 +1946,23 @@ Size: 16641776
 SHA256sum: d2e65e73cbbb65bee431b12089710435deecfcf88c26d33e3a5839089a65d7b1
 Description:  Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
  ShadowTLS, Tor, trojan, VLess, VMess, WireGuard and so on.
+
+Package: tcping
+Version: 0.3-r1
+Depends: libc
+Source: /feed/tcping
+SourceName: tcping
+License: GPL-2.0-only
+LicenseFiles: license.txt
+Section: net
+SourceDateEpoch: 1786303066
+URL: https://github.com/jlyo/tcping
+Architecture: x86_64
+Installed-Size: 20480
+Filename: x86_64/tcping_0.3-r1_x86_64.ipk
+Size: 4409
+SHA256sum: ed63cb54a6fbbc2bbde7463d940607e7c73c4cfe7346fface72dd3357b0d1471
+Description:  tcping measures the latency of a tcp-connection
 
 Package: tcping
 Version: 0.3-r2

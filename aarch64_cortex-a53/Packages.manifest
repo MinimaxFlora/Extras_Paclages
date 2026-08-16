@@ -27,13 +27,13 @@ Description:  Bandix Plus core service for network traffic monitoring
 
 Package: chinadns-ng
 Version: 2025.08.09-r1
-Depends: libc, ipset
-Source: /feed/helloworld/chinadns-ng
+Depends: libc
+Source: /feed/chinadns-ng
 SourceName: chinadns-ng
 License: AGPL-3.0-only
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1755872993
+SourceDateEpoch: 1786303034
 URL: https://github.com/zfl9/chinadns-ng
 Maintainer: sbwml <admin@cooluc.com>
 Architecture: aarch64_cortex-a53
@@ -96,11 +96,11 @@ Description:  This is a DNS server that forwards DNS requests to a SOCKS5 server
 Package: dns2socks
 Version: 2.1-r2
 Depends: libc, libpthread
-Source: /feed/helloworld/dns2socks
+Source: /feed/dns2socks
 SourceName: dns2socks
 License: BSD-3-Clause
 Section: net
-SourceDateEpoch: 1762750310
+SourceDateEpoch: 1786303034
 URL: http://dns2socks.sourceforge.net/
 Maintainer: ghostmaker
 Architecture: aarch64_cortex-a53
@@ -429,16 +429,16 @@ Installed-Size: 1382400
 Description:  LuCI support for PassWall 2
 
 Package: luci-app-passwall
-Version: 26.8.1-r1
+Version: 26.8.12-r1
 Depends: libc, coreutils, coreutils-base64, coreutils-nohup, coreutils-timeout, curl, chinadns-ng, dns2socks, dnsmasq-full, ip-full, libuci-lua, lua, luci-compat, luci-lib-jsonc, microsocks, resolveip, tcping, lyaml, luci-lua-runtime
-Source: /feed/helloworld/luci-app-passwall
+Source: /feed/luci-app-passwall
 SourceName: luci-app-passwall
 Section: luci
-SourceDateEpoch: 1786042923
+SourceDateEpoch: 1786846049
 URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
-Installed-Size: 3133440
+Installed-Size: 3164160
 Description:  LuCI support for PassWall
 
 Package: luci-app-quickfile
@@ -916,12 +916,12 @@ Installed-Size: 20480
 Description:  Translation for luci-app-openlist2 - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-passwall-zh-cn
-Version: 26.8.1
+Version: 26.8.12
 Depends: libc, luci-app-passwall
-Source: /feed/helloworld/luci-app-passwall
+Source: /feed/luci-app-passwall
 SourceName: luci-app-passwall
 Section: luci
-SourceDateEpoch: 1786042923
+SourceDateEpoch: 1786846049
 Architecture: all
 Installed-Size: 51200
 Description:  Translation for luci-app-passwall - 简体中文 (Simplified Chinese)
@@ -1102,6 +1102,23 @@ Architecture: aarch64_cortex-a53
 Installed-Size: 71680
 Description:  A SOCKS5 service that you can run on your remote boxes to tunnel connections
  through them, if for some reason SSH doesn't cut it for you.
+
+Package: microsocks
+Version: 1.0.5-r2
+Depends: libc, libpthread
+Source: /feed/microsocks
+SourceName: microsocks
+License: MIT
+LicenseFiles: COPYING
+Section: net
+SourceDateEpoch: 1786303049
+URL: https://github.com/rofl0r/microsocks
+Maintainer: lean
+Architecture: aarch64_cortex-a53
+Installed-Size: 71680
+Description:  A SOCKS5 service that you can run on your remote boxes to tunnel connections
+ through them, if for some reason SSH doesn't cut it for you.
+ This version supports forwarding rules.
 
 Package: mihomo-alpha
 Version: 2026.07.08
@@ -1578,6 +1595,20 @@ Architecture: aarch64_cortex-a53
 Installed-Size: 41850880
 Description:  Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
  ShadowTLS, Tor, trojan, VLess, VMess, WireGuard and so on.
+
+Package: tcping
+Version: 0.3-r1
+Depends: libc
+Source: /feed/tcping
+SourceName: tcping
+License: GPL-2.0-only
+LicenseFiles: license.txt
+Section: net
+SourceDateEpoch: 1786303066
+URL: https://github.com/jlyo/tcping
+Architecture: aarch64_cortex-a53
+Installed-Size: 71680
+Description:  tcping measures the latency of a tcp-connection
 
 Package: tcping
 Version: 0.3-r2
