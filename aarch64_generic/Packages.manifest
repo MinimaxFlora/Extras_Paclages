@@ -365,12 +365,12 @@ Installed-Size: 51200
 Description:  LuCI Support for momo
 
 Package: luci-app-mosdns
-Version: 1.7.4-r1
-Depends: libc, mosdns, curl, v2ray-geoip, v2ray-geosite, v2dat
+Version: 1.7.5-r1
+Depends: libc, mosdns, curl, v2ray-geoip, v2ray-geosite, v2dat, ucode
 Source: /feed/luci-app-mosdns
 SourceName: luci-app-mosdns
 Section: luci
-SourceDateEpoch: 1785948329
+SourceDateEpoch: 1786933378
 URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
@@ -860,16 +860,16 @@ Installed-Size: 20480
 Description:  Translation for luci-app-momo - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-mosdns-zh-cn
-Version: 26.217.60329~9689e27
+Version: 26.221.69436~5d579a0
 Depends: libc, luci-app-mosdns
 Source: /feed/luci-app-mosdns
 SourceName: luci-app-mosdns
 Section: luci
-SourceDateEpoch: 1785948329
+SourceDateEpoch: 1786933378
 Maintainer: sbwml <admin@cooluc.com>
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-app-mosdns - 简体中文 (Chinese Simplified)
+Description:  Translation for luci-app-mosdns - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-nikki-ru
 Version: 26.161.57678~7ea66de
@@ -1175,7 +1175,7 @@ Source: /feed/mosdns
 SourceName: mosdns
 License: GPL-3.0
 Section: net
-SourceDateEpoch: 1785948329
+SourceDateEpoch: 1786933379
 URL: https://github.com/IrineSistiana/mosdns
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_generic
@@ -1672,6 +1672,20 @@ Source: /feed/v2dat
 SourceName: v2dat
 License: GPL-3.0
 Section: utils
+SourceDateEpoch: 1786303066
+URL: https://github.com/urlesistiana/v2dat
+Maintainer: sbwml <admin@cooluc.com>
+Architecture: aarch64_generic
+Installed-Size: 8591360
+Description:  V2ray geo/ip data unpack tools
+
+Package: v2dat
+Version: 2022.12.15~47b8ee51-r4
+Depends: libc
+Source: /feed/v2dat
+SourceName: v2dat
+License: GPL-3.0
+Section: utils
 SourceDateEpoch: 1785948329
 URL: https://github.com/urlesistiana/v2dat
 Maintainer: sbwml <admin@cooluc.com>
@@ -1714,33 +1728,33 @@ Description:  Project V is a set of network tools that help you to build your ow
  This includes extra resources for v2ray-core.
 
 Package: v2ray-geoip
-Version: 20260806234845-r1
+Version: 202608060031.1
 Depends: libc
-Source: /feed/helloworld/v2ray-geodata
+Source: /feed/v2ray-geodata
 SourceName: v2ray-geodata
 License: CC-BY-SA-4.0
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1717423549
+SourceDateEpoch: 1786303067
 URL: https://www.v2fly.org
-Maintainer: sbwml <admin@cooluc.com>
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: all
 Installed-Size: 17438720
 Description:  GeoIP List for V2Ray
 
 Package: v2ray-geosite
-Version: 20260806234845-r1
+Version: 202608082221.1
 Depends: libc
-Source: /feed/helloworld/v2ray-geodata
+Source: /feed/v2ray-geodata
 SourceName: v2ray-geodata
-License: GPL-3.0
+License: MIT
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1717423549
+SourceDateEpoch: 1786303067
 URL: https://www.v2fly.org
-Maintainer: sbwml <admin@cooluc.com>
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: all
-Installed-Size: 10577920
+Installed-Size: 10598400
 Description:  Geosite List for V2Ray
 
 Package: v2ray-plugin

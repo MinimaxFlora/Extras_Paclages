@@ -440,19 +440,19 @@ SHA256sum: 5bd435d9f27beb6c8d76710c583af5ddca06ff00099bdd29e52b27275dd9f33e
 Description:  LuCI Support for momo
 
 Package: luci-app-mosdns
-Version: 1.7.4-r1
-Depends: libc, mosdns, curl, v2ray-geoip, v2ray-geosite, v2dat
+Version: 1.7.5-r1
+Depends: libc, mosdns, curl, v2ray-geoip, v2ray-geosite, v2dat, ucode
 Source: /feed/luci-app-mosdns
 SourceName: luci-app-mosdns
 Section: luci
-SourceDateEpoch: 1785948329
+SourceDateEpoch: 1786933378
 URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 399360
-Filename: aarch64_cortex-a53/luci-app-mosdns_1.7.4-r1_all.ipk
-Size: 105168
-SHA256sum: 5c372f844632b5dc17c98e77b6fedf857c3e209ff6965023efe128d57b190717
+Filename: aarch64_cortex-a53/luci-app-mosdns_1.7.5-r1_all.ipk
+Size: 105697
+SHA256sum: cb76b1a995863a6c54110bda5f62e50b82bb454c9bc347eedfdf9773c3418c0f
 Description:  LuCI Support for mosdns
 
 Package: luci-app-nikki
@@ -1055,19 +1055,19 @@ SHA256sum: 32057bd0550984ab76d86f781e5294b67b365795357cce7481d2f9d9f40a22c8
 Description:  Translation for luci-app-momo - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-mosdns-zh-cn
-Version: 26.217.60329~9689e27
+Version: 26.221.69436~5d579a0
 Depends: libc, luci-app-mosdns
 Source: /feed/luci-app-mosdns
 SourceName: luci-app-mosdns
 Section: luci
-SourceDateEpoch: 1785948329
+SourceDateEpoch: 1786933378
 Maintainer: sbwml <admin@cooluc.com>
 Architecture: all
 Installed-Size: 20480
-Filename: aarch64_cortex-a53/luci-i18n-mosdns-zh-cn_26.217.60329~9689e27_all.ipk
-Size: 5508
-SHA256sum: ef22c99ebce12cd877c6fdb67b0ae7775ceed2b6e90e276db2266a5434739f2d
-Description:  Translation for luci-app-mosdns - 简体中文 (Chinese Simplified)
+Filename: aarch64_cortex-a53/luci-i18n-mosdns-zh-cn_26.221.69436.5d579a0_all.ipk
+Size: 5503
+SHA256sum: 6ef7efc018f033bacf31a85d21c59839e8d229e322498159fd9222f1d2ab1200
+Description:  Translation for luci-app-mosdns - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-nikki-ru
 Version: 26.161.57678~7ea66de
@@ -1442,14 +1442,14 @@ Source: /feed/mosdns
 SourceName: mosdns
 License: GPL-3.0
 Section: net
-SourceDateEpoch: 1785948329
+SourceDateEpoch: 1786933379
 URL: https://github.com/IrineSistiana/mosdns
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_cortex-a53
 Installed-Size: 18360320
 Filename: aarch64_cortex-a53/mosdns_5.3.4-r6_aarch64_cortex-a53.ipk
-Size: 6673049
-SHA256sum: 2e01232fbb45a030bc1cbd1703622880cbf9cc11a6c49eb6e9e39f2601c38025
+Size: 6681014
+SHA256sum: 10523d98dc1fa9fad331ca6b84547b4cb0e3fb193d84c68bf6b82480068f8f8e
 Description:  A plug-in DNS forwarder/splitter
 
 Package: naiveproxy
@@ -2038,6 +2038,23 @@ Source: /feed/v2dat
 SourceName: v2dat
 License: GPL-3.0
 Section: utils
+SourceDateEpoch: 1786303066
+URL: https://github.com/urlesistiana/v2dat
+Maintainer: sbwml <admin@cooluc.com>
+Architecture: aarch64_cortex-a53
+Installed-Size: 8591360
+Filename: aarch64_cortex-a53/v2dat_2022.12.15.47b8ee51-r4_aarch64_cortex-a53.ipk
+Size: 3228982
+SHA256sum: 154f8a4e9c913a1397cc78c11d6fea70579466f000845a3bd46c045d572f2b4b
+Description:  V2ray geo/ip data unpack tools
+
+Package: v2dat
+Version: 2022.12.15~47b8ee51-r4
+Depends: libc
+Source: /feed/v2dat
+SourceName: v2dat
+License: GPL-3.0
+Section: utils
 SourceDateEpoch: 1785948329
 URL: https://github.com/urlesistiana/v2dat
 Maintainer: sbwml <admin@cooluc.com>
@@ -2089,39 +2106,39 @@ Description:  Project V is a set of network tools that help you to build your ow
  This includes extra resources for v2ray-core.
 
 Package: v2ray-geoip
-Version: 20260806235903-r1
+Version: 202608060031.1
 Depends: libc
-Source: /feed/helloworld/v2ray-geodata
+Source: /feed/v2ray-geodata
 SourceName: v2ray-geodata
 License: CC-BY-SA-4.0
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1717423549
+SourceDateEpoch: 1786303067
 URL: https://www.v2fly.org
-Maintainer: sbwml <admin@cooluc.com>
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: all
 Installed-Size: 17438720
-Filename: aarch64_cortex-a53/v2ray-geoip_20260806235903-r1_all.ipk
-Size: 3575551
-SHA256sum: eadfcd3e909447217f0801407f21ac8f7b5f143fbd46e184d7bc39d83f8b8c1f
+Filename: aarch64_cortex-a53/v2ray-geoip_202608060031.1_all.ipk
+Size: 3575629
+SHA256sum: c05b47a3e459d6370fa6c4efd62a5cc155710378bbb0ea20c30611ef7319035e
 Description:  GeoIP List for V2Ray
 
 Package: v2ray-geosite
-Version: 20260806235903-r1
+Version: 202608082221.1
 Depends: libc
-Source: /feed/helloworld/v2ray-geodata
+Source: /feed/v2ray-geodata
 SourceName: v2ray-geodata
-License: GPL-3.0
+License: MIT
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1717423549
+SourceDateEpoch: 1786303067
 URL: https://www.v2fly.org
-Maintainer: sbwml <admin@cooluc.com>
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: all
-Installed-Size: 10577920
-Filename: aarch64_cortex-a53/v2ray-geosite_20260806235903-r1_all.ipk
-Size: 3476990
-SHA256sum: 8b2f0626d68c8c856af7fe1340896d33dbcc111c027bba3d5d846ad4948921c4
+Installed-Size: 10598400
+Filename: aarch64_cortex-a53/v2ray-geosite_202608082221.1_all.ipk
+Size: 3486865
+SHA256sum: 14837fd7820d2e79f67d6e6152c8539ded24b8d8e074d8dab22f16726dc3dc39
 Description:  Geosite List for V2Ray
 
 Package: v2ray-plugin
