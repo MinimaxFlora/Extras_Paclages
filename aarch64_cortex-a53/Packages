@@ -15,6 +15,21 @@ Size: 6048760
 SHA256sum: 823fedd02c014adc72909bfe6d192fda2262ee3832152613408d00522fa045bb
 Description:  Use AirPlay to stream to UPnP/Sonos & Chromecast devices
 
+Package: autocore-arm
+Version: 1.0.1-r1
+Depends: libc, bcm27xx-userland, luci-base
+Source: /feed/autocore
+SourceName: autocore
+Section: opt
+SourceDateEpoch: 1786970397
+Maintainer: CN_SZTL
+Architecture: aarch64_cortex-a53
+Installed-Size: 71680
+Filename: aarch64_cortex-a53/autocore-arm_1.0.1-r1_aarch64_cortex-a53.ipk
+Size: 15418
+SHA256sum: 7c1a702c7e3eec3569a95ef51db6de5fbe330b7d583b2d68d52bfc208ddcd6ab
+Description:  ARM auto core script.
+
 Package: bandix-plus
 Version: 0.1.2-r1
 Depends: libc, zoneinfo-all, conntrack, iw

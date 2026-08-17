@@ -12,6 +12,18 @@ Architecture: aarch64_generic
 Installed-Size: 14397440
 Description:  Use AirPlay to stream to UPnP/Sonos & Chromecast devices
 
+Package: autocore-arm
+Version: 1.0.1-r1
+Depends: libc, luci-base
+Source: /feed/autocore
+SourceName: autocore
+Section: opt
+SourceDateEpoch: 1786970397
+Maintainer: CN_SZTL
+Architecture: aarch64_generic
+Installed-Size: 71680
+Description:  ARM auto core script.
+
 Package: bandix-plus
 Version: 0.1.2-r1
 Depends: libc, zoneinfo-all, conntrack, iw

@@ -15,6 +15,21 @@ Size: 5797492
 SHA256sum: 1b9435fc579587e91dd91cb1c503ab9ff6589dd1096c008cc3f3d553ef549487
 Description:  Use AirPlay to stream to UPnP/Sonos & Chromecast devices
 
+Package: autocore-x86
+Version: 1.0.1-r1
+Depends: libc, lm-sensors, ethtool, luci-base
+Source: /feed/autocore
+SourceName: autocore
+Section: opt
+SourceDateEpoch: 1786970397
+Maintainer: Lean / CN_SZTL
+Architecture: x86_64
+Installed-Size: 71680
+Filename: x86_64/autocore-x86_1.0.1-r1_x86_64.ipk
+Size: 15897
+SHA256sum: bbec71819b23e7fb59d01f8177d6ea1c88ea99eced4f3fa6a9a174d4cbc05b1e
+Description:  x86/x64 auto core loadbalance script.
+
 Package: bandix-plus
 Version: 0.1.2-r1
 Depends: libc, zoneinfo-all, conntrack, iw
