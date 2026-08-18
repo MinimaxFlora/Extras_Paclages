@@ -21,13 +21,13 @@ Depends: libc, luci-base
 Source: /feed/autocore
 SourceName: autocore
 Section: opt
-SourceDateEpoch: 1786970397
+SourceDateEpoch: 1787035420
 Maintainer: CN_SZTL
 Architecture: aarch64_generic
 Installed-Size: 71680
 Filename: aarch64_generic/autocore-arm_1.0.1-r1_aarch64_generic.ipk
-Size: 15400
-SHA256sum: ba7a078cb0ae7b817a39b36f9b7126875d0d47cb22b341bdbf4a112ab38a34ba
+Size: 15536
+SHA256sum: a32ad377f808b9338094394a8e265c4d6b99b4700c667602bac8b64c18e3f3e6
 Description:  ARM auto core script.
 
 Package: bandix-plus

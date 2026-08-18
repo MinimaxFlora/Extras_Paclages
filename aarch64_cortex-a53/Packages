@@ -21,13 +21,13 @@ Depends: libc, bcm27xx-userland, luci-base
 Source: /feed/autocore
 SourceName: autocore
 Section: opt
-SourceDateEpoch: 1786970397
+SourceDateEpoch: 1787035420
 Maintainer: CN_SZTL
 Architecture: aarch64_cortex-a53
 Installed-Size: 71680
 Filename: aarch64_cortex-a53/autocore-arm_1.0.1-r1_aarch64_cortex-a53.ipk
-Size: 15418
-SHA256sum: 7c1a702c7e3eec3569a95ef51db6de5fbe330b7d583b2d68d52bfc208ddcd6ab
+Size: 15552
+SHA256sum: 05dd7f21cadffaf12a8bd66958c8137302d93fdca6bc826bfd79f831b0df989a
 Description:  ARM auto core script.
 
 Package: bandix-plus

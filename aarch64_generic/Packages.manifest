@@ -18,7 +18,7 @@ Depends: libc, luci-base
 Source: /feed/autocore
 SourceName: autocore
 Section: opt
-SourceDateEpoch: 1786970397
+SourceDateEpoch: 1787035420
 Maintainer: CN_SZTL
 Architecture: aarch64_generic
 Installed-Size: 71680

@@ -18,7 +18,7 @@ Depends: libc, lm-sensors, ethtool, luci-base
 Source: /feed/autocore
 SourceName: autocore
 Section: opt
-SourceDateEpoch: 1786970397
+SourceDateEpoch: 1787035420
 Maintainer: Lean / CN_SZTL
 Architecture: x86_64
 Installed-Size: 71680

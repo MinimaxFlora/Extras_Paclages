@@ -21,13 +21,13 @@ Depends: libc, lm-sensors, ethtool, luci-base
 Source: /feed/autocore
 SourceName: autocore
 Section: opt
-SourceDateEpoch: 1786970397
+SourceDateEpoch: 1787035420
 Maintainer: Lean / CN_SZTL
 Architecture: x86_64
 Installed-Size: 71680
 Filename: x86_64/autocore-x86_1.0.1-r1_x86_64.ipk
-Size: 15897
-SHA256sum: bbec71819b23e7fb59d01f8177d6ea1c88ea99eced4f3fa6a9a174d4cbc05b1e
+Size: 16028
+SHA256sum: 3ae1ab2a6cb75e4ef18b27afbfcddd078acfe650dee47bedb4349959a498ded1
 Description:  x86/x64 auto core loadbalance script.
 
 Package: bandix-plus
