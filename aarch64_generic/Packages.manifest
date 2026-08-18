@@ -10,7 +10,7 @@ URL: https://github.com/philippe44/AirConnect
 Maintainer: sbwml <admin@cooluc.com>
 Architecture: aarch64_generic
 Installed-Size: 14397440
-Description:  Use AirPlay to stream to UPnP/Sonos & Chromecast devices
+Description: Use AirPlay to stream to UPnP/Sonos & Chromecast devices
 
 Package: autocore-arm
 Version: 1.0.1-r1
@@ -22,7 +22,7 @@ SourceDateEpoch: 1786970397
 Maintainer: CN_SZTL
 Architecture: aarch64_generic
 Installed-Size: 71680
-Description:  ARM auto core script.
+Description: ARM auto core script.
 
 Package: bandix-plus
 Version: 0.1.2-r1
@@ -35,7 +35,7 @@ SourceDateEpoch: 1785992673
 Maintainer: timsaya
 Architecture: aarch64_generic
 Installed-Size: 5089280
-Description:  Bandix Plus core service for network traffic monitoring
+Description: Bandix Plus core service for network traffic monitoring
 
 Package: chinadns-ng
 Version: 2025.08.09-r1
@@ -50,7 +50,7 @@ URL: https://github.com/zfl9/chinadns-ng
 Maintainer: sbwml <admin@cooluc.com>
 Architecture: aarch64_generic
 Installed-Size: 522240
-Description:  ChinaDNS next generation, refactoring with epoll and ipset.
+Description: ChinaDNS next generation, refactoring with epoll and ipset.
 
 Package: dae
 Version: 2026.06.14-r1
@@ -64,7 +64,7 @@ URL: https://github.com/daeuniverse/dae
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_generic
 Installed-Size: 31385600
-Description:  dae, means goose, is a lightweight and high-performance transparent
+Description: dae, means goose, is a lightweight and high-performance transparent
  proxy solution.
  
  In order to improve the traffic diversion performance as much as possible,
@@ -87,7 +87,7 @@ URL: https://github.com/daeuniverse/daed
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_generic
 Installed-Size: 42895360
-Description:  daed is a backend of dae, provides a method to bundle arbitrary
+Description: daed is a backend of dae, provides a method to bundle arbitrary
  frontend, dae and geodata into one binary.
 
 Package: dns2socks-rust
@@ -103,7 +103,7 @@ URL: https://github.com/tun2proxy/dns2socks.git
 Maintainer: Zxlhhyccc <zxlhhyccc@gmail.com>
 Architecture: aarch64_generic
 Installed-Size: 2170880
-Description:  This is a DNS server that forwards DNS requests to a SOCKS5 server.
+Description: This is a DNS server that forwards DNS requests to a SOCKS5 server.
 
 Package: dns2socks
 Version: 2.1-r2
@@ -117,7 +117,7 @@ URL: http://dns2socks.sourceforge.net/
 Maintainer: ghostmaker
 Architecture: aarch64_generic
 Installed-Size: 71680
-Description:  This is a command line utility to resolve DNS requests via
+Description: This is a command line utility to resolve DNS requests via
  a SOCKS tunnel like Tor or a HTTP proxy.
 
 Package: dns2tcp
@@ -133,7 +133,7 @@ URL: https://github.com/zfl9/dns2tcp
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_generic
 Installed-Size: 71680
-Description:  utility to convert dns query from udp to tcp
+Description: utility to convert dns query from udp to tcp
 
 Package: geoview
 Version: 0.2.6-r1
@@ -148,7 +148,7 @@ URL: https://github.com/snowie2000/geoview
 Maintainer: snowie2000
 Architecture: aarch64_generic
 Installed-Size: 7208960
-Description:  geoview is a handy tool to extract useful information from geo* files.
+Description: geoview is a handy tool to extract useful information from geo* files.
 
 Package: hysteria
 Version: 2.12.0-r1
@@ -162,7 +162,7 @@ URL: https://github.com/apernet/hysteria
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_generic
 Installed-Size: 21186560
-Description:  Hysteria is a feature-packed network utility optimized for networks
+Description: Hysteria is a feature-packed network utility optimized for networks
  of poor quality (e.g. satellite connections, congested public Wi-Fi,
  connecting from China to servers abroad) powered by a custom version
  of QUIC protocol.
@@ -178,7 +178,7 @@ SourceDateEpoch: 1741242626
 URL: https://github.com/zfl9/ipt2socks
 Architecture: aarch64_generic
 Installed-Size: 143360
-Description:  Utility for converting iptables (redirect/tproxy) to socks5.
+Description: Utility for converting iptables (redirect/tproxy) to socks5.
 
 Package: kcptun-client
 Version: 20230207-r1
@@ -193,7 +193,7 @@ URL: https://github.com/xtaci/kcptun
 Maintainer: Dengfeng Liu <liudf0716@gmail.com>, Chao Liu <expiron18@gmail.com>
 Architecture: aarch64_generic
 Installed-Size: 7905280
-Description:  kcptun is a Stable & Secure Tunnel Based On KCP with N:M Multiplexing.
+Description: kcptun is a Stable & Secure Tunnel Based On KCP with N:M Multiplexing.
  This package only contains kcptun client.
 
 Package: kcptun-config
@@ -209,7 +209,7 @@ URL: https://github.com/xtaci/kcptun
 Maintainer: Dengfeng Liu <liudf0716@gmail.com>, Chao Liu <expiron18@gmail.com>
 Architecture: aarch64_generic
 Installed-Size: 10240
-Description:  Kcptun Config Scripts
+Description: Kcptun Config Scripts
 
 Package: kcptun-server
 Version: 20230207-r1
@@ -224,7 +224,7 @@ URL: https://github.com/xtaci/kcptun
 Maintainer: Dengfeng Liu <liudf0716@gmail.com>, Chao Liu <expiron18@gmail.com>
 Architecture: aarch64_generic
 Installed-Size: 11059200
-Description:  kcptun is a Stable & Secure Tunnel Based On KCP with N:M Multiplexing.
+Description: kcptun is a Stable & Secure Tunnel Based On KCP with N:M Multiplexing.
  This package only contains kcptun server.
 
 Package: lua-neturl
@@ -239,7 +239,7 @@ URL: https://github.com/golgote/neturl
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: all
 Installed-Size: 20480
-Description:  This small Lua library provides a few functions to parse URL with
+Description: This small Lua library provides a few functions to parse URL with
  querystring and build new URL easily.
 
 Package: luci-app-airconnect
@@ -253,7 +253,7 @@ URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 20480
-Description:  LuCI support for AirConnect
+Description: LuCI support for AirConnect
 
 Package: luci-app-argon-config
 Version: 1.0-r20230608
@@ -266,7 +266,7 @@ URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 30720
-Description:  LuCI app for Argon theme configuration
+Description: LuCI app for Argon theme configuration
 
 Package: luci-app-aurora-config
 Version: 1.1.14-r20260806
@@ -280,7 +280,7 @@ URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 378880
-Description:  LuCI configuration UI for the Aurora theme
+Description: LuCI configuration UI for the Aurora theme
 
 Package: luci-app-bandix-plus
 Version: 0.1.3-r1
@@ -294,7 +294,7 @@ URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 245760
-Description:  LuCI Bandix Plus app for network traffic monitoring
+Description: LuCI Bandix Plus app for network traffic monitoring
 
 Package: luci-app-dae
 Version: 26.100.50428~1ee5d45
@@ -308,7 +308,7 @@ URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 20480
-Description:  LuCI app for dae
+Description: LuCI app for dae
 
 Package: luci-app-daed
 Version: 26.074.21710~fc9fa00
@@ -321,7 +321,7 @@ URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 20480
-Description:  LuCI app for dae dashboard
+Description: LuCI app for dae dashboard
 
 Package: luci-app-diskman
 Version: 1.0.0-r4
@@ -335,7 +335,7 @@ URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 81920
-Description:  Provides Web UI for Disk Manager
+Description: Provides Web UI for Disk Manager
 
 Package: luci-app-homeproxy
 Version: 26.218.16504~0aec5b1
@@ -348,7 +348,7 @@ URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 1863680
-Description:  The modern ImmortalWrt proxy platform for ARM64/AMD64
+Description: The modern ImmortalWrt proxy platform for ARM64/AMD64
 
 Package: luci-app-kucat-config
 Version: 2.2.1-r20260312
@@ -361,7 +361,7 @@ URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 112640
-Description:  LuCI support for Kucat theme setting by sirpdboy
+Description: LuCI support for Kucat theme setting by sirpdboy
 
 Package: luci-app-momo
 Version: 1.2.1-r1
@@ -374,7 +374,7 @@ URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 51200
-Description:  LuCI Support for momo
+Description: LuCI Support for momo
 
 Package: luci-app-mosdns
 Version: 1.7.5-r1
@@ -387,7 +387,7 @@ URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 399360
-Description:  LuCI Support for mosdns
+Description: LuCI Support for mosdns
 
 Package: luci-app-nikki
 Version: 1.26.1-r1
@@ -400,7 +400,7 @@ URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 61440
-Description:  LuCI Support for nikki
+Description: LuCI Support for nikki
 
 Package: luci-app-openclash
 Version: 0.47.133
@@ -412,7 +412,7 @@ SourceDateEpoch: 1662173734
 Maintainer: vernesong
 Architecture: all
 Installed-Size: 9192796
-Description:  A LuCI support for clash
+Description: A LuCI support for clash
 
 Package: luci-app-openlist2
 Version: 1.0.3-r1
@@ -425,7 +425,7 @@ URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 30720
-Description:  LuCI support for openlist
+Description: LuCI support for openlist
 
 Package: luci-app-passwall2
 Version: 26.7.16-r1
@@ -438,7 +438,7 @@ URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 1382400
-Description:  LuCI support for PassWall 2
+Description: LuCI support for PassWall 2
 
 Package: luci-app-passwall
 Version: 26.8.12-r1
@@ -451,7 +451,7 @@ URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 3164160
-Description:  LuCI support for PassWall
+Description: LuCI support for PassWall
 
 Package: luci-app-quickfile
 Version: 1.0.0-r1
@@ -465,7 +465,7 @@ URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 10240
-Description:  LuCI File Manager module
+Description: LuCI File Manager module
 
 Package: luci-app-ramfree
 Version: 1.0-r1
@@ -478,7 +478,7 @@ URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 10240
-Description:  LuCI support for ramfree
+Description: LuCI support for ramfree
 
 Package: luci-app-ssr-plus
 Version: 196-r7
@@ -491,7 +491,7 @@ URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 2488320
-Description:  SS/SSR/V2Ray/Trojan/NaiveProxy/Tuic/ShadowTLS/Hysteria/Socks5/Clash LuCI interface
+Description: SS/SSR/V2Ray/Trojan/NaiveProxy/Tuic/ShadowTLS/Hysteria/Socks5/Clash LuCI interface
 
 Package: luci-i18n-airconnect-zh-cn
 Version: 26.216.59507~71e1bd6
@@ -503,7 +503,7 @@ SourceDateEpoch: 1785861107
 Maintainer: sbwml <admin@cooluc.com>
 Architecture: all
 Installed-Size: 10240
-Description:  Translation for luci-app-airconnect - 简体中文 (Simplified Chinese)
+Description: Translation for luci-app-airconnect - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-argon-config-es
 Version: 26.217.50438~639f3a1
@@ -515,7 +515,7 @@ SourceDateEpoch: 1785938438
 Maintainer: jerrykuku <jerrykuku@qq.com>
 Architecture: all
 Installed-Size: 10240
-Description:  Translation for luci-app-argon-config - Español (Spanish)
+Description: Translation for luci-app-argon-config - Español (Spanish)
 
 Package: luci-i18n-argon-config-ru
 Version: 26.217.50438~639f3a1
@@ -527,7 +527,7 @@ SourceDateEpoch: 1785938438
 Maintainer: jerrykuku <jerrykuku@qq.com>
 Architecture: all
 Installed-Size: 10240
-Description:  Translation for luci-app-argon-config - Русский (Russian)
+Description: Translation for luci-app-argon-config - Русский (Russian)
 
 Package: luci-i18n-argon-config-zh-cn
 Version: 26.217.50438~639f3a1
@@ -539,7 +539,7 @@ SourceDateEpoch: 1785938438
 Maintainer: jerrykuku <jerrykuku@qq.com>
 Architecture: all
 Installed-Size: 10240
-Description:  Translation for luci-app-argon-config - 简体中文 (Chinese Simplified)
+Description: Translation for luci-app-argon-config - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-argon-config-zh-tw
 Version: 26.217.50438~639f3a1
@@ -551,7 +551,7 @@ SourceDateEpoch: 1785938438
 Maintainer: jerrykuku <jerrykuku@qq.com>
 Architecture: all
 Installed-Size: 10240
-Description:  Translation for luci-app-argon-config - 繁體中文 (Chinese Traditional)
+Description: Translation for luci-app-argon-config - 繁體中文 (Chinese Traditional)
 
 Package: luci-i18n-aurora-config-de
 Version: 26.218.30578~bbcc773
@@ -563,7 +563,7 @@ Section: luci
 SourceDateEpoch: 1786004978
 Architecture: all
 Installed-Size: 30720
-Description:  Translation for luci-app-aurora-config - Deutsch (German)
+Description: Translation for luci-app-aurora-config - Deutsch (German)
 
 Package: luci-i18n-aurora-config-es
 Version: 26.218.30578~bbcc773
@@ -575,7 +575,7 @@ Section: luci
 SourceDateEpoch: 1786004978
 Architecture: all
 Installed-Size: 30720
-Description:  Translation for luci-app-aurora-config - Español (Spanish)
+Description: Translation for luci-app-aurora-config - Español (Spanish)
 
 Package: luci-i18n-aurora-config-fr
 Version: 26.218.30578~bbcc773
@@ -587,7 +587,7 @@ Section: luci
 SourceDateEpoch: 1786004978
 Architecture: all
 Installed-Size: 40960
-Description:  Translation for luci-app-aurora-config - Français (French)
+Description: Translation for luci-app-aurora-config - Français (French)
 
 Package: luci-i18n-aurora-config-it
 Version: 26.218.30578~bbcc773
@@ -599,7 +599,7 @@ Section: luci
 SourceDateEpoch: 1786004978
 Architecture: all
 Installed-Size: 30720
-Description:  Translation for luci-app-aurora-config - Italiano (Italian)
+Description: Translation for luci-app-aurora-config - Italiano (Italian)
 
 Package: luci-i18n-aurora-config-ja
 Version: 26.218.30578~bbcc773
@@ -611,7 +611,7 @@ Section: luci
 SourceDateEpoch: 1786004978
 Architecture: all
 Installed-Size: 40960
-Description:  Translation for luci-app-aurora-config - 日本語 (Japanese)
+Description: Translation for luci-app-aurora-config - 日本語 (Japanese)
 
 Package: luci-i18n-aurora-config-ko
 Version: 26.218.30578~bbcc773
@@ -623,7 +623,7 @@ Section: luci
 SourceDateEpoch: 1786004978
 Architecture: all
 Installed-Size: 40960
-Description:  Translation for luci-app-aurora-config - 한국어 (Korean)
+Description: Translation for luci-app-aurora-config - 한국어 (Korean)
 
 Package: luci-i18n-aurora-config-nl
 Version: 26.218.30578~bbcc773
@@ -635,7 +635,7 @@ Section: luci
 SourceDateEpoch: 1786004978
 Architecture: all
 Installed-Size: 30720
-Description:  Translation for luci-app-aurora-config - Nederlands (Dutch)
+Description: Translation for luci-app-aurora-config - Nederlands (Dutch)
 
 Package: luci-i18n-aurora-config-pl
 Version: 26.218.30578~bbcc773
@@ -647,7 +647,7 @@ Section: luci
 SourceDateEpoch: 1786004978
 Architecture: all
 Installed-Size: 30720
-Description:  Translation for luci-app-aurora-config - Polski (Polish)
+Description: Translation for luci-app-aurora-config - Polski (Polish)
 
 Package: luci-i18n-aurora-config-ru
 Version: 26.218.30578~bbcc773
@@ -659,7 +659,7 @@ Section: luci
 SourceDateEpoch: 1786004978
 Architecture: all
 Installed-Size: 51200
-Description:  Translation for luci-app-aurora-config - Русский (Russian)
+Description: Translation for luci-app-aurora-config - Русский (Russian)
 
 Package: luci-i18n-aurora-config-tr
 Version: 26.218.30578~bbcc773
@@ -671,7 +671,7 @@ Section: luci
 SourceDateEpoch: 1786004978
 Architecture: all
 Installed-Size: 30720
-Description:  Translation for luci-app-aurora-config - Türkçe (Turkish)
+Description: Translation for luci-app-aurora-config - Türkçe (Turkish)
 
 Package: luci-i18n-aurora-config-uk
 Version: 26.218.30578~bbcc773
@@ -683,7 +683,7 @@ Section: luci
 SourceDateEpoch: 1786004978
 Architecture: all
 Installed-Size: 51200
-Description:  Translation for luci-app-aurora-config - Українська (Ukrainian)
+Description: Translation for luci-app-aurora-config - Українська (Ukrainian)
 
 Package: luci-i18n-aurora-config-zh-cn
 Version: 26.218.30578~bbcc773
@@ -695,7 +695,7 @@ Section: luci
 SourceDateEpoch: 1786004978
 Architecture: all
 Installed-Size: 30720
-Description:  Translation for luci-app-aurora-config - 简体中文 (Chinese Simplified)
+Description: Translation for luci-app-aurora-config - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-aurora-config-zh-tw
 Version: 26.218.30578~bbcc773
@@ -707,7 +707,7 @@ Section: luci
 SourceDateEpoch: 1786004978
 Architecture: all
 Installed-Size: 30720
-Description:  Translation for luci-app-aurora-config - 繁體中文 (Chinese Traditional)
+Description: Translation for luci-app-aurora-config - 繁體中文 (Chinese Traditional)
 
 Package: luci-i18n-bandix-plus-es
 Version: 26.218.16358~9da3267
@@ -720,7 +720,7 @@ SourceDateEpoch: 1785990758
 Maintainer: timsaya
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-app-bandix-plus - Español (Spanish)
+Description: Translation for luci-app-bandix-plus - Español (Spanish)
 
 Package: luci-i18n-bandix-plus-fr
 Version: 26.218.16358~9da3267
@@ -733,7 +733,7 @@ SourceDateEpoch: 1785990758
 Maintainer: timsaya
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-app-bandix-plus - Français (French)
+Description: Translation for luci-app-bandix-plus - Français (French)
 
 Package: luci-i18n-bandix-plus-ja
 Version: 26.218.16358~9da3267
@@ -746,7 +746,7 @@ SourceDateEpoch: 1785990758
 Maintainer: timsaya
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-app-bandix-plus - 日本語 (Japanese)
+Description: Translation for luci-app-bandix-plus - 日本語 (Japanese)
 
 Package: luci-i18n-bandix-plus-pl
 Version: 26.218.16358~9da3267
@@ -759,7 +759,7 @@ SourceDateEpoch: 1785990758
 Maintainer: timsaya
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-app-bandix-plus - Polski (Polish)
+Description: Translation for luci-app-bandix-plus - Polski (Polish)
 
 Package: luci-i18n-bandix-plus-ru
 Version: 26.218.16358~9da3267
@@ -772,7 +772,7 @@ SourceDateEpoch: 1785990758
 Maintainer: timsaya
 Architecture: all
 Installed-Size: 30720
-Description:  Translation for luci-app-bandix-plus - Русский (Russian)
+Description: Translation for luci-app-bandix-plus - Русский (Russian)
 
 Package: luci-i18n-bandix-plus-zh-cn
 Version: 26.218.16358~9da3267
@@ -785,7 +785,7 @@ SourceDateEpoch: 1785990758
 Maintainer: timsaya
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-app-bandix-plus - 简体中文 (Chinese Simplified)
+Description: Translation for luci-app-bandix-plus - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-bandix-plus-zh-tw
 Version: 26.218.16358~9da3267
@@ -798,7 +798,7 @@ SourceDateEpoch: 1785990758
 Maintainer: timsaya
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-app-bandix-plus - 繁體中文 (Chinese Traditional)
+Description: Translation for luci-app-bandix-plus - 繁體中文 (Chinese Traditional)
 
 Package: luci-i18n-dae-zh-cn
 Version: 26.074.18101~3304670
@@ -811,7 +811,7 @@ SourceDateEpoch: 1775829628
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: all
 Installed-Size: 10240
-Description:  Translation for luci-app-dae - 简体中文 (Simplified Chinese)
+Description: Translation for luci-app-dae - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-daed-zh-cn
 Version: 25.036.30618~b090b46
@@ -822,7 +822,7 @@ Section: luci
 SourceDateEpoch: 1773554510
 Architecture: all
 Installed-Size: 10240
-Description:  Translation for luci-app-daed - 简体中文 (Simplified Chinese)
+Description: Translation for luci-app-daed - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-diskman-zh-cn
 Version: 26.218.45653~8761094
@@ -835,7 +835,7 @@ SourceDateEpoch: 1786020053
 Maintainer: sbwml <admin@cooluc.com>
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-app-diskman - 简体中文 (Chinese Simplified)
+Description: Translation for luci-app-diskman - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-fluent-de
 Version: 26.230.07832~d6fd5a9
@@ -847,7 +847,7 @@ Section: luci
 SourceDateEpoch: 1787019032
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-theme-fluent - Deutsch (German)
+Description: Translation for luci-theme-fluent - Deutsch (German)
 
 Package: luci-i18n-fluent-es
 Version: 26.230.07832~d6fd5a9
@@ -859,7 +859,7 @@ Section: luci
 SourceDateEpoch: 1787019032
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-theme-fluent - Español (Spanish)
+Description: Translation for luci-theme-fluent - Español (Spanish)
 
 Package: luci-i18n-fluent-fa
 Version: 26.230.07832~d6fd5a9
@@ -871,7 +871,7 @@ Section: luci
 SourceDateEpoch: 1787019032
 Architecture: all
 Installed-Size: 30720
-Description:  Translation for luci-theme-fluent - Farsi (Persian)
+Description: Translation for luci-theme-fluent - Farsi (Persian)
 
 Package: luci-i18n-fluent-fr
 Version: 26.230.07832~d6fd5a9
@@ -883,7 +883,7 @@ Section: luci
 SourceDateEpoch: 1787019032
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-theme-fluent - Français (French)
+Description: Translation for luci-theme-fluent - Français (French)
 
 Package: luci-i18n-fluent-it
 Version: 26.230.07832~d6fd5a9
@@ -895,7 +895,7 @@ Section: luci
 SourceDateEpoch: 1787019032
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-theme-fluent - Italiano (Italian)
+Description: Translation for luci-theme-fluent - Italiano (Italian)
 
 Package: luci-i18n-fluent-ja
 Version: 26.230.07832~d6fd5a9
@@ -907,7 +907,7 @@ Section: luci
 SourceDateEpoch: 1787019032
 Architecture: all
 Installed-Size: 30720
-Description:  Translation for luci-theme-fluent - 日本語 (Japanese)
+Description: Translation for luci-theme-fluent - 日本語 (Japanese)
 
 Package: luci-i18n-fluent-ko
 Version: 26.230.07832~d6fd5a9
@@ -919,7 +919,7 @@ Section: luci
 SourceDateEpoch: 1787019032
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-theme-fluent - 한국어 (Korean)
+Description: Translation for luci-theme-fluent - 한국어 (Korean)
 
 Package: luci-i18n-fluent-pl
 Version: 26.230.07832~d6fd5a9
@@ -931,7 +931,7 @@ Section: luci
 SourceDateEpoch: 1787019032
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-theme-fluent - Polski (Polish)
+Description: Translation for luci-theme-fluent - Polski (Polish)
 
 Package: luci-i18n-fluent-ru
 Version: 26.230.07832~d6fd5a9
@@ -943,7 +943,7 @@ Section: luci
 SourceDateEpoch: 1787019032
 Architecture: all
 Installed-Size: 30720
-Description:  Translation for luci-theme-fluent - Русский (Russian)
+Description: Translation for luci-theme-fluent - Русский (Russian)
 
 Package: luci-i18n-fluent-tr
 Version: 26.230.07832~d6fd5a9
@@ -955,7 +955,7 @@ Section: luci
 SourceDateEpoch: 1787019032
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-theme-fluent - Türkçe (Turkish)
+Description: Translation for luci-theme-fluent - Türkçe (Turkish)
 
 Package: luci-i18n-fluent-uk
 Version: 26.230.07832~d6fd5a9
@@ -967,7 +967,7 @@ Section: luci
 SourceDateEpoch: 1787019032
 Architecture: all
 Installed-Size: 30720
-Description:  Translation for luci-theme-fluent - Українська (Ukrainian)
+Description: Translation for luci-theme-fluent - Українська (Ukrainian)
 
 Package: luci-i18n-fluent-vi
 Version: 26.230.07832~d6fd5a9
@@ -979,7 +979,7 @@ Section: luci
 SourceDateEpoch: 1787019032
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-theme-fluent - Tiếng Việt (Vietnamese)
+Description: Translation for luci-theme-fluent - Tiếng Việt (Vietnamese)
 
 Package: luci-i18n-fluent-zh-cn
 Version: 26.230.07832~d6fd5a9
@@ -991,7 +991,7 @@ Section: luci
 SourceDateEpoch: 1787019032
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-theme-fluent - 简体中文 (Simplified Chinese)
+Description: Translation for luci-theme-fluent - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-fluent-zh-tw
 Version: 26.230.07832~d6fd5a9
@@ -1003,7 +1003,7 @@ Section: luci
 SourceDateEpoch: 1787019032
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-theme-fluent - 正體中文 (Traditional Chinese)
+Description: Translation for luci-theme-fluent - 正體中文 (Traditional Chinese)
 
 Package: luci-i18n-homeproxy-zh-cn
 Version: 26.218.16504~0aec5b1
@@ -1014,7 +1014,7 @@ Section: luci
 SourceDateEpoch: 1785990904
 Architecture: all
 Installed-Size: 40960
-Description:  Translation for luci-app-homeproxy - 简体中文 (Chinese Simplified)
+Description: Translation for luci-app-homeproxy - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-kucat-config-zh-cn
 Version: 26.217.50438~3881ac2
@@ -1026,7 +1026,7 @@ SourceDateEpoch: 1785938438
 Maintainer: sirpdboy team <herboy2008@gmail.com>
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-app-kucat-config - 简体中文 (Chinese Simplified)
+Description: Translation for luci-app-kucat-config - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-momo-zh-cn
 Version: 26.154.54079~3cbcf4b
@@ -1037,7 +1037,7 @@ Section: luci
 SourceDateEpoch: 1784876487
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-app-momo - 简体中文 (Simplified Chinese)
+Description: Translation for luci-app-momo - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-mosdns-zh-cn
 Version: 26.221.69436~5d579a0
@@ -1049,7 +1049,7 @@ SourceDateEpoch: 1786933378
 Maintainer: sbwml <admin@cooluc.com>
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-app-mosdns - 简体中文 (Simplified Chinese)
+Description: Translation for luci-app-mosdns - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-nikki-ru
 Version: 26.161.57678~7ea66de
@@ -1060,7 +1060,7 @@ Section: luci
 SourceDateEpoch: 1785837665
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-app-nikki - Русский (Russian)
+Description: Translation for luci-app-nikki - Русский (Russian)
 
 Package: luci-i18n-nikki-zh-cn
 Version: 26.161.57678~7ea66de
@@ -1071,7 +1071,7 @@ Section: luci
 SourceDateEpoch: 1785837665
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-app-nikki - 简体中文 (Simplified Chinese)
+Description: Translation for luci-app-nikki - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-nikki-zh-tw
 Version: 26.161.57678~7ea66de
@@ -1082,7 +1082,7 @@ Section: luci
 SourceDateEpoch: 1785837665
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-app-nikki - 正體中文 (Traditional Chinese)
+Description: Translation for luci-app-nikki - 正體中文 (Traditional Chinese)
 
 Package: luci-i18n-openlist2-zh-cn
 Version: 26.217.60329~629eced
@@ -1093,7 +1093,7 @@ Section: luci
 SourceDateEpoch: 1785948329
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-app-openlist2 - 简体中文 (Chinese Simplified)
+Description: Translation for luci-app-openlist2 - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-passwall-zh-cn
 Version: 26.8.12
@@ -1104,7 +1104,7 @@ Section: luci
 SourceDateEpoch: 1786846049
 Architecture: all
 Installed-Size: 51200
-Description:  Translation for luci-app-passwall - 简体中文 (Simplified Chinese)
+Description: Translation for luci-app-passwall - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-passwall2-fa
 Version: 26.7.16
@@ -1115,7 +1115,7 @@ Section: luci
 SourceDateEpoch: 1785826896
 Architecture: all
 Installed-Size: 81920
-Description:  Translation for luci-app-passwall2 - Farsi (Persian)
+Description: Translation for luci-app-passwall2 - Farsi (Persian)
 
 Package: luci-i18n-passwall2-ru
 Version: 26.7.16
@@ -1126,7 +1126,7 @@ Section: luci
 SourceDateEpoch: 1785826896
 Architecture: all
 Installed-Size: 81920
-Description:  Translation for luci-app-passwall2 - Русский (Russian)
+Description: Translation for luci-app-passwall2 - Русский (Russian)
 
 Package: luci-i18n-passwall2-zh-cn
 Version: 26.7.16
@@ -1137,7 +1137,7 @@ Section: luci
 SourceDateEpoch: 1785826896
 Architecture: all
 Installed-Size: 51200
-Description:  Translation for luci-app-passwall2 - 简体中文 (Simplified Chinese)
+Description: Translation for luci-app-passwall2 - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-passwall2-zh-tw
 Version: 26.7.16
@@ -1148,7 +1148,7 @@ Section: luci
 SourceDateEpoch: 1785826896
 Architecture: all
 Installed-Size: 51200
-Description:  Translation for luci-app-passwall2 - 正體中文 (Traditional Chinese)
+Description: Translation for luci-app-passwall2 - 正體中文 (Traditional Chinese)
 
 Package: luci-i18n-quickfile-zh-cn
 Version: 26.221.69441~0f2ef3d
@@ -1161,7 +1161,7 @@ SourceDateEpoch: 1786303041
 Maintainer: sbwml <admin@cooluc.com>
 Architecture: all
 Installed-Size: 10240
-Description:  Translation for luci-app-quickfile - 简体中文 (Simplified Chinese)
+Description: Translation for luci-app-quickfile - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-ramfree-zh-cn
 Version: 26.217.60940~fef2dc6
@@ -1172,7 +1172,7 @@ Section: luci
 SourceDateEpoch: 1785948940
 Architecture: all
 Installed-Size: 10240
-Description:  Translation for luci-app-ramfree - 简体中文 (Chinese Simplified)
+Description: Translation for luci-app-ramfree - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-ssr-plus-zh-cn
 Version: 26.199.57699~2e3d359
@@ -1183,7 +1183,7 @@ Section: luci
 SourceDateEpoch: 1785603692
 Architecture: all
 Installed-Size: 40960
-Description:  Translation for luci-app-ssr-plus - 简体中文 (Simplified Chinese)
+Description: Translation for luci-app-ssr-plus - 简体中文 (Simplified Chinese)
 
 Package: luci-lua-runtime
 Version: 24.315.52043~d650688
@@ -1197,7 +1197,7 @@ URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 10240
-Description:  LuCI Lua runtime libraries
+Description: LuCI Lua runtime libraries
 
 Package: luci-theme-argon
 Version: 2.4.6-r20260731
@@ -1210,7 +1210,7 @@ URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 4372480
-Description:  Argon Theme
+Description: Argon Theme
 
 Package: luci-theme-aurora
 Version: 1.1.13-r20260802
@@ -1224,7 +1224,7 @@ URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 450560
-Description:  Aurora Theme (A modern browser theme built with Vite and Tailwind CSS)
+Description: Aurora Theme (A modern browser theme built with Vite and Tailwind CSS)
 
 Package: luci-theme-design
 Version: 7.1-r20260801
@@ -1238,7 +1238,7 @@ URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 624640
-Description:  Design Theme
+Description: Design Theme
 
 Package: luci-theme-fluent
 Version: 1.0.9-r1
@@ -1252,7 +1252,7 @@ URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 962560
-Description:  Fluent Theme for LuCI
+Description: Fluent Theme for LuCI
 
 Package: luci-theme-kucat
 Version: 3.3.2-r20260329
@@ -1265,7 +1265,7 @@ URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 1228800
-Description:  Kucat Theme by sirpdboy
+Description: Kucat Theme by sirpdboy
 
 Package: luci-theme-shadcn
 Version: 0.3.13-r20260802
@@ -1279,7 +1279,7 @@ URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 778240
-Description:  A modern sidebar LuCI theme for OpenWrt, built with shadcn/ui design language.
+Description: A modern sidebar LuCI theme for OpenWrt, built with shadcn/ui design language.
 
 Package: microsocks
 Version: 1.0.5-r1
@@ -1294,7 +1294,7 @@ URL: https://github.com/rofl0r/microsocks
 Maintainer: lean
 Architecture: aarch64_generic
 Installed-Size: 71680
-Description:  A SOCKS5 service that you can run on your remote boxes to tunnel connections
+Description: A SOCKS5 service that you can run on your remote boxes to tunnel connections
  through them, if for some reason SSH doesn't cut it for you.
 
 Package: microsocks
@@ -1310,7 +1310,7 @@ URL: https://github.com/rofl0r/microsocks
 Maintainer: lean
 Architecture: aarch64_generic
 Installed-Size: 71680
-Description:  A SOCKS5 service that you can run on your remote boxes to tunnel connections
+Description: A SOCKS5 service that you can run on your remote boxes to tunnel connections
  through them, if for some reason SSH doesn't cut it for you.
  This version supports forwarding rules.
 
@@ -1329,7 +1329,7 @@ URL: https://wiki.metacubex.one
 Maintainer: Joseph Mory <morytyann@gmail.com>
 Architecture: aarch64_generic
 Installed-Size: 44492800
-Description:  A rule based proxy in Go.
+Description: A rule based proxy in Go.
 
 Package: mihomo-meta
 Version: 1.19.29
@@ -1346,7 +1346,7 @@ URL: https://wiki.metacubex.one
 Maintainer: Joseph Mory <morytyann@gmail.com>
 Architecture: aarch64_generic
 Installed-Size: 44021760
-Description:  A rule based proxy in Go.
+Description: A rule based proxy in Go.
 
 Package: momo
 Version: 2026.06.03-r1
@@ -1360,7 +1360,7 @@ URL: https://github.com/nikkinikki-org
 Maintainer: Joseph Mory <morytyann@gmail.com>
 Architecture: aarch64_generic
 Installed-Size: 286720
-Description:  Transparent Proxy with sing-box on OpenWrt.
+Description: Transparent Proxy with sing-box on OpenWrt.
 
 Package: mosdns
 Version: 5.3.4-r6
@@ -1374,7 +1374,7 @@ URL: https://github.com/IrineSistiana/mosdns
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_generic
 Installed-Size: 18360320
-Description:  A plug-in DNS forwarder/splitter
+Description: A plug-in DNS forwarder/splitter
 
 Package: naiveproxy
 Version: 150.0.7871.63-r1
@@ -1389,7 +1389,7 @@ URL: https://github.com/klzgrad/naiveproxy
 Maintainer: sbwml <admin@cooluc.com>
 Architecture: aarch64_generic
 Installed-Size: 7301120
-Description:  NaïveProxy uses Chrome's network stack to camouflage traffic with strong
+Description: NaïveProxy uses Chrome's network stack to camouflage traffic with strong
  censorship resistance and low detectability. Reusing Chrome's stack also
  ensures best practices in performance and security.
 
@@ -1405,7 +1405,7 @@ URL: https://github.com/nikkinikki-org
 Maintainer: Joseph Mory <morytyann@gmail.com>
 Architecture: aarch64_generic
 Installed-Size: 307200
-Description:  Transparent Proxy with Mihomo on OpenWrt.
+Description: Transparent Proxy with Mihomo on OpenWrt.
 
 Package: openlist2
 Version: 4.2.4-r1
@@ -1419,7 +1419,7 @@ URL: https://openlist.team/
 Maintainer: sbwml <admin@cooluc.com>
 Architecture: aarch64_generic
 Installed-Size: 85504000
-Description:  A file list program that supports multiple storage, powered by Gin and Solidjs.
+Description: A file list program that supports multiple storage, powered by Gin and Solidjs.
 
 Package: pdnsd-alt
 Version: 1.2.9-r3
@@ -1430,7 +1430,7 @@ Section: net
 SourceDateEpoch: 1765966502
 Architecture: aarch64_generic
 Installed-Size: 276480
-Description:  pdnsd, is an IPv6 capable proxy DNS server with permanent caching (the cache
+Description: pdnsd, is an IPv6 capable proxy DNS server with permanent caching (the cache
  contents are written to hard disk on exit) that is designed to cope with
  unreachable or down DNS servers (for example in dial-in networking).
  
@@ -1449,7 +1449,7 @@ URL: https://git.cooluc.com/sbwml/quickfile
 Maintainer: sbwml <admin@cooluc.com>
 Architecture: aarch64_generic
 Installed-Size: 5150720
-Description:  Lightweight web-based file manager for OpenWrt/LuCI with minimal resource usage.
+Description: Lightweight web-based file manager for OpenWrt/LuCI with minimal resource usage.
 
 Package: redsocks2
 Version: 0.71-r1
@@ -1463,7 +1463,7 @@ URL: https://github.com/semigodking/redsocks
 Maintainer: semigodking <semigodking@gmail.com>
 Architecture: aarch64_generic
 Installed-Size: 143360
-Description:  This is a modified version of original redsocks.
+Description: This is a modified version of original redsocks.
  Transparent redirector of any TCP/UDP connection to proxy.
 
 Package: shadow-tls
@@ -1478,7 +1478,7 @@ URL: https://github.com/ihciah/shadow-tls
 Maintainer: FluffyTigerFear
 Architecture: aarch64_generic
 Installed-Size: 3870720
-Description:  A proxy to expose real tls handshake to the firewall.
+Description: A proxy to expose real tls handshake to the firewall.
 
 Package: shadowsocks-libev-config
 Version: 3.3.5-r12
@@ -1494,7 +1494,7 @@ CPE-ID: cpe:/a:shadowsocks:shadowsocks-libev
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
 Architecture: aarch64_generic
 Installed-Size: 20480
-Description:  shadowsocks-libev config scripts
+Description: shadowsocks-libev config scripts
 
 Package: shadowsocks-libev-ss-local
 Version: 3.3.5-r12
@@ -1510,7 +1510,7 @@ CPE-ID: cpe:/a:shadowsocks:shadowsocks-libev
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
 Architecture: aarch64_generic
 Installed-Size: 143360
-Description:  shadowsocks-libev ss-local
+Description: shadowsocks-libev ss-local
 
 Package: shadowsocks-libev-ss-redir
 Version: 3.3.5-r12
@@ -1526,7 +1526,7 @@ CPE-ID: cpe:/a:shadowsocks:shadowsocks-libev
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
 Architecture: aarch64_generic
 Installed-Size: 143360
-Description:  shadowsocks-libev ss-redir
+Description: shadowsocks-libev ss-redir
 
 Package: shadowsocks-libev-ss-rules
 Version: 3.3.5-r12
@@ -1542,7 +1542,7 @@ CPE-ID: cpe:/a:shadowsocks:shadowsocks-libev
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
 Architecture: aarch64_generic
 Installed-Size: 20480
-Description:  shadowsocks-libev ss-rules
+Description: shadowsocks-libev ss-rules
 
 Package: shadowsocks-libev-ss-server
 Version: 3.3.5-r12
@@ -1558,7 +1558,7 @@ CPE-ID: cpe:/a:shadowsocks:shadowsocks-libev
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
 Architecture: aarch64_generic
 Installed-Size: 143360
-Description:  shadowsocks-libev ss-server
+Description: shadowsocks-libev ss-server
 
 Package: shadowsocks-libev-ss-tunnel
 Version: 3.3.5-r12
@@ -1574,7 +1574,7 @@ CPE-ID: cpe:/a:shadowsocks:shadowsocks-libev
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
 Architecture: aarch64_generic
 Installed-Size: 143360
-Description:  shadowsocks-libev ss-tunnel
+Description: shadowsocks-libev ss-tunnel
 
 Package: shadowsocks-rust-sslocal
 Version: 1.24.0-r1
@@ -1589,7 +1589,7 @@ URL: https://github.com/shadowsocks/shadowsocks-rust
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_generic
 Installed-Size: 8529920
-Description:  shadowsocks-rust sslocal
+Description: shadowsocks-rust sslocal
 
 Package: shadowsocks-rust-ssmanager
 Version: 1.24.0-r1
@@ -1604,7 +1604,7 @@ URL: https://github.com/shadowsocks/shadowsocks-rust
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_generic
 Installed-Size: 6963200
-Description:  shadowsocks-rust ssmanager
+Description: shadowsocks-rust ssmanager
 
 Package: shadowsocks-rust-ssserver
 Version: 1.24.0-r1
@@ -1619,7 +1619,7 @@ URL: https://github.com/shadowsocks/shadowsocks-rust
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_generic
 Installed-Size: 6809600
-Description:  shadowsocks-rust ssserver
+Description: shadowsocks-rust ssserver
 
 Package: shadowsocks-rust-ssservice
 Version: 1.24.0-r1
@@ -1634,7 +1634,7 @@ URL: https://github.com/shadowsocks/shadowsocks-rust
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_generic
 Installed-Size: 9318400
-Description:  shadowsocks-rust ssservice
+Description: shadowsocks-rust ssservice
 
 Package: shadowsocks-rust-ssurl
 Version: 1.24.0-r1
@@ -1649,7 +1649,7 @@ URL: https://github.com/shadowsocks/shadowsocks-rust
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_generic
 Installed-Size: 2211840
-Description:  shadowsocks-rust ssurl
+Description: shadowsocks-rust ssurl
 
 Package: shadowsocksr-libev-ssr-check
 Version: 2.5.6-r11
@@ -1663,7 +1663,7 @@ SourceDateEpoch: 1778746523
 URL: https://github.com/shadowsocksrr/shadowsocksr-libev
 Architecture: aarch64_generic
 Installed-Size: 71680
-Description:  shadowsocksr-libev ssr-check
+Description: shadowsocksr-libev ssr-check
 
 Package: shadowsocksr-libev-ssr-local
 Version: 2.5.6-r11
@@ -1677,7 +1677,7 @@ SourceDateEpoch: 1778746523
 URL: https://github.com/shadowsocksrr/shadowsocksr-libev
 Architecture: aarch64_generic
 Installed-Size: 204800
-Description:  shadowsocksr-libev ssr-local
+Description: shadowsocksr-libev ssr-local
 
 Package: shadowsocksr-libev-ssr-nat
 Version: 2.5.6-r11
@@ -1691,7 +1691,7 @@ SourceDateEpoch: 1778746523
 URL: https://github.com/shadowsocksrr/shadowsocksr-libev
 Architecture: aarch64_generic
 Installed-Size: 10240
-Description:  shadowsocksr-libev ssr-nat
+Description: shadowsocksr-libev ssr-nat
 
 Package: shadowsocksr-libev-ssr-redir
 Version: 2.5.6-r11
@@ -1705,7 +1705,7 @@ SourceDateEpoch: 1778746523
 URL: https://github.com/shadowsocksrr/shadowsocksr-libev
 Architecture: aarch64_generic
 Installed-Size: 143360
-Description:  shadowsocksr-libev ssr-redir
+Description: shadowsocksr-libev ssr-redir
 
 Package: shadowsocksr-libev-ssr-server
 Version: 2.5.6-r11
@@ -1719,7 +1719,7 @@ SourceDateEpoch: 1778746523
 URL: https://github.com/shadowsocksrr/shadowsocksr-libev
 Architecture: aarch64_generic
 Installed-Size: 204800
-Description:  shadowsocksr-libev ssr-server
+Description: shadowsocksr-libev ssr-server
 
 Package: simple-obfs-client
 Version: 0.0.5-r1
@@ -1735,7 +1735,7 @@ URL: https://github.com/shadowsocks/simple-obfs
 Maintainer: Jian Chang <aa65535@live.com>
 Architecture: aarch64_generic
 Installed-Size: 143360
-Description:  Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
+Description: Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
 
 Package: simple-obfs-server
 Version: 0.0.5-r1
@@ -1750,7 +1750,7 @@ URL: https://github.com/shadowsocks/simple-obfs
 Maintainer: Jian Chang <aa65535@live.com>
 Architecture: aarch64_generic
 Installed-Size: 143360
-Description:  Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
+Description: Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
 
 Package: sing-box-tiny
 Version: 1.12.25-r1
@@ -1768,7 +1768,7 @@ CPE-ID: cpe:/a:sagernet:sing-box
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_generic
 Installed-Size: 29747200
-Description:  Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
+Description: Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
  ShadowTLS, Tor, trojan, VLess, VMess, WireGuard and so on.
 
 Package: sing-box
@@ -1787,7 +1787,7 @@ CPE-ID: cpe:/a:sagernet:sing-box
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_generic
 Installed-Size: 41850880
-Description:  Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
+Description: Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
  ShadowTLS, Tor, trojan, VLess, VMess, WireGuard and so on.
 
 Package: tcping
@@ -1802,7 +1802,7 @@ SourceDateEpoch: 1786303066
 URL: https://github.com/jlyo/tcping
 Architecture: aarch64_generic
 Installed-Size: 71680
-Description:  tcping measures the latency of a tcp-connection
+Description: tcping measures the latency of a tcp-connection
 
 Package: tcping
 Version: 0.3-r2
@@ -1815,7 +1815,7 @@ SourceDateEpoch: 1754315629
 URL: https://github.com/jlyo/tcping
 Architecture: aarch64_generic
 Installed-Size: 71680
-Description:  tcping measures the latency of a tcp-connection
+Description: tcping measures the latency of a tcp-connection
 
 Package: trojan-plus
 Version: 10.0.3-r2
@@ -1829,7 +1829,7 @@ URL: https://github.com/Trojan-Plus-Group/trojan-plus
 Maintainer: Trojan-Plus-Group
 Architecture: aarch64_generic
 Installed-Size: 993280
-Description:  An unidentifiable mechanism that helps you bypass GFW. It's compatible with original trojan with experimental features.
+Description: An unidentifiable mechanism that helps you bypass GFW. It's compatible with original trojan with experimental features.
 
 Package: trojan
 Version: 1.16.0-r2
@@ -1843,7 +1843,7 @@ URL: https://github.com/trojan-gfw/trojan
 Maintainer: GreaterFire
 Architecture: aarch64_generic
 Installed-Size: 798720
-Description:  An unidentifiable mechanism that helps you bypass GFW
+Description: An unidentifiable mechanism that helps you bypass GFW
 
 Package: tuic-client
 Version: 1.8.1-r1
@@ -1857,21 +1857,7 @@ URL: https://github.com/Itsusinn/tuic
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_generic
 Installed-Size: 4884480
-Description:  Delicately-TUICed 0-RTT proxy protocol
-
-Package: v2dat
-Version: 2022.12.15~47b8ee51-r4
-Depends: libc
-Source: /feed/v2dat
-SourceName: v2dat
-License: GPL-3.0
-Section: utils
-SourceDateEpoch: 1786303066
-URL: https://github.com/urlesistiana/v2dat
-Maintainer: sbwml <admin@cooluc.com>
-Architecture: aarch64_generic
-Installed-Size: 8591360
-Description:  V2ray geo/ip data unpack tools
+Description: Delicately-TUICed 0-RTT proxy protocol
 
 Package: v2dat
 Version: 2022.12.15~47b8ee51-r4
@@ -1885,7 +1871,7 @@ URL: https://github.com/urlesistiana/v2dat
 Maintainer: sbwml <admin@cooluc.com>
 Architecture: aarch64_generic
 Installed-Size: 8591360
-Description:  V2ray geo/ip data unpack tools
+Description: V2ray geo/ip data unpack tools
 
 Package: v2ray-core
 Version: 5.53.0-r1
@@ -1900,7 +1886,7 @@ URL: https://www.v2fly.org
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_generic
 Installed-Size: 36812800
-Description:  Project V is a set of network tools that help you to build your own computer network.
+Description: Project V is a set of network tools that help you to build your own computer network.
  It secures your network connections and thus protects your privacy.
 
 Package: v2ray-extra
@@ -1916,7 +1902,7 @@ URL: https://www.v2fly.org
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: all
 Installed-Size: 1556480
-Description:  Project V is a set of network tools that help you to build your own computer network.
+Description: Project V is a set of network tools that help you to build your own computer network.
  It secures your network connections and thus protects your privacy.
  
  This includes extra resources for v2ray-core.
@@ -1934,7 +1920,7 @@ URL: https://www.v2fly.org
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: all
 Installed-Size: 17438720
-Description:  GeoIP List for V2Ray
+Description: GeoIP List for V2Ray
 
 Package: v2ray-geosite
 Version: 202608082221.1
@@ -1949,7 +1935,7 @@ URL: https://www.v2fly.org
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: all
 Installed-Size: 10598400
-Description:  Geosite List for V2Ray
+Description: Geosite List for V2Ray
 
 Package: v2ray-plugin
 Version: 5.49.0-r1
@@ -1964,7 +1950,7 @@ URL: https://github.com/teddysun/v2ray-plugin
 Maintainer: madeye <max.c.lv@gmail.com>
 Architecture: aarch64_generic
 Installed-Size: 16261120
-Description:  SIP003 plugin for shadowsocks, based on v2ray
+Description: SIP003 plugin for shadowsocks, based on v2ray
 
 Package: vmlinux-btf
 Version: 6.6.143
@@ -1975,7 +1961,7 @@ Section: kernel
 SourceDateEpoch: 1773205056
 Architecture: aarch64_generic
 Installed-Size: 5201920
-Description:  BPF CO-RE stand for Compile Once - Run Everywhere It's a concept to
+Description: BPF CO-RE stand for Compile Once - Run Everywhere It's a concept to
  build cross-version kernel eBPF application by building in a single
  binary by bringing together the BTF type information, libbpf and the
  compiler.
@@ -1993,7 +1979,7 @@ URL: https://xtls.github.io
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_generic
 Installed-Size: 30320640
-Description:  Xray, Penetrates Everything. It helps you to build your own computer network.
+Description: Xray, Penetrates Everything. It helps you to build your own computer network.
  It secures your network connections and thus protects your privacy.
 
 Package: xray-plugin
@@ -2009,5 +1995,4 @@ URL: https://github.com/teddysun/xray-plugin
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_generic
 Installed-Size: 16803840
-Description:  SIP003 plugin for Shadowsocks, based on Xray
-
+Description: SIP003 plugin for Shadowsocks, based on Xray
