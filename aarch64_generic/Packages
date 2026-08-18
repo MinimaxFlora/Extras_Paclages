@@ -13,7 +13,7 @@ Installed-Size: 14397440
 Filename: aarch64_generic/airconnect_1.11.2-r1_aarch64_generic.ipk
 Size: 6048757
 SHA256sum: 8ba6f76e7c57ec3fd1ece986d269f6af7b1bbe389680df19a23a0878d87b491a
-Description: Use AirPlay to stream to UPnP/Sonos & Chromecast devices
+Description:  Use AirPlay to stream to UPnP/Sonos & Chromecast devices
 
 Package: autocore-arm
 Version: 1.0.1-r1
@@ -28,7 +28,7 @@ Installed-Size: 71680
 Filename: aarch64_generic/autocore-arm_1.0.1-r1_aarch64_generic.ipk
 Size: 15400
 SHA256sum: ba7a078cb0ae7b817a39b36f9b7126875d0d47cb22b341bdbf4a112ab38a34ba
-Description: ARM auto core script.
+Description:  ARM auto core script.
 
 Package: bandix-plus
 Version: 0.1.2-r1
@@ -44,7 +44,7 @@ Installed-Size: 5089280
 Filename: aarch64_generic/bandix-plus_0.1.2-r1_aarch64_generic.ipk
 Size: 2059342
 SHA256sum: 971e786e7e7e405308acc20d6ab0ead2f208d64246b108e26e80c58427dc2c34
-Description: Bandix Plus core service for network traffic monitoring
+Description:  Bandix Plus core service for network traffic monitoring
 
 Package: chinadns-ng
 Version: 2025.08.09-r1
@@ -62,7 +62,7 @@ Installed-Size: 522240
 Filename: aarch64_generic/chinadns-ng_2025.08.09-r1_aarch64_generic.ipk
 Size: 269690
 SHA256sum: 8646b126f83a3610c2d062a4b54de0f864021a38c0ca263bfa83c096335c4f90
-Description: ChinaDNS next generation, refactoring with epoll and ipset.
+Description:  ChinaDNS next generation, refactoring with epoll and ipset.
 
 Package: dae
 Version: 2026.06.14-r1
@@ -79,7 +79,7 @@ Installed-Size: 31385600
 Filename: aarch64_generic/dae_2026.06.14-r1_aarch64_generic.ipk
 Size: 11251938
 SHA256sum: f109299f1c4db346908a8e8fcc945585cf80251b63c22f51d8151f31acb3e82d
-Description: dae, means goose, is a lightweight and high-performance transparent
+Description:  dae, means goose, is a lightweight and high-performance transparent
  proxy solution.
  
  In order to improve the traffic diversion performance as much as possible,
@@ -105,7 +105,7 @@ Installed-Size: 42895360
 Filename: aarch64_generic/daed_2026.04.27-r1_aarch64_generic.ipk
 Size: 21437301
 SHA256sum: 81c5d9ba9d6a195dfe707c8bd3243823eb8bb5b67f0706c174638e721d218284
-Description: daed is a backend of dae, provides a method to bundle arbitrary
+Description:  daed is a backend of dae, provides a method to bundle arbitrary
  frontend, dae and geodata into one binary.
 
 Package: dns2socks-rust
@@ -124,7 +124,7 @@ Installed-Size: 2170880
 Filename: aarch64_generic/dns2socks-rust_0.2.3-r1_aarch64_generic.ipk
 Size: 1012856
 SHA256sum: 3a78a5fe69851409bbf037745e746138e3fe985cbf4a865286dc4a85f2fa2cd0
-Description: This is a DNS server that forwards DNS requests to a SOCKS5 server.
+Description:  This is a DNS server that forwards DNS requests to a SOCKS5 server.
 
 Package: dns2socks
 Version: 2.1-r2
@@ -141,7 +141,7 @@ Installed-Size: 71680
 Filename: aarch64_generic/dns2socks_2.1-r2_aarch64_generic.ipk
 Size: 11828
 SHA256sum: 99b622381bcd54ddb2b590d901c4a6c57c214290237c73d19d8f1fc33b07e4e6
-Description: This is a command line utility to resolve DNS requests via
+Description:  This is a command line utility to resolve DNS requests via
  a SOCKS tunnel like Tor or a HTTP proxy.
 
 Package: dns2tcp
@@ -160,7 +160,7 @@ Installed-Size: 71680
 Filename: aarch64_generic/dns2tcp_1.1.2-r1_aarch64_generic.ipk
 Size: 11402
 SHA256sum: 89dbd4684cb6fbfecb19354d3123783e4210407ca1f2cc34c3e389c0dd6ca41b
-Description: utility to convert dns query from udp to tcp
+Description:  utility to convert dns query from udp to tcp
 
 Package: geoview
 Version: 0.2.6-r1
@@ -178,7 +178,7 @@ Installed-Size: 7208960
 Filename: aarch64_generic/geoview_0.2.6-r1_aarch64_generic.ipk
 Size: 2743867
 SHA256sum: ae9db5f7d1f633c3ce5ccf119db501c5ac9c0f190fd19a39490c53becc20b49c
-Description: geoview is a handy tool to extract useful information from geo* files.
+Description:  geoview is a handy tool to extract useful information from geo* files.
 
 Package: hysteria
 Version: 2.12.0-r1
@@ -195,7 +195,7 @@ Installed-Size: 21186560
 Filename: aarch64_generic/hysteria_2.12.0-r1_aarch64_generic.ipk
 Size: 7746226
 SHA256sum: bd0b272999242ff9179951eddcb42476c6083f2d3b32b2bbe565b1f52053e971
-Description: Hysteria is a feature-packed network utility optimized for networks
+Description:  Hysteria is a feature-packed network utility optimized for networks
  of poor quality (e.g. satellite connections, congested public Wi-Fi,
  connecting from China to servers abroad) powered by a custom version
  of QUIC protocol.
@@ -214,7 +214,7 @@ Installed-Size: 143360
 Filename: aarch64_generic/ipt2socks_1.1.4-r3_aarch64_generic.ipk
 Size: 26140
 SHA256sum: 456f01901384b93dd3883faa99d69e6c6bddf72bb1cb2a820a21806477c7b277
-Description: Utility for converting iptables (redirect/tproxy) to socks5.
+Description:  Utility for converting iptables (redirect/tproxy) to socks5.
 
 Package: kcptun-client
 Version: 20230207-r1
@@ -232,7 +232,7 @@ Installed-Size: 7905280
 Filename: aarch64_generic/kcptun-client_20230207-r1_aarch64_generic.ipk
 Size: 3048530
 SHA256sum: e771f6d0f8dfec1ad4f5b521fd3ec5beab7fd5bea365013765d4b85fcfaca823
-Description: kcptun is a Stable & Secure Tunnel Based On KCP with N:M Multiplexing.
+Description:  kcptun is a Stable & Secure Tunnel Based On KCP with N:M Multiplexing.
  This package only contains kcptun client.
 
 Package: kcptun-config
@@ -251,7 +251,7 @@ Installed-Size: 10240
 Filename: aarch64_generic/kcptun-config_20230207-r1_aarch64_generic.ipk
 Size: 2823
 SHA256sum: f40198bc1fc0c5ea17c6203369a5e9b230a6cfaea9bfcb5414841f3b644e9cdc
-Description: Kcptun Config Scripts
+Description:  Kcptun Config Scripts
 
 Package: kcptun-server
 Version: 20230207-r1
@@ -269,7 +269,7 @@ Installed-Size: 11059200
 Filename: aarch64_generic/kcptun-server_20230207-r1_aarch64_generic.ipk
 Size: 4270787
 SHA256sum: 5edf6cec729edcde34524e82f8012eeddec9f6df8577204900508c36a537a43c
-Description: kcptun is a Stable & Secure Tunnel Based On KCP with N:M Multiplexing.
+Description:  kcptun is a Stable & Secure Tunnel Based On KCP with N:M Multiplexing.
  This package only contains kcptun server.
 
 Package: lua-neturl
@@ -287,7 +287,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/lua-neturl_1.2.1-r1_all.ipk
 Size: 5330
 SHA256sum: daba03ca9cdb221cb8c29e561ac76aed9a3f13eb8a47b46ac1d557ed38bb9a79
-Description: This small Lua library provides a few functions to parse URL with
+Description:  This small Lua library provides a few functions to parse URL with
  querystring and build new URL easily.
 
 Package: luci-app-airconnect
@@ -304,7 +304,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-app-airconnect_1.0.3-r1_all.ipk
 Size: 2721
 SHA256sum: 9421f92fad036123ca24d76e3ff346427a379f1aafd51167716d3968a9776916
-Description: LuCI support for AirConnect
+Description:  LuCI support for AirConnect
 
 Package: luci-app-argon-config
 Version: 1.0-r20230608
@@ -320,7 +320,7 @@ Installed-Size: 30720
 Filename: aarch64_generic/luci-app-argon-config_1.0-r20230608_all.ipk
 Size: 3997
 SHA256sum: ea9938465dcaa3773cc72f383a51b21d0d74febbf171f51b33c960b1817f0b7d
-Description: LuCI app for Argon theme configuration
+Description:  LuCI app for Argon theme configuration
 
 Package: luci-app-aurora-config
 Version: 1.1.14-r20260806
@@ -337,7 +337,7 @@ Installed-Size: 378880
 Filename: aarch64_generic/luci-app-aurora-config_1.1.14-r20260806_all.ipk
 Size: 110222
 SHA256sum: 20226d8a59cd499dd90c1aa5f48b5e56b247ae07da63fafb8559b2e05ab1ab03
-Description: LuCI configuration UI for the Aurora theme
+Description:  LuCI configuration UI for the Aurora theme
 
 Package: luci-app-bandix-plus
 Version: 0.1.3-r1
@@ -354,7 +354,7 @@ Installed-Size: 245760
 Filename: aarch64_generic/luci-app-bandix-plus_0.1.3-r1_all.ipk
 Size: 46472
 SHA256sum: 69d052ec4a13eef7ada5bff0f40dfe414eda00ddcfea730c5fcc204797718d99
-Description: LuCI Bandix Plus app for network traffic monitoring
+Description:  LuCI Bandix Plus app for network traffic monitoring
 
 Package: luci-app-dae
 Version: 26.100.50428~1ee5d45
@@ -371,7 +371,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-app-dae_26.100.50428~1ee5d45_all.ipk
 Size: 3409
 SHA256sum: 4ebf03888eb366ecdc8d66c7a534cc34ae54a290c554d673380da6e46ef697d3
-Description: LuCI app for dae
+Description:  LuCI app for dae
 
 Package: luci-app-daed
 Version: 26.074.21710~fc9fa00
@@ -387,7 +387,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-app-daed_26.074.21710~fc9fa00_all.ipk
 Size: 3252
 SHA256sum: 55e1caa74ede790baa9c3303caa8097d07fea6ceac2e01ca7e047efd12f1ef1a
-Description: LuCI app for dae dashboard
+Description:  LuCI app for dae dashboard
 
 Package: luci-app-diskman
 Version: 1.0.0-r4
@@ -404,7 +404,7 @@ Installed-Size: 81920
 Filename: aarch64_generic/luci-app-diskman_1.0.0-r4_all.ipk
 Size: 14653
 SHA256sum: 7299c76d2a3a627dfad1930e5ba2de697e8fb3ca8b83c349a3d99f7677d7f3e9
-Description: Provides Web UI for Disk Manager
+Description:  Provides Web UI for Disk Manager
 
 Package: luci-app-homeproxy
 Version: 26.218.16504~0aec5b1
@@ -420,7 +420,7 @@ Installed-Size: 1863680
 Filename: aarch64_generic/luci-app-homeproxy_26.218.16504~0aec5b1_all.ipk
 Size: 577794
 SHA256sum: 2d6d454e2d3a4ca92b27637566b5ea848f3df45dc30a0264d31be76febfb33f5
-Description: The modern ImmortalWrt proxy platform for ARM64/AMD64
+Description:  The modern ImmortalWrt proxy platform for ARM64/AMD64
 
 Package: luci-app-kucat-config
 Version: 2.2.1-r20260312
@@ -436,7 +436,7 @@ Installed-Size: 112640
 Filename: aarch64_generic/luci-app-kucat-config_2.2.1-r20260312_all.ipk
 Size: 16915
 SHA256sum: 241bac8d296a741784aa10e526cacf2f63f52f2b75448056d32ed0b52b5d4d62
-Description: LuCI support for Kucat theme setting by sirpdboy
+Description:  LuCI support for Kucat theme setting by sirpdboy
 
 Package: luci-app-momo
 Version: 1.2.1-r1
@@ -452,7 +452,7 @@ Installed-Size: 51200
 Filename: aarch64_generic/luci-app-momo_1.2.1-r1_all.ipk
 Size: 8268
 SHA256sum: 5bd435d9f27beb6c8d76710c583af5ddca06ff00099bdd29e52b27275dd9f33e
-Description: LuCI Support for momo
+Description:  LuCI Support for momo
 
 Package: luci-app-mosdns
 Version: 1.7.5-r1
@@ -468,7 +468,7 @@ Installed-Size: 399360
 Filename: aarch64_generic/luci-app-mosdns_1.7.5-r1_all.ipk
 Size: 105697
 SHA256sum: cb76b1a995863a6c54110bda5f62e50b82bb454c9bc347eedfdf9773c3418c0f
-Description: LuCI Support for mosdns
+Description:  LuCI Support for mosdns
 
 Package: luci-app-nikki
 Version: 1.26.1-r1
@@ -484,7 +484,7 @@ Installed-Size: 61440
 Filename: aarch64_generic/luci-app-nikki_1.26.1-r1_all.ipk
 Size: 10846
 SHA256sum: 83c8db58853566b35bc5ac0e0388c6e66febf43d781077fffced2c6411d5efc8
-Description: LuCI Support for nikki
+Description:  LuCI Support for nikki
 
 Package: luci-app-openclash
 Version: 0.47.133
@@ -499,7 +499,7 @@ Installed-Size: 9192796
 Filename: aarch64_generic/luci-app-openclash_0.47.133_all.ipk
 Size: 9173397
 SHA256sum: c2490630043ea7e3db91a8f0d079088bc39c6aab4dc283d292f302064f891b90
-Description: A LuCI support for clash
+Description:  A LuCI support for clash
 
 Package: luci-app-openlist2
 Version: 1.0.3-r1
@@ -515,7 +515,7 @@ Installed-Size: 30720
 Filename: aarch64_generic/luci-app-openlist2_1.0.3-r1_all.ipk
 Size: 5840
 SHA256sum: 6cf34619bee74b885304336c0cfa039f8b12132c6eb5a6e94bef27fc31e57dec
-Description: LuCI support for openlist
+Description:  LuCI support for openlist
 
 Package: luci-app-passwall2
 Version: 26.7.16-r1
@@ -531,7 +531,7 @@ Installed-Size: 1382400
 Filename: aarch64_generic/luci-app-passwall2_26.7.16-r1_all.ipk
 Size: 340760
 SHA256sum: fac65cf662b20b89c29eae33be68455b4941e4651c7abf3165417adc6d692763
-Description: LuCI support for PassWall 2
+Description:  LuCI support for PassWall 2
 
 Package: luci-app-passwall
 Version: 26.8.12-r1
@@ -547,7 +547,7 @@ Installed-Size: 3164160
 Filename: aarch64_generic/luci-app-passwall_26.8.12-r1_all.ipk
 Size: 845410
 SHA256sum: 27fe8cf61514e10f7f8275c3cc0b60f2f09cf7dfa55ad44450cb45febc899441
-Description: LuCI support for PassWall
+Description:  LuCI support for PassWall
 
 Package: luci-app-quickfile
 Version: 1.0.0-r1
@@ -564,7 +564,7 @@ Installed-Size: 10240
 Filename: aarch64_generic/luci-app-quickfile_1.0.0-r1_all.ipk
 Size: 1669
 SHA256sum: b828076d9ec297c468f7f368da0aca094ef9e2809db364f1ee73456aa1ce8c2e
-Description: LuCI File Manager module
+Description:  LuCI File Manager module
 
 Package: luci-app-ramfree
 Version: 1.0-r1
@@ -580,7 +580,7 @@ Installed-Size: 10240
 Filename: aarch64_generic/luci-app-ramfree_1.0-r1_all.ipk
 Size: 1590
 SHA256sum: b449ec22799ea5e9af09dd1883bf58e8f87faca03659808fa752e2ee428f7ab4
-Description: LuCI support for ramfree
+Description:  LuCI support for ramfree
 
 Package: luci-app-ssr-plus
 Version: 196-r7
@@ -596,7 +596,7 @@ Installed-Size: 2488320
 Filename: aarch64_generic/luci-app-ssr-plus_196-r7_all.ipk
 Size: 502731
 SHA256sum: a28ee36e8cdb1b0d104779b6dfbffe12adc9f1d327d792f24df2ce13fa745391
-Description: SS/SSR/V2Ray/Trojan/NaiveProxy/Tuic/ShadowTLS/Hysteria/Socks5/Clash LuCI interface
+Description:  SS/SSR/V2Ray/Trojan/NaiveProxy/Tuic/ShadowTLS/Hysteria/Socks5/Clash LuCI interface
 
 Package: luci-i18n-airconnect-zh-cn
 Version: 26.216.59507~71e1bd6
@@ -611,7 +611,7 @@ Installed-Size: 10240
 Filename: aarch64_generic/luci-i18n-airconnect-zh-cn_26.216.59507~71e1bd6_all.ipk
 Size: 1610
 SHA256sum: 9b5c56039973f7b297ebbe9b54d3e020d18087d0dafbb4d21364e9d9a69986d2
-Description: Translation for luci-app-airconnect - 简体中文 (Simplified Chinese)
+Description:  Translation for luci-app-airconnect - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-argon-config-es
 Version: 26.217.50438~639f3a1
@@ -626,7 +626,7 @@ Installed-Size: 10240
 Filename: aarch64_generic/luci-i18n-argon-config-es_26.217.50438~639f3a1_all.ipk
 Size: 1439
 SHA256sum: c793ab44935f2a5dfa62c7a395e82ab33a764258266a5fc6040fac67c9e76a48
-Description: Translation for luci-app-argon-config - Español (Spanish)
+Description:  Translation for luci-app-argon-config - Español (Spanish)
 
 Package: luci-i18n-argon-config-ru
 Version: 26.217.50438~639f3a1
@@ -641,7 +641,7 @@ Installed-Size: 10240
 Filename: aarch64_generic/luci-i18n-argon-config-ru_26.217.50438~639f3a1_all.ipk
 Size: 2368
 SHA256sum: d8a6f4b38ac8709fe58e837ad5464d7d9c988af5d76b68113b26211ec0b3c583
-Description: Translation for luci-app-argon-config - Русский (Russian)
+Description:  Translation for luci-app-argon-config - Русский (Russian)
 
 Package: luci-i18n-argon-config-zh-cn
 Version: 26.217.50438~639f3a1
@@ -656,7 +656,7 @@ Installed-Size: 10240
 Filename: aarch64_generic/luci-i18n-argon-config-zh-cn_26.217.50438~639f3a1_all.ipk
 Size: 2236
 SHA256sum: 7a4c9017ebafeb308f93f59da003ebe852caa46a057639bcaa08d625d1a98fe1
-Description: Translation for luci-app-argon-config - 简体中文 (Chinese Simplified)
+Description:  Translation for luci-app-argon-config - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-argon-config-zh-tw
 Version: 26.217.50438~639f3a1
@@ -671,7 +671,7 @@ Installed-Size: 10240
 Filename: aarch64_generic/luci-i18n-argon-config-zh-tw_26.217.50438~639f3a1_all.ipk
 Size: 2220
 SHA256sum: 16b567ba745092ec069aa0346e7e4046c337c73fd332d30dea43e84aa6c32678
-Description: Translation for luci-app-argon-config - 繁體中文 (Chinese Traditional)
+Description:  Translation for luci-app-argon-config - 繁體中文 (Chinese Traditional)
 
 Package: luci-i18n-aurora-config-de
 Version: 26.218.30578~bbcc773
@@ -686,7 +686,7 @@ Installed-Size: 30720
 Filename: aarch64_generic/luci-i18n-aurora-config-de_26.218.30578~bbcc773_all.ipk
 Size: 11369
 SHA256sum: 16c2c3d7d851a26fc3bf2e665e07dd155f48eaf02c2dfda26a3d5854b3c38cd1
-Description: Translation for luci-app-aurora-config - Deutsch (German)
+Description:  Translation for luci-app-aurora-config - Deutsch (German)
 
 Package: luci-i18n-aurora-config-es
 Version: 26.218.30578~bbcc773
@@ -701,7 +701,7 @@ Installed-Size: 30720
 Filename: aarch64_generic/luci-i18n-aurora-config-es_26.218.30578~bbcc773_all.ipk
 Size: 11491
 SHA256sum: a5a7e99be03fa8677f1db935e12302a00bb4607c1287ceb459818b68b6ad62be
-Description: Translation for luci-app-aurora-config - Español (Spanish)
+Description:  Translation for luci-app-aurora-config - Español (Spanish)
 
 Package: luci-i18n-aurora-config-fr
 Version: 26.218.30578~bbcc773
@@ -716,7 +716,7 @@ Installed-Size: 40960
 Filename: aarch64_generic/luci-i18n-aurora-config-fr_26.218.30578~bbcc773_all.ipk
 Size: 11600
 SHA256sum: 27df4cf330fd5a2bb50ec0247a63c8375818382ca0d055c8172fd60306d006ad
-Description: Translation for luci-app-aurora-config - Français (French)
+Description:  Translation for luci-app-aurora-config - Français (French)
 
 Package: luci-i18n-aurora-config-it
 Version: 26.218.30578~bbcc773
@@ -731,7 +731,7 @@ Installed-Size: 30720
 Filename: aarch64_generic/luci-i18n-aurora-config-it_26.218.30578~bbcc773_all.ipk
 Size: 11195
 SHA256sum: 92719a745f6869de95e8d016379d9b1955531e7a61dfc4191620036616d9d4a9
-Description: Translation for luci-app-aurora-config - Italiano (Italian)
+Description:  Translation for luci-app-aurora-config - Italiano (Italian)
 
 Package: luci-i18n-aurora-config-ja
 Version: 26.218.30578~bbcc773
@@ -746,7 +746,7 @@ Installed-Size: 40960
 Filename: aarch64_generic/luci-i18n-aurora-config-ja_26.218.30578~bbcc773_all.ipk
 Size: 11880
 SHA256sum: cad317f143227f1967e5d7201663de6b69949ff72884a6ab7fb77bd6421b74c4
-Description: Translation for luci-app-aurora-config - 日本語 (Japanese)
+Description:  Translation for luci-app-aurora-config - 日本語 (Japanese)
 
 Package: luci-i18n-aurora-config-ko
 Version: 26.218.30578~bbcc773
@@ -761,7 +761,7 @@ Installed-Size: 40960
 Filename: aarch64_generic/luci-i18n-aurora-config-ko_26.218.30578~bbcc773_all.ipk
 Size: 11600
 SHA256sum: dc70cb9f88470d73f49d668c43fed143cfab624990f35c679c43634f0f0babd2
-Description: Translation for luci-app-aurora-config - 한국어 (Korean)
+Description:  Translation for luci-app-aurora-config - 한국어 (Korean)
 
 Package: luci-i18n-aurora-config-nl
 Version: 26.218.30578~bbcc773
@@ -776,7 +776,7 @@ Installed-Size: 30720
 Filename: aarch64_generic/luci-i18n-aurora-config-nl_26.218.30578~bbcc773_all.ipk
 Size: 11117
 SHA256sum: df19700ba9edd7e12e71ead13334b89254a6bcc7ac3410938567e85fae70a199
-Description: Translation for luci-app-aurora-config - Nederlands (Dutch)
+Description:  Translation for luci-app-aurora-config - Nederlands (Dutch)
 
 Package: luci-i18n-aurora-config-pl
 Version: 26.218.30578~bbcc773
@@ -791,7 +791,7 @@ Installed-Size: 30720
 Filename: aarch64_generic/luci-i18n-aurora-config-pl_26.218.30578~bbcc773_all.ipk
 Size: 11515
 SHA256sum: 8a879df0ac3300f4263572bb3d564a5d3b4264711822b3b4d1030a25874252bc
-Description: Translation for luci-app-aurora-config - Polski (Polish)
+Description:  Translation for luci-app-aurora-config - Polski (Polish)
 
 Package: luci-i18n-aurora-config-ru
 Version: 26.218.30578~bbcc773
@@ -806,7 +806,7 @@ Installed-Size: 51200
 Filename: aarch64_generic/luci-i18n-aurora-config-ru_26.218.30578~bbcc773_all.ipk
 Size: 13041
 SHA256sum: d4bbbd125c6761113cbcd2d16ca7a1ef4615b1e706b02c955ac3492676b61eb1
-Description: Translation for luci-app-aurora-config - Русский (Russian)
+Description:  Translation for luci-app-aurora-config - Русский (Russian)
 
 Package: luci-i18n-aurora-config-tr
 Version: 26.218.30578~bbcc773
@@ -821,7 +821,7 @@ Installed-Size: 30720
 Filename: aarch64_generic/luci-i18n-aurora-config-tr_26.218.30578~bbcc773_all.ipk
 Size: 11447
 SHA256sum: 1a4f1b1efe2700ef48178d0716fab911eff9cf279037b06eada9484a4b2ef999
-Description: Translation for luci-app-aurora-config - Türkçe (Turkish)
+Description:  Translation for luci-app-aurora-config - Türkçe (Turkish)
 
 Package: luci-i18n-aurora-config-uk
 Version: 26.218.30578~bbcc773
@@ -836,7 +836,7 @@ Installed-Size: 51200
 Filename: aarch64_generic/luci-i18n-aurora-config-uk_26.218.30578~bbcc773_all.ipk
 Size: 13017
 SHA256sum: 566f6b6039b639027a59ad245e35f888acf9293fa144891f87e052981a68500c
-Description: Translation for luci-app-aurora-config - Українська (Ukrainian)
+Description:  Translation for luci-app-aurora-config - Українська (Ukrainian)
 
 Package: luci-i18n-aurora-config-zh-cn
 Version: 26.218.30578~bbcc773
@@ -851,7 +851,7 @@ Installed-Size: 30720
 Filename: aarch64_generic/luci-i18n-aurora-config-zh-cn_26.218.30578~bbcc773_all.ipk
 Size: 11322
 SHA256sum: 9861da27f1f8c98ecc19946e786af079cdb7ee636d2d2f09911e563bb38970fa
-Description: Translation for luci-app-aurora-config - 简体中文 (Chinese Simplified)
+Description:  Translation for luci-app-aurora-config - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-aurora-config-zh-tw
 Version: 26.218.30578~bbcc773
@@ -866,7 +866,7 @@ Installed-Size: 30720
 Filename: aarch64_generic/luci-i18n-aurora-config-zh-tw_26.218.30578~bbcc773_all.ipk
 Size: 11287
 SHA256sum: 3eb73a2c18ae4547f238e7a4f9b0b753fc1189c6989b7f6071c20c479adf35de
-Description: Translation for luci-app-aurora-config - 繁體中文 (Chinese Traditional)
+Description:  Translation for luci-app-aurora-config - 繁體中文 (Chinese Traditional)
 
 Package: luci-i18n-bandix-plus-es
 Version: 26.218.16358~9da3267
@@ -882,7 +882,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-i18n-bandix-plus-es_26.218.16358~9da3267_all.ipk
 Size: 5653
 SHA256sum: 991ff08ba219691ae0316a4cedbdd69bf0b539eaa56e32f039862240821a4c5b
-Description: Translation for luci-app-bandix-plus - Español (Spanish)
+Description:  Translation for luci-app-bandix-plus - Español (Spanish)
 
 Package: luci-i18n-bandix-plus-fr
 Version: 26.218.16358~9da3267
@@ -898,7 +898,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-i18n-bandix-plus-fr_26.218.16358~9da3267_all.ipk
 Size: 5759
 SHA256sum: c0c7a807c4b79d096756880deb39c93eaea01cd3522abdefb67451c7071a353e
-Description: Translation for luci-app-bandix-plus - Français (French)
+Description:  Translation for luci-app-bandix-plus - Français (French)
 
 Package: luci-i18n-bandix-plus-ja
 Version: 26.218.16358~9da3267
@@ -914,7 +914,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-i18n-bandix-plus-ja_26.218.16358~9da3267_all.ipk
 Size: 5819
 SHA256sum: c1812e8fb60dcb416ba0bd6784c7d76973020395859f7c6f886ed0194deff19d
-Description: Translation for luci-app-bandix-plus - 日本語 (Japanese)
+Description:  Translation for luci-app-bandix-plus - 日本語 (Japanese)
 
 Package: luci-i18n-bandix-plus-pl
 Version: 26.218.16358~9da3267
@@ -930,7 +930,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-i18n-bandix-plus-pl_26.218.16358~9da3267_all.ipk
 Size: 5522
 SHA256sum: 4e08ddcc31aff587f907653b4ab1b6489eae3d8b65ba770e4db2115e51f79427
-Description: Translation for luci-app-bandix-plus - Polski (Polish)
+Description:  Translation for luci-app-bandix-plus - Polski (Polish)
 
 Package: luci-i18n-bandix-plus-ru
 Version: 26.218.16358~9da3267
@@ -946,7 +946,7 @@ Installed-Size: 30720
 Filename: aarch64_generic/luci-i18n-bandix-plus-ru_26.218.16358~9da3267_all.ipk
 Size: 6279
 SHA256sum: 34a7a62d4e29c8e027f0f90d63753b5badf0889e889061945c933f8f0a61c5ad
-Description: Translation for luci-app-bandix-plus - Русский (Russian)
+Description:  Translation for luci-app-bandix-plus - Русский (Russian)
 
 Package: luci-i18n-bandix-plus-zh-cn
 Version: 26.218.16358~9da3267
@@ -962,7 +962,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-i18n-bandix-plus-zh-cn_26.218.16358~9da3267_all.ipk
 Size: 5324
 SHA256sum: 60857b6a3a89bc28fee46d8a7547a9238bd5e505e872d424cb9bb7c90af2f688
-Description: Translation for luci-app-bandix-plus - 简体中文 (Chinese Simplified)
+Description:  Translation for luci-app-bandix-plus - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-bandix-plus-zh-tw
 Version: 26.218.16358~9da3267
@@ -978,7 +978,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-i18n-bandix-plus-zh-tw_26.218.16358~9da3267_all.ipk
 Size: 5329
 SHA256sum: b3e8d7d85aa6594d968c981f2bb022d3cd3c660cfbd8c583d08fb5c7a245f338
-Description: Translation for luci-app-bandix-plus - 繁體中文 (Chinese Traditional)
+Description:  Translation for luci-app-bandix-plus - 繁體中文 (Chinese Traditional)
 
 Package: luci-i18n-dae-zh-cn
 Version: 26.074.18101~3304670
@@ -994,7 +994,7 @@ Installed-Size: 10240
 Filename: aarch64_generic/luci-i18n-dae-zh-cn_26.074.18101~3304670_all.ipk
 Size: 1798
 SHA256sum: 2f90f32985f4ba4fb51437f67b55e401e33dcaf0773cb8c56488303296ff266a
-Description: Translation for luci-app-dae - 简体中文 (Simplified Chinese)
+Description:  Translation for luci-app-dae - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-daed-zh-cn
 Version: 25.036.30618~b090b46
@@ -1008,7 +1008,7 @@ Installed-Size: 10240
 Filename: aarch64_generic/luci-i18n-daed-zh-cn_25.036.30618~b090b46_all.ipk
 Size: 1679
 SHA256sum: 33b06ddca9bb65f4bcd9e9b0353a0d00d0f38ffb2293bf2f752f3e0d3c828b10
-Description: Translation for luci-app-daed - 简体中文 (Simplified Chinese)
+Description:  Translation for luci-app-daed - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-diskman-zh-cn
 Version: 26.218.45653~8761094
@@ -1024,7 +1024,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-i18n-diskman-zh-cn_26.218.45653~8761094_all.ipk
 Size: 3836
 SHA256sum: dbaccc6f1b4e36525626a9e05053f520e85678204417c2e0f47a957832ab3589
-Description: Translation for luci-app-diskman - 简体中文 (Chinese Simplified)
+Description:  Translation for luci-app-diskman - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-fluent-de
 Version: 26.230.07832~d6fd5a9
@@ -1039,7 +1039,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-i18n-fluent-de_26.230.07832~d6fd5a9_all.ipk
 Size: 6759
 SHA256sum: ef4dcc36cf0a8f9f57f786d463c884841d7a503b6c3cc2dac64432f89d6719ea
-Description: Translation for luci-theme-fluent - Deutsch (German)
+Description:  Translation for luci-theme-fluent - Deutsch (German)
 
 Package: luci-i18n-fluent-es
 Version: 26.230.07832~d6fd5a9
@@ -1054,7 +1054,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-i18n-fluent-es_26.230.07832~d6fd5a9_all.ipk
 Size: 6678
 SHA256sum: d2e1369b95c7982d7fe7b7216b33b04ad0eed498eb8b7d812d3805429230c4b6
-Description: Translation for luci-theme-fluent - Español (Spanish)
+Description:  Translation for luci-theme-fluent - Español (Spanish)
 
 Package: luci-i18n-fluent-fa
 Version: 26.230.07832~d6fd5a9
@@ -1069,7 +1069,7 @@ Installed-Size: 30720
 Filename: aarch64_generic/luci-i18n-fluent-fa_26.230.07832~d6fd5a9_all.ipk
 Size: 6711
 SHA256sum: 86c4f089853805c99622c0f59286894aaca4ad1bf318427109909ecfa6031fa9
-Description: Translation for luci-theme-fluent - Farsi (Persian)
+Description:  Translation for luci-theme-fluent - Farsi (Persian)
 
 Package: luci-i18n-fluent-fr
 Version: 26.230.07832~d6fd5a9
@@ -1084,7 +1084,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-i18n-fluent-fr_26.230.07832~d6fd5a9_all.ipk
 Size: 6615
 SHA256sum: 2dd0a78107dfa7e1926f216286885ca57d240858f89904ebb89b3ffbb0b70fe1
-Description: Translation for luci-theme-fluent - Français (French)
+Description:  Translation for luci-theme-fluent - Français (French)
 
 Package: luci-i18n-fluent-it
 Version: 26.230.07832~d6fd5a9
@@ -1099,7 +1099,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-i18n-fluent-it_26.230.07832~d6fd5a9_all.ipk
 Size: 6501
 SHA256sum: 9c7ed2cd72ff12fb7f5373fe275656978716f8ba8365b71a6df51bcc61a6c510
-Description: Translation for luci-theme-fluent - Italiano (Italian)
+Description:  Translation for luci-theme-fluent - Italiano (Italian)
 
 Package: luci-i18n-fluent-ja
 Version: 26.230.07832~d6fd5a9
@@ -1114,7 +1114,7 @@ Installed-Size: 30720
 Filename: aarch64_generic/luci-i18n-fluent-ja_26.230.07832~d6fd5a9_all.ipk
 Size: 6965
 SHA256sum: e5674a11fcb9475a971915a6a199f2f6701ca6f3e13f8f04b40bc4635c56d0c2
-Description: Translation for luci-theme-fluent - 日本語 (Japanese)
+Description:  Translation for luci-theme-fluent - 日本語 (Japanese)
 
 Package: luci-i18n-fluent-ko
 Version: 26.230.07832~d6fd5a9
@@ -1129,7 +1129,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-i18n-fluent-ko_26.230.07832~d6fd5a9_all.ipk
 Size: 6557
 SHA256sum: 62bfc4f08cc643e44ef774140543859304e6dc1f9038216d96017943f155ac65
-Description: Translation for luci-theme-fluent - 한국어 (Korean)
+Description:  Translation for luci-theme-fluent - 한국어 (Korean)
 
 Package: luci-i18n-fluent-pl
 Version: 26.230.07832~d6fd5a9
@@ -1144,7 +1144,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-i18n-fluent-pl_26.230.07832~d6fd5a9_all.ipk
 Size: 6744
 SHA256sum: 609b132bd556e1d1906f775f2d03e1a688d01188588bb7b1413c70fb15b1bdc0
-Description: Translation for luci-theme-fluent - Polski (Polish)
+Description:  Translation for luci-theme-fluent - Polski (Polish)
 
 Package: luci-i18n-fluent-ru
 Version: 26.230.07832~d6fd5a9
@@ -1159,7 +1159,7 @@ Installed-Size: 30720
 Filename: aarch64_generic/luci-i18n-fluent-ru_26.230.07832~d6fd5a9_all.ipk
 Size: 7352
 SHA256sum: e71d4c7c1b780a9aa2586f0eb08a2878e1f3b5eb8d8281f2b160bac067f769c5
-Description: Translation for luci-theme-fluent - Русский (Russian)
+Description:  Translation for luci-theme-fluent - Русский (Russian)
 
 Package: luci-i18n-fluent-tr
 Version: 26.230.07832~d6fd5a9
@@ -1174,7 +1174,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-i18n-fluent-tr_26.230.07832~d6fd5a9_all.ipk
 Size: 6597
 SHA256sum: 4dea3b9065bc54dcb1c6c8763df47b58fd330fde700da80c45a576c7a9baeece
-Description: Translation for luci-theme-fluent - Türkçe (Turkish)
+Description:  Translation for luci-theme-fluent - Türkçe (Turkish)
 
 Package: luci-i18n-fluent-uk
 Version: 26.230.07832~d6fd5a9
@@ -1189,7 +1189,7 @@ Installed-Size: 30720
 Filename: aarch64_generic/luci-i18n-fluent-uk_26.230.07832~d6fd5a9_all.ipk
 Size: 7538
 SHA256sum: a5ffd12479758590d861ee5eba3cf6c6568f5f4d694546c917ee6c0d0b79dc29
-Description: Translation for luci-theme-fluent - Українська (Ukrainian)
+Description:  Translation for luci-theme-fluent - Українська (Ukrainian)
 
 Package: luci-i18n-fluent-vi
 Version: 26.230.07832~d6fd5a9
@@ -1204,7 +1204,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-i18n-fluent-vi_26.230.07832~d6fd5a9_all.ipk
 Size: 6608
 SHA256sum: 24c4e33894f65ce923883e7ea6b372995ffb7a53878bdbbbd913c7da9cde5c03
-Description: Translation for luci-theme-fluent - Tiếng Việt (Vietnamese)
+Description:  Translation for luci-theme-fluent - Tiếng Việt (Vietnamese)
 
 Package: luci-i18n-fluent-zh-cn
 Version: 26.230.07832~d6fd5a9
@@ -1219,7 +1219,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-i18n-fluent-zh-cn_26.230.07832~d6fd5a9_all.ipk
 Size: 6354
 SHA256sum: e6fb859ef2c787c4b3efafb5d460b66aaff5377ea2eabb689256250d0af4b968
-Description: Translation for luci-theme-fluent - 简体中文 (Simplified Chinese)
+Description:  Translation for luci-theme-fluent - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-fluent-zh-tw
 Version: 26.230.07832~d6fd5a9
@@ -1234,7 +1234,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-i18n-fluent-zh-tw_26.230.07832~d6fd5a9_all.ipk
 Size: 6386
 SHA256sum: f620a0e6a939074108cd7bb80ea319b56fadcf2c6d446a03e87bb86cef35ac86
-Description: Translation for luci-theme-fluent - 正體中文 (Traditional Chinese)
+Description:  Translation for luci-theme-fluent - 正體中文 (Traditional Chinese)
 
 Package: luci-i18n-homeproxy-zh-cn
 Version: 26.218.16504~0aec5b1
@@ -1248,7 +1248,7 @@ Installed-Size: 40960
 Filename: aarch64_generic/luci-i18n-homeproxy-zh-cn_26.218.16504~0aec5b1_all.ipk
 Size: 13625
 SHA256sum: eb1d1130c108141f5f8dca6738c602662c12c29477cf830261b28cb00e1330ea
-Description: Translation for luci-app-homeproxy - 简体中文 (Chinese Simplified)
+Description:  Translation for luci-app-homeproxy - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-kucat-config-zh-cn
 Version: 26.217.50438~3881ac2
@@ -1263,7 +1263,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-i18n-kucat-config-zh-cn_26.217.50438~3881ac2_all.ipk
 Size: 3816
 SHA256sum: 103edabec03c80db3e05c2adfea6348b8085e3b1d29a29bd40059fb5d80f18d3
-Description: Translation for luci-app-kucat-config - 简体中文 (Chinese Simplified)
+Description:  Translation for luci-app-kucat-config - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-momo-zh-cn
 Version: 26.154.54079~3cbcf4b
@@ -1277,7 +1277,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-i18n-momo-zh-cn_26.154.54079~3cbcf4b_all.ipk
 Size: 3550
 SHA256sum: 32057bd0550984ab76d86f781e5294b67b365795357cce7481d2f9d9f40a22c8
-Description: Translation for luci-app-momo - 简体中文 (Simplified Chinese)
+Description:  Translation for luci-app-momo - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-mosdns-zh-cn
 Version: 26.221.69436~5d579a0
@@ -1292,7 +1292,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-i18n-mosdns-zh-cn_26.221.69436~5d579a0_all.ipk
 Size: 5503
 SHA256sum: 6ef7efc018f033bacf31a85d21c59839e8d229e322498159fd9222f1d2ab1200
-Description: Translation for luci-app-mosdns - 简体中文 (Simplified Chinese)
+Description:  Translation for luci-app-mosdns - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-nikki-ru
 Version: 26.161.57678~7ea66de
@@ -1306,7 +1306,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-i18n-nikki-ru_26.161.57678~7ea66de_all.ipk
 Size: 5752
 SHA256sum: d401e5a85a221fecda7880e30d76f4e7f896739522cd91a5dab77e54818bfdf3
-Description: Translation for luci-app-nikki - Русский (Russian)
+Description:  Translation for luci-app-nikki - Русский (Russian)
 
 Package: luci-i18n-nikki-zh-cn
 Version: 26.161.57678~7ea66de
@@ -1320,7 +1320,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-i18n-nikki-zh-cn_26.161.57678~7ea66de_all.ipk
 Size: 5275
 SHA256sum: 54acaef0dad8d6685ffa910533619fa4f4b5f66fdf2450e46fa30ed68879179a
-Description: Translation for luci-app-nikki - 简体中文 (Simplified Chinese)
+Description:  Translation for luci-app-nikki - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-nikki-zh-tw
 Version: 26.161.57678~7ea66de
@@ -1334,7 +1334,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-i18n-nikki-zh-tw_26.161.57678~7ea66de_all.ipk
 Size: 5287
 SHA256sum: 3825ff5ad5983c3cd7eb641d794662a3b4505b57e4f09c6976d04a9c2d34bf19
-Description: Translation for luci-app-nikki - 正體中文 (Traditional Chinese)
+Description:  Translation for luci-app-nikki - 正體中文 (Traditional Chinese)
 
 Package: luci-i18n-openlist2-zh-cn
 Version: 26.217.60329~629eced
@@ -1348,7 +1348,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/luci-i18n-openlist2-zh-cn_26.217.60329~629eced_all.ipk
 Size: 3630
 SHA256sum: 09ba2cc130c38446ac8de4915acad44a86f2480de432181da47b1e597fec6b9b
-Description: Translation for luci-app-openlist2 - 简体中文 (Chinese Simplified)
+Description:  Translation for luci-app-openlist2 - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-passwall-zh-cn
 Version: 26.8.12
@@ -1362,7 +1362,7 @@ Installed-Size: 51200
 Filename: aarch64_generic/luci-i18n-passwall-zh-cn_26.8.12_all.ipk
 Size: 18033
 SHA256sum: 7224d3219cdcedecaf420b345a04dbb21cf862a56f4da1be93c0546cda7a9e1e
-Description: Translation for luci-app-passwall - 简体中文 (Simplified Chinese)
+Description:  Translation for luci-app-passwall - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-passwall2-fa
 Version: 26.7.16
@@ -1376,7 +1376,7 @@ Installed-Size: 81920
 Filename: aarch64_generic/luci-i18n-passwall2-fa_26.7.16_all.ipk
 Size: 22791
 SHA256sum: 63b9b5ab64c8668f26943c5ec7185cefc8e7cc2c0e4459085b9cb48c62a9d6ba
-Description: Translation for luci-app-passwall2 - Farsi (Persian)
+Description:  Translation for luci-app-passwall2 - Farsi (Persian)
 
 Package: luci-i18n-passwall2-ru
 Version: 26.7.16
@@ -1390,7 +1390,7 @@ Installed-Size: 81920
 Filename: aarch64_generic/luci-i18n-passwall2-ru_26.7.16_all.ipk
 Size: 23811
 SHA256sum: 53218e4e9e944a2898d5602e225acda4f561ad2b7c2719808a70f9f401b416c7
-Description: Translation for luci-app-passwall2 - Русский (Russian)
+Description:  Translation for luci-app-passwall2 - Русский (Russian)
 
 Package: luci-i18n-passwall2-zh-cn
 Version: 26.7.16
@@ -1404,7 +1404,7 @@ Installed-Size: 51200
 Filename: aarch64_generic/luci-i18n-passwall2-zh-cn_26.7.16_all.ipk
 Size: 19963
 SHA256sum: 4cea83dc7943cb058eaedcc1e83800b10bf977770bd9938236f9fc388b53b3ab
-Description: Translation for luci-app-passwall2 - 简体中文 (Simplified Chinese)
+Description:  Translation for luci-app-passwall2 - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-passwall2-zh-tw
 Version: 26.7.16
@@ -1418,7 +1418,7 @@ Installed-Size: 51200
 Filename: aarch64_generic/luci-i18n-passwall2-zh-tw_26.7.16_all.ipk
 Size: 20153
 SHA256sum: 0f27dea8520af8e86b643a9f9e8b674ea15205cea8a6932cc9f90df5833a844d
-Description: Translation for luci-app-passwall2 - 正體中文 (Traditional Chinese)
+Description:  Translation for luci-app-passwall2 - 正體中文 (Traditional Chinese)
 
 Package: luci-i18n-quickfile-zh-cn
 Version: 26.221.69441~0f2ef3d
@@ -1434,7 +1434,7 @@ Installed-Size: 10240
 Filename: aarch64_generic/luci-i18n-quickfile-zh-cn_26.221.69441~0f2ef3d_all.ipk
 Size: 1194
 SHA256sum: 94b74a1f62407e1885f21dbee571b6513e0615b0e982ab1794261ba134f17db4
-Description: Translation for luci-app-quickfile - 简体中文 (Simplified Chinese)
+Description:  Translation for luci-app-quickfile - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-ramfree-zh-cn
 Version: 26.217.60940~fef2dc6
@@ -1448,7 +1448,7 @@ Installed-Size: 10240
 Filename: aarch64_generic/luci-i18n-ramfree-zh-cn_26.217.60940~fef2dc6_all.ipk
 Size: 1150
 SHA256sum: 002bd453278336381cf20d831c9b1001f844f5f70d5c409caff759c02ca4d785
-Description: Translation for luci-app-ramfree - 简体中文 (Chinese Simplified)
+Description:  Translation for luci-app-ramfree - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-ssr-plus-zh-cn
 Version: 26.199.57699~2e3d359
@@ -1462,7 +1462,7 @@ Installed-Size: 40960
 Filename: aarch64_generic/luci-i18n-ssr-plus-zh-cn_26.199.57699~2e3d359_all.ipk
 Size: 14580
 SHA256sum: e7509a476f4e3b4fbde2054d6b162b980173a47d1c36621a0129fef440212dbf
-Description: Translation for luci-app-ssr-plus - 简体中文 (Simplified Chinese)
+Description:  Translation for luci-app-ssr-plus - 简体中文 (Simplified Chinese)
 
 Package: luci-lua-runtime
 Version: 24.315.52043~d650688
@@ -1479,7 +1479,7 @@ Installed-Size: 10240
 Filename: aarch64_generic/luci-lua-runtime_24.315.52043~d650688_all.ipk
 Size: 953
 SHA256sum: 6772dd45829c451b6cd851e6f22da0acff04d07d1133c2bd0d3e0095ccd277e3
-Description: LuCI Lua runtime libraries
+Description:  LuCI Lua runtime libraries
 
 Package: luci-theme-argon
 Version: 2.4.6-r20260731
@@ -1495,7 +1495,7 @@ Installed-Size: 4372480
 Filename: aarch64_generic/luci-theme-argon_2.4.6-r20260731_all.ipk
 Size: 4159563
 SHA256sum: 2b27458128fb3bffd0d6dd7e62dd961b32dc150734b1ffc6b6d034f57ffbeb65
-Description: Argon Theme
+Description:  Argon Theme
 
 Package: luci-theme-aurora
 Version: 1.1.13-r20260802
@@ -1512,7 +1512,7 @@ Installed-Size: 450560
 Filename: aarch64_generic/luci-theme-aurora_1.1.13-r20260802_all.ipk
 Size: 176088
 SHA256sum: 093badcefe12a7cc750e242b1be38d6a3bf6f25bb74674f1e9f7d22dbc97bd42
-Description: Aurora Theme (A modern browser theme built with Vite and Tailwind CSS)
+Description:  Aurora Theme (A modern browser theme built with Vite and Tailwind CSS)
 
 Package: luci-theme-design
 Version: 7.1-r20260801
@@ -1529,7 +1529,7 @@ Installed-Size: 624640
 Filename: aarch64_generic/luci-theme-design_7.1-r20260801_all.ipk
 Size: 313494
 SHA256sum: e98b5db348346da13e2af44150cf05bb047a713cd7cee29563f60411c69e17c7
-Description: Design Theme
+Description:  Design Theme
 
 Package: luci-theme-fluent
 Version: 1.0.9-r1
@@ -1546,7 +1546,7 @@ Installed-Size: 962560
 Filename: aarch64_generic/luci-theme-fluent_1.0.9-r1_all.ipk
 Size: 160930
 SHA256sum: 41fe8b88c2891e3c4b9a14b83e1796dde378ea71e10098928c902c211100fe03
-Description: Fluent Theme for LuCI
+Description:  Fluent Theme for LuCI
 
 Package: luci-theme-kucat
 Version: 3.3.2-r20260329
@@ -1562,7 +1562,7 @@ Installed-Size: 1228800
 Filename: aarch64_generic/luci-theme-kucat_3.3.2-r20260329_all.ipk
 Size: 910314
 SHA256sum: d785963bf7b736d01f2678d24d180eca2dedc32c6d1a7c032438e49768a84006
-Description: Kucat Theme by sirpdboy
+Description:  Kucat Theme by sirpdboy
 
 Package: luci-theme-shadcn
 Version: 0.3.13-r20260802
@@ -1579,7 +1579,7 @@ Installed-Size: 778240
 Filename: aarch64_generic/luci-theme-shadcn_0.3.13-r20260802_all.ipk
 Size: 515805
 SHA256sum: 8849b2cae24ec2a043bfbab58a5188dd10bbaff9733a5866c79fa0cc2f6157bf
-Description: A modern sidebar LuCI theme for OpenWrt, built with shadcn/ui design language.
+Description:  A modern sidebar LuCI theme for OpenWrt, built with shadcn/ui design language.
 
 Package: microsocks
 Version: 1.0.5-r1
@@ -1597,7 +1597,7 @@ Installed-Size: 71680
 Filename: aarch64_generic/microsocks_1.0.5-r1_aarch64_generic.ipk
 Size: 7169
 SHA256sum: 87e476041691157f483c7c1a5cc52a1f9f384d3e7309695a8d5a4bed24c14207
-Description: A SOCKS5 service that you can run on your remote boxes to tunnel connections
+Description:  A SOCKS5 service that you can run on your remote boxes to tunnel connections
  through them, if for some reason SSH doesn't cut it for you.
 
 Package: microsocks
@@ -1616,7 +1616,7 @@ Installed-Size: 71680
 Filename: aarch64_generic/microsocks_1.0.5-r2_aarch64_generic.ipk
 Size: 8783
 SHA256sum: 665ab619e6dd42c61a5c2c92e4c7cf75b8f7f801d558b47c5c5a5d396c32f4ee
-Description: A SOCKS5 service that you can run on your remote boxes to tunnel connections
+Description:  A SOCKS5 service that you can run on your remote boxes to tunnel connections
  through them, if for some reason SSH doesn't cut it for you.
  This version supports forwarding rules.
 
@@ -1638,7 +1638,7 @@ Installed-Size: 44492800
 Filename: aarch64_generic/mihomo-alpha_2026.07.08_aarch64_generic.ipk
 Size: 16141699
 SHA256sum: 1b4bf8d56ab1ba3b78cc5958b157af719c66e9d2f85ce55a0a058ebc4649ca94
-Description: A rule based proxy in Go.
+Description:  A rule based proxy in Go.
 
 Package: mihomo-meta
 Version: 1.19.29
@@ -1658,7 +1658,7 @@ Installed-Size: 44021760
 Filename: aarch64_generic/mihomo-meta_1.19.29_aarch64_generic.ipk
 Size: 15916531
 SHA256sum: af8566183f589d6b16d8256a92cd5d1bc5acbfa9966487089f0871b19e324404
-Description: A rule based proxy in Go.
+Description:  A rule based proxy in Go.
 
 Package: momo
 Version: 2026.06.03-r1
@@ -1675,7 +1675,7 @@ Installed-Size: 286720
 Filename: aarch64_generic/momo_2026.06.03-r1_aarch64_generic.ipk
 Size: 49308
 SHA256sum: 92cccf9fe222d8401ea92835a4e97b3309b7a24b857dcfb08704c1c8c5058278
-Description: Transparent Proxy with sing-box on OpenWrt.
+Description:  Transparent Proxy with sing-box on OpenWrt.
 
 Package: mosdns
 Version: 5.3.4-r6
@@ -1692,7 +1692,7 @@ Installed-Size: 18360320
 Filename: aarch64_generic/mosdns_5.3.4-r6_aarch64_generic.ipk
 Size: 6681019
 SHA256sum: 1d15d7a54a39cca75ff9d3b85f476d7bb8778bae896bb7ba003d997561f213c0
-Description: A plug-in DNS forwarder/splitter
+Description:  A plug-in DNS forwarder/splitter
 
 Package: naiveproxy
 Version: 150.0.7871.63-r1
@@ -1710,7 +1710,7 @@ Installed-Size: 7301120
 Filename: aarch64_generic/naiveproxy_150.0.7871.63-r1_aarch64_generic.ipk
 Size: 3635900
 SHA256sum: a424572a828b05af49fa023001cfa4600fe0c100419f8c1195e383d2a116b3d2
-Description: NaïveProxy uses Chrome's network stack to camouflage traffic with strong
+Description:  NaïveProxy uses Chrome's network stack to camouflage traffic with strong
  censorship resistance and low detectability. Reusing Chrome's stack also
  ensures best practices in performance and security.
 
@@ -1729,7 +1729,7 @@ Installed-Size: 307200
 Filename: aarch64_generic/nikki_2026.04.08-r1_aarch64_generic.ipk
 Size: 53217
 SHA256sum: d18660719f82d956fc4ee4b32aa5da2158182660746deece0f99e68ba30c3ffd
-Description: Transparent Proxy with Mihomo on OpenWrt.
+Description:  Transparent Proxy with Mihomo on OpenWrt.
 
 Package: openlist2
 Version: 4.2.4-r1
@@ -1746,7 +1746,7 @@ Installed-Size: 85504000
 Filename: aarch64_generic/openlist2_4.2.4-r1_aarch64_generic.ipk
 Size: 28458520
 SHA256sum: 5983d094d94e21e7291677fe07a0795e5a931e04958004bbb2bee394e0760ada
-Description: A file list program that supports multiple storage, powered by Gin and Solidjs.
+Description:  A file list program that supports multiple storage, powered by Gin and Solidjs.
 
 Package: pdnsd-alt
 Version: 1.2.9-r3
@@ -1760,7 +1760,7 @@ Installed-Size: 276480
 Filename: aarch64_generic/pdnsd-alt_1.2.9-r3_aarch64_generic.ipk
 Size: 93593
 SHA256sum: 7740d9bb0d1d6a00411388d2440b9c455ff1a518b67696d64fb5b01d13e9f2f5
-Description: pdnsd, is an IPv6 capable proxy DNS server with permanent caching (the cache
+Description:  pdnsd, is an IPv6 capable proxy DNS server with permanent caching (the cache
  contents are written to hard disk on exit) that is designed to cope with
  unreachable or down DNS servers (for example in dial-in networking).
  
@@ -1782,7 +1782,7 @@ Installed-Size: 5150720
 Filename: aarch64_generic/quickfile_1.0.25-r1_aarch64_generic.ipk
 Size: 5139736
 SHA256sum: e6ae5170ed45f66e0529b82e9c3a590f137f8119a3f0a28a77c446e990e24458
-Description: Lightweight web-based file manager for OpenWrt/LuCI with minimal resource usage.
+Description:  Lightweight web-based file manager for OpenWrt/LuCI with minimal resource usage.
 
 Package: redsocks2
 Version: 0.71-r1
@@ -1799,7 +1799,7 @@ Installed-Size: 143360
 Filename: aarch64_generic/redsocks2_0.71-r1_aarch64_generic.ipk
 Size: 61088
 SHA256sum: 8c23b814e5aa4c107a255ac83706e5a985de8fea33c147835c73a73a998f1a32
-Description: This is a modified version of original redsocks.
+Description:  This is a modified version of original redsocks.
  Transparent redirector of any TCP/UDP connection to proxy.
 
 Package: shadow-tls
@@ -1817,7 +1817,7 @@ Installed-Size: 3870720
 Filename: aarch64_generic/shadow-tls_0.2.25-r1_aarch64_generic.ipk
 Size: 1968022
 SHA256sum: 156a5e980069fbe64ba98a41a74ef2cbb13c130ac919399a026c78fd24e6d3ea
-Description: A proxy to expose real tls handshake to the firewall.
+Description:  A proxy to expose real tls handshake to the firewall.
 
 Package: shadowsocks-libev-config
 Version: 3.3.5-r12
@@ -1836,7 +1836,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/shadowsocks-libev-config_3.3.5-r12_aarch64_generic.ipk
 Size: 3735
 SHA256sum: 57b83732138707d20035f57c08a008ec3fc5942b85017e86b6cc15edafeef80c
-Description: shadowsocks-libev config scripts
+Description:  shadowsocks-libev config scripts
 
 Package: shadowsocks-libev-ss-local
 Version: 3.3.5-r12
@@ -1855,7 +1855,7 @@ Installed-Size: 143360
 Filename: aarch64_generic/shadowsocks-libev-ss-local_3.3.5-r12_aarch64_generic.ipk
 Size: 51931
 SHA256sum: dea56ebdee1b5a7e51390b709e5db8dedde9dbace3e88626f3ba9f80904be983
-Description: shadowsocks-libev ss-local
+Description:  shadowsocks-libev ss-local
 
 Package: shadowsocks-libev-ss-redir
 Version: 3.3.5-r12
@@ -1874,7 +1874,7 @@ Installed-Size: 143360
 Filename: aarch64_generic/shadowsocks-libev-ss-redir_3.3.5-r12_aarch64_generic.ipk
 Size: 46514
 SHA256sum: 0f75c336192dad927378d8f7be96e073cca318ca7ef6d28e3f60070ecdf33365
-Description: shadowsocks-libev ss-redir
+Description:  shadowsocks-libev ss-redir
 
 Package: shadowsocks-libev-ss-rules
 Version: 3.3.5-r12
@@ -1893,7 +1893,7 @@ Installed-Size: 20480
 Filename: aarch64_generic/shadowsocks-libev-ss-rules_3.3.5-r12_aarch64_generic.ipk
 Size: 2741
 SHA256sum: a2acd7b00980cfa3abae958d50d97f847fb5cf99f765e78ff970fee78bdc3847
-Description: shadowsocks-libev ss-rules
+Description:  shadowsocks-libev ss-rules
 
 Package: shadowsocks-libev-ss-server
 Version: 3.3.5-r12
@@ -1912,7 +1912,7 @@ Installed-Size: 143360
 Filename: aarch64_generic/shadowsocks-libev-ss-server_3.3.5-r12_aarch64_generic.ipk
 Size: 57193
 SHA256sum: 2fa170f207eaade8124edd1c1e7f36dcc949ee904c43bf84adbd6cd7eb5ea357
-Description: shadowsocks-libev ss-server
+Description:  shadowsocks-libev ss-server
 
 Package: shadowsocks-libev-ss-tunnel
 Version: 3.3.5-r12
@@ -1931,7 +1931,7 @@ Installed-Size: 143360
 Filename: aarch64_generic/shadowsocks-libev-ss-tunnel_3.3.5-r12_aarch64_generic.ipk
 Size: 44705
 SHA256sum: d8f07f623a9dad791e8b39be4ddd7d12f0569282e916af36ca4346cf384243e7
-Description: shadowsocks-libev ss-tunnel
+Description:  shadowsocks-libev ss-tunnel
 
 Package: shadowsocks-rust-sslocal
 Version: 1.24.0-r1
@@ -1949,7 +1949,7 @@ Installed-Size: 8529920
 Filename: aarch64_generic/shadowsocks-rust-sslocal_1.24.0-r1_aarch64_generic.ipk
 Size: 4190268
 SHA256sum: 7b594a35afa085e94991aef27a7c125d1b7c4c1707f71d3cef3812576643f015
-Description: shadowsocks-rust sslocal
+Description:  shadowsocks-rust sslocal
 
 Package: shadowsocks-rust-ssmanager
 Version: 1.24.0-r1
@@ -1967,7 +1967,7 @@ Installed-Size: 6963200
 Filename: aarch64_generic/shadowsocks-rust-ssmanager_1.24.0-r1_aarch64_generic.ipk
 Size: 3479039
 SHA256sum: c19800ef1e02bc55ca45efa93436b6fc4b94b2b1a94afa47c05e230e9b95ca60
-Description: shadowsocks-rust ssmanager
+Description:  shadowsocks-rust ssmanager
 
 Package: shadowsocks-rust-ssserver
 Version: 1.24.0-r1
@@ -1985,7 +1985,7 @@ Installed-Size: 6809600
 Filename: aarch64_generic/shadowsocks-rust-ssserver_1.24.0-r1_aarch64_generic.ipk
 Size: 3400555
 SHA256sum: f3b91806f488bd32313ca49b9d38c9835b1af2081f19de9a61a77bd403675de5
-Description: shadowsocks-rust ssserver
+Description:  shadowsocks-rust ssserver
 
 Package: shadowsocks-rust-ssservice
 Version: 1.24.0-r1
@@ -2003,7 +2003,7 @@ Installed-Size: 9318400
 Filename: aarch64_generic/shadowsocks-rust-ssservice_1.24.0-r1_aarch64_generic.ipk
 Size: 4568488
 SHA256sum: 6ec4b9fb29708c888865b900ce31e6096cb295227793168bba5756c814b4be4b
-Description: shadowsocks-rust ssservice
+Description:  shadowsocks-rust ssservice
 
 Package: shadowsocks-rust-ssurl
 Version: 1.24.0-r1
@@ -2021,7 +2021,7 @@ Installed-Size: 2211840
 Filename: aarch64_generic/shadowsocks-rust-ssurl_1.24.0-r1_aarch64_generic.ipk
 Size: 1069386
 SHA256sum: a160993757364d55761e953539ec3d39cf0c3eeba561fd2e50c894adaef24ea2
-Description: shadowsocks-rust ssurl
+Description:  shadowsocks-rust ssurl
 
 Package: shadowsocksr-libev-ssr-check
 Version: 2.5.6-r11
@@ -2038,7 +2038,7 @@ Installed-Size: 71680
 Filename: aarch64_generic/shadowsocksr-libev-ssr-check_2.5.6-r11_aarch64_generic.ipk
 Size: 3374
 SHA256sum: f0c2e565124b812e4bdadab99ed8f54823a05db3fbdffb493dd623920c2d167a
-Description: shadowsocksr-libev ssr-check
+Description:  shadowsocksr-libev ssr-check
 
 Package: shadowsocksr-libev-ssr-local
 Version: 2.5.6-r11
@@ -2055,7 +2055,7 @@ Installed-Size: 204800
 Filename: aarch64_generic/shadowsocksr-libev-ssr-local_2.5.6-r11_aarch64_generic.ipk
 Size: 63640
 SHA256sum: 303fd76315ed532eb0e5e6b1cd62eddd501036ec5aae7acea2e3109e6f4bd0d9
-Description: shadowsocksr-libev ssr-local
+Description:  shadowsocksr-libev ssr-local
 
 Package: shadowsocksr-libev-ssr-nat
 Version: 2.5.6-r11
@@ -2072,7 +2072,7 @@ Installed-Size: 10240
 Filename: aarch64_generic/shadowsocksr-libev-ssr-nat_2.5.6-r11_aarch64_generic.ipk
 Size: 3027
 SHA256sum: 84280a31f54478bd8227d0aa5619edd68e9c36244dc50a06a2dc1cbd73f627ab
-Description: shadowsocksr-libev ssr-nat
+Description:  shadowsocksr-libev ssr-nat
 
 Package: shadowsocksr-libev-ssr-redir
 Version: 2.5.6-r11
@@ -2089,7 +2089,7 @@ Installed-Size: 143360
 Filename: aarch64_generic/shadowsocksr-libev-ssr-redir_2.5.6-r11_aarch64_generic.ipk
 Size: 57091
 SHA256sum: 880ec33786d93358e2bb5054d73fc43013b3e729f6e882dab156b7ae3ebc7c7a
-Description: shadowsocksr-libev ssr-redir
+Description:  shadowsocksr-libev ssr-redir
 
 Package: shadowsocksr-libev-ssr-server
 Version: 2.5.6-r11
@@ -2106,7 +2106,7 @@ Installed-Size: 204800
 Filename: aarch64_generic/shadowsocksr-libev-ssr-server_2.5.6-r11_aarch64_generic.ipk
 Size: 67180
 SHA256sum: b7b8eac390730e199533d6eff35febd839037405cfb02e9ed4c53a83fd3c70a7
-Description: shadowsocksr-libev ssr-server
+Description:  shadowsocksr-libev ssr-server
 
 Package: simple-obfs-client
 Version: 0.0.5-r1
@@ -2125,7 +2125,7 @@ Installed-Size: 143360
 Filename: aarch64_generic/simple-obfs-client_0.0.5-r1_aarch64_generic.ipk
 Size: 32108
 SHA256sum: bebca4f9a3a1bbc137064686303dadb6aa77a298baab823cb06e716fd00f4f0e
-Description: Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
+Description:  Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
 
 Package: simple-obfs-server
 Version: 0.0.5-r1
@@ -2143,7 +2143,7 @@ Installed-Size: 143360
 Filename: aarch64_generic/simple-obfs-server_0.0.5-r1_aarch64_generic.ipk
 Size: 34698
 SHA256sum: da94623f17c3d62441205943fe4d5c66d34b764227044fa63adf9931ffc9d4b4
-Description: Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
+Description:  Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
 
 Package: sing-box-tiny
 Version: 1.12.25-r1
@@ -2164,7 +2164,7 @@ Installed-Size: 29747200
 Filename: aarch64_generic/sing-box-tiny_1.12.25-r1_aarch64_generic.ipk
 Size: 10643876
 SHA256sum: 41a258a4599ecc7774951388e520ea5489361a7205134db70eb67f694e55867b
-Description: Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
+Description:  Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
  ShadowTLS, Tor, trojan, VLess, VMess, WireGuard and so on.
 
 Package: sing-box
@@ -2186,7 +2186,7 @@ Installed-Size: 41850880
 Filename: aarch64_generic/sing-box_1.12.25-r1_aarch64_generic.ipk
 Size: 15024939
 SHA256sum: daacb383a6e97664bd7d1c1351ebeecf998da122d68a7e1df21b0c580ce3d766
-Description: Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
+Description:  Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
  ShadowTLS, Tor, trojan, VLess, VMess, WireGuard and so on.
 
 Package: tcping
@@ -2204,7 +2204,7 @@ Installed-Size: 71680
 Filename: aarch64_generic/tcping_0.3-r1_aarch64_generic.ipk
 Size: 4308
 SHA256sum: ce4cfd140368144c0627a118776af8e12a09b8364dca6b95aec1f7e5f4ca656e
-Description: tcping measures the latency of a tcp-connection
+Description:  tcping measures the latency of a tcp-connection
 
 Package: tcping
 Version: 0.3-r2
@@ -2220,7 +2220,7 @@ Installed-Size: 71680
 Filename: aarch64_generic/tcping_0.3-r2_aarch64_generic.ipk
 Size: 4778
 SHA256sum: 1cc20034ecca420e889dea974a303d2653cab6035753f064bf0b714c42166f7f
-Description: tcping measures the latency of a tcp-connection
+Description:  tcping measures the latency of a tcp-connection
 
 Package: trojan-plus
 Version: 10.0.3-r2
@@ -2237,7 +2237,7 @@ Installed-Size: 993280
 Filename: aarch64_generic/trojan-plus_10.0.3-r2_aarch64_generic.ipk
 Size: 411720
 SHA256sum: 1bee9b741918a002a6e875879e8408984b27f2a42621a4be6cb95101b559a2c9
-Description: An unidentifiable mechanism that helps you bypass GFW. It's compatible with original trojan with experimental features.
+Description:  An unidentifiable mechanism that helps you bypass GFW. It's compatible with original trojan with experimental features.
 
 Package: trojan
 Version: 1.16.0-r2
@@ -2254,7 +2254,7 @@ Installed-Size: 798720
 Filename: aarch64_generic/trojan_1.16.0-r2_aarch64_generic.ipk
 Size: 290933
 SHA256sum: 21b9d155de138e06d9ca33e7f60169b1b7a4547d52604c79cfad4a263ffe9035
-Description: An unidentifiable mechanism that helps you bypass GFW
+Description:  An unidentifiable mechanism that helps you bypass GFW
 
 Package: tuic-client
 Version: 1.8.1-r1
@@ -2271,7 +2271,7 @@ Installed-Size: 4884480
 Filename: aarch64_generic/tuic-client_1.8.1-r1_aarch64_generic.ipk
 Size: 2582810
 SHA256sum: 2bd66c7941e24c881f14f11c56e38d62e2b3df08753d7a0b8dae69ac0fcd2458
-Description: Delicately-TUICed 0-RTT proxy protocol
+Description:  Delicately-TUICed 0-RTT proxy protocol
 
 Package: v2dat
 Version: 2022.12.15~47b8ee51-r4
@@ -2288,7 +2288,7 @@ Installed-Size: 8591360
 Filename: aarch64_generic/v2dat_2022.12.15~47b8ee51-r4_aarch64_generic.ipk
 Size: 3226794
 SHA256sum: 69a6b5c537ad14acb23a8597294d8e3fd6629dfda21f2da1a8e533e50fc973a8
-Description: V2ray geo/ip data unpack tools
+Description:  V2ray geo/ip data unpack tools
 
 Package: v2ray-core
 Version: 5.53.0-r1
@@ -2306,7 +2306,7 @@ Installed-Size: 36812800
 Filename: aarch64_generic/v2ray-core_5.53.0-r1_aarch64_generic.ipk
 Size: 12955146
 SHA256sum: 2429a0e8b823a80ab30a13ae5cf8a6d6f2a1d3f5e714464371162e468110036c
-Description: Project V is a set of network tools that help you to build your own computer network.
+Description:  Project V is a set of network tools that help you to build your own computer network.
  It secures your network connections and thus protects your privacy.
 
 Package: v2ray-extra
@@ -2325,7 +2325,7 @@ Installed-Size: 1556480
 Filename: aarch64_generic/v2ray-extra_5.53.0-r1_all.ipk
 Size: 299385
 SHA256sum: 9df047d1f42771f45bc3203104ec91d020b75e382798e1e7bb1ba4a2062b4c3a
-Description: Project V is a set of network tools that help you to build your own computer network.
+Description:  Project V is a set of network tools that help you to build your own computer network.
  It secures your network connections and thus protects your privacy.
  
  This includes extra resources for v2ray-core.
@@ -2346,7 +2346,7 @@ Installed-Size: 17438720
 Filename: aarch64_generic/v2ray-geoip_202608060031.1_all.ipk
 Size: 3575629
 SHA256sum: c05b47a3e459d6370fa6c4efd62a5cc155710378bbb0ea20c30611ef7319035e
-Description: GeoIP List for V2Ray
+Description:  GeoIP List for V2Ray
 
 Package: v2ray-geosite
 Version: 202608082221.1
@@ -2364,7 +2364,7 @@ Installed-Size: 10598400
 Filename: aarch64_generic/v2ray-geosite_202608082221.1_all.ipk
 Size: 3486865
 SHA256sum: 14837fd7820d2e79f67d6e6152c8539ded24b8d8e074d8dab22f16726dc3dc39
-Description: Geosite List for V2Ray
+Description:  Geosite List for V2Ray
 
 Package: v2ray-plugin
 Version: 5.49.0-r1
@@ -2382,7 +2382,7 @@ Installed-Size: 16261120
 Filename: aarch64_generic/v2ray-plugin_5.49.0-r1_aarch64_generic.ipk
 Size: 5964383
 SHA256sum: cda7dea360b68f0eac7481ad6321b4b9dd6e6ad311b0b8fc2a14d714ab6bd3b4
-Description: SIP003 plugin for shadowsocks, based on v2ray
+Description:  SIP003 plugin for shadowsocks, based on v2ray
 
 Package: vmlinux-btf
 Version: 6.6.143
@@ -2396,7 +2396,7 @@ Installed-Size: 5201920
 Filename: aarch64_generic/vmlinux-btf_6.6.143_aarch64_generic.ipk
 Size: 1680859
 SHA256sum: 74ae89d1b017d651534d8a9cdee2a5d126172b8154428b3f5f8ad6d394f691fd
-Description: BPF CO-RE stand for Compile Once - Run Everywhere It's a concept to
+Description:  BPF CO-RE stand for Compile Once - Run Everywhere It's a concept to
  build cross-version kernel eBPF application by building in a single
  binary by bringing together the BTF type information, libbpf and the
  compiler.
@@ -2417,7 +2417,7 @@ Installed-Size: 30320640
 Filename: aarch64_generic/xray-core_26.3.27-r1_aarch64_generic.ipk
 Size: 10777780
 SHA256sum: 0c0ada04abd43bc7a2674f1fb9d9179345c5e515a409be97b636903319a446af
-Description: Xray, Penetrates Everything. It helps you to build your own computer network.
+Description:  Xray, Penetrates Everything. It helps you to build your own computer network.
  It secures your network connections and thus protects your privacy.
 
 Package: xray-plugin
@@ -2436,4 +2436,5 @@ Installed-Size: 16803840
 Filename: aarch64_generic/xray-plugin_26.2.6-r1_aarch64_generic.ipk
 Size: 6248732
 SHA256sum: 1c515d2bd2d948a7c81152c415b7708ada58c4c378388f6e258ba4940721a14c
-Description: SIP003 plugin for Shadowsocks, based on Xray
+Description:  SIP003 plugin for Shadowsocks, based on Xray
+
