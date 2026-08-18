@@ -46,6 +46,43 @@ jobs:
           echo "=== 数量统计 ==="
           echo "ipk: $(find downloads -name '*.ipk' | wc -l)  apk: $(find downloads -name '*.apk' | wc -l)"
 
+      # ---------------------------------------------------------------
+      # 修正包文件名：编译产物文件名中 '~'（git hash 分隔符）可能被写成 '.'，
+      # 而包内元数据版本仍是 '~'（如 26.221.69441~0f2ef3d）。索引按包内版本
+      # 生成，文件名必须与之一致，否则安装时报 "package mentioned in index
+      # not found"。这里在同步前统一把 hash 前的 '.' 改回 '~'。
+      # ---------------------------------------------------------------
+      - name: Fix package filenames
+        shell: bash
+        run: |
+          set -euo pipefail
+          FIXED=0
+          while IFS= read -r -d '' f; do
+            case "$f" in
+              *.apk) ext="apk" ;;
+              *.ipk) ext="ipk" ;;
+              *) continue ;;
+            esac
+            base="${f%.${ext}}"
+            # 匹配: '.' + 6-10 位 hex git hash，可选 '-rN' 发行号与 ipk 的 '_arch' 后缀
+            if [[ "$base" =~ \.([0-9a-fA-F]{6,10})(-r[0-9]+)?(_[^.]+)?$ ]]; then
+              hash="${BASH_REMATCH[1]}"
+              suffix="${BASH_REMATCH[2]}${BASH_REMATCH[3]}"
+              target="${base%${BASH_REMATCH[0]}}~${hash}${suffix}.${ext}"
+              if [[ "$target" != "$f" ]]; then
+                if [[ -e "$target" ]]; then
+                  rm -f "$f"
+                  echo "移除重复: ${f}（已存在 ${target}）"
+                else
+                  mv -f "$f" "$target"
+                  echo "修正文件名: ${f} -> ${target}"
+                fi
+                FIXED=$((FIXED+1))
+              fi
+            fi
+          done < <(find downloads -type f \( -name '*.apk' -o -name '*.ipk' \) -print0)
+          echo "共修正 ${FIXED} 个包文件名（~ 被写成 .）"
+
       - name: Prepare signing keys
         run: |
           # 私钥从 secrets 注入到 master 工作区 key/（可选，无私钥则不签名）
