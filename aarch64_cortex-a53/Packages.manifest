@@ -837,6 +837,174 @@ Architecture: all
 Installed-Size: 20480
 Description:  Translation for luci-app-diskman - 简体中文 (Chinese Simplified)
 
+Package: luci-i18n-fluent-de
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 20480
+Description:  Translation for luci-theme-fluent - Deutsch (German)
+
+Package: luci-i18n-fluent-es
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 20480
+Description:  Translation for luci-theme-fluent - Español (Spanish)
+
+Package: luci-i18n-fluent-fa
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 30720
+Description:  Translation for luci-theme-fluent - Farsi (Persian)
+
+Package: luci-i18n-fluent-fr
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 20480
+Description:  Translation for luci-theme-fluent - Français (French)
+
+Package: luci-i18n-fluent-it
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 20480
+Description:  Translation for luci-theme-fluent - Italiano (Italian)
+
+Package: luci-i18n-fluent-ja
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 30720
+Description:  Translation for luci-theme-fluent - 日本語 (Japanese)
+
+Package: luci-i18n-fluent-ko
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 20480
+Description:  Translation for luci-theme-fluent - 한국어 (Korean)
+
+Package: luci-i18n-fluent-pl
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 20480
+Description:  Translation for luci-theme-fluent - Polski (Polish)
+
+Package: luci-i18n-fluent-ru
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 30720
+Description:  Translation for luci-theme-fluent - Русский (Russian)
+
+Package: luci-i18n-fluent-tr
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 20480
+Description:  Translation for luci-theme-fluent - Türkçe (Turkish)
+
+Package: luci-i18n-fluent-uk
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 30720
+Description:  Translation for luci-theme-fluent - Українська (Ukrainian)
+
+Package: luci-i18n-fluent-vi
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 20480
+Description:  Translation for luci-theme-fluent - Tiếng Việt (Vietnamese)
+
+Package: luci-i18n-fluent-zh-cn
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 20480
+Description:  Translation for luci-theme-fluent - 简体中文 (Simplified Chinese)
+
+Package: luci-i18n-fluent-zh-tw
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 20480
+Description:  Translation for luci-theme-fluent - 正體中文 (Traditional Chinese)
+
 Package: luci-i18n-homeproxy-zh-cn
 Version: 26.218.16504~0aec5b1
 Depends: libc, luci-app-homeproxy
@@ -1071,6 +1239,20 @@ Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 624640
 Description:  Design Theme
+
+Package: luci-theme-fluent
+Version: 1.0.9-r1
+Depends: libc, luci-base
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+URL: https://github.com/openwrt/luci
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 962560
+Description:  Fluent Theme for LuCI
 
 Package: luci-theme-kucat
 Version: 3.3.2-r20260329

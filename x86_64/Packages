@@ -1026,6 +1026,216 @@ Size: 3836
 SHA256sum: dbaccc6f1b4e36525626a9e05053f520e85678204417c2e0f47a957832ab3589
 Description:  Translation for luci-app-diskman - 简体中文 (Chinese Simplified)
 
+Package: luci-i18n-fluent-de
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 20480
+Filename: x86_64/luci-i18n-fluent-de_26.230.07832.d6fd5a9_all.ipk
+Size: 6759
+SHA256sum: ef4dcc36cf0a8f9f57f786d463c884841d7a503b6c3cc2dac64432f89d6719ea
+Description:  Translation for luci-theme-fluent - Deutsch (German)
+
+Package: luci-i18n-fluent-es
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 20480
+Filename: x86_64/luci-i18n-fluent-es_26.230.07832.d6fd5a9_all.ipk
+Size: 6678
+SHA256sum: d2e1369b95c7982d7fe7b7216b33b04ad0eed498eb8b7d812d3805429230c4b6
+Description:  Translation for luci-theme-fluent - Español (Spanish)
+
+Package: luci-i18n-fluent-fa
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 30720
+Filename: x86_64/luci-i18n-fluent-fa_26.230.07832.d6fd5a9_all.ipk
+Size: 6711
+SHA256sum: 86c4f089853805c99622c0f59286894aaca4ad1bf318427109909ecfa6031fa9
+Description:  Translation for luci-theme-fluent - Farsi (Persian)
+
+Package: luci-i18n-fluent-fr
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 20480
+Filename: x86_64/luci-i18n-fluent-fr_26.230.07832.d6fd5a9_all.ipk
+Size: 6615
+SHA256sum: 2dd0a78107dfa7e1926f216286885ca57d240858f89904ebb89b3ffbb0b70fe1
+Description:  Translation for luci-theme-fluent - Français (French)
+
+Package: luci-i18n-fluent-it
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 20480
+Filename: x86_64/luci-i18n-fluent-it_26.230.07832.d6fd5a9_all.ipk
+Size: 6501
+SHA256sum: 9c7ed2cd72ff12fb7f5373fe275656978716f8ba8365b71a6df51bcc61a6c510
+Description:  Translation for luci-theme-fluent - Italiano (Italian)
+
+Package: luci-i18n-fluent-ja
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 30720
+Filename: x86_64/luci-i18n-fluent-ja_26.230.07832.d6fd5a9_all.ipk
+Size: 6965
+SHA256sum: e5674a11fcb9475a971915a6a199f2f6701ca6f3e13f8f04b40bc4635c56d0c2
+Description:  Translation for luci-theme-fluent - 日本語 (Japanese)
+
+Package: luci-i18n-fluent-ko
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 20480
+Filename: x86_64/luci-i18n-fluent-ko_26.230.07832.d6fd5a9_all.ipk
+Size: 6557
+SHA256sum: 62bfc4f08cc643e44ef774140543859304e6dc1f9038216d96017943f155ac65
+Description:  Translation for luci-theme-fluent - 한국어 (Korean)
+
+Package: luci-i18n-fluent-pl
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 20480
+Filename: x86_64/luci-i18n-fluent-pl_26.230.07832.d6fd5a9_all.ipk
+Size: 6744
+SHA256sum: 609b132bd556e1d1906f775f2d03e1a688d01188588bb7b1413c70fb15b1bdc0
+Description:  Translation for luci-theme-fluent - Polski (Polish)
+
+Package: luci-i18n-fluent-ru
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 30720
+Filename: x86_64/luci-i18n-fluent-ru_26.230.07832.d6fd5a9_all.ipk
+Size: 7352
+SHA256sum: e71d4c7c1b780a9aa2586f0eb08a2878e1f3b5eb8d8281f2b160bac067f769c5
+Description:  Translation for luci-theme-fluent - Русский (Russian)
+
+Package: luci-i18n-fluent-tr
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 20480
+Filename: x86_64/luci-i18n-fluent-tr_26.230.07832.d6fd5a9_all.ipk
+Size: 6597
+SHA256sum: 4dea3b9065bc54dcb1c6c8763df47b58fd330fde700da80c45a576c7a9baeece
+Description:  Translation for luci-theme-fluent - Türkçe (Turkish)
+
+Package: luci-i18n-fluent-uk
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 30720
+Filename: x86_64/luci-i18n-fluent-uk_26.230.07832.d6fd5a9_all.ipk
+Size: 7538
+SHA256sum: a5ffd12479758590d861ee5eba3cf6c6568f5f4d694546c917ee6c0d0b79dc29
+Description:  Translation for luci-theme-fluent - Українська (Ukrainian)
+
+Package: luci-i18n-fluent-vi
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 20480
+Filename: x86_64/luci-i18n-fluent-vi_26.230.07832.d6fd5a9_all.ipk
+Size: 6608
+SHA256sum: 24c4e33894f65ce923883e7ea6b372995ffb7a53878bdbbbd913c7da9cde5c03
+Description:  Translation for luci-theme-fluent - Tiếng Việt (Vietnamese)
+
+Package: luci-i18n-fluent-zh-cn
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 20480
+Filename: x86_64/luci-i18n-fluent-zh-cn_26.230.07832.d6fd5a9_all.ipk
+Size: 6354
+SHA256sum: e6fb859ef2c787c4b3efafb5d460b66aaff5377ea2eabb689256250d0af4b968
+Description:  Translation for luci-theme-fluent - 简体中文 (Simplified Chinese)
+
+Package: luci-i18n-fluent-zh-tw
+Version: 26.230.07832~d6fd5a9
+Depends: libc, luci-theme-fluent
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+Architecture: all
+Installed-Size: 20480
+Filename: x86_64/luci-i18n-fluent-zh-tw_26.230.07832.d6fd5a9_all.ipk
+Size: 6386
+SHA256sum: f620a0e6a939074108cd7bb80ea319b56fadcf2c6d446a03e87bb86cef35ac86
+Description:  Translation for luci-theme-fluent - 正體中文 (Traditional Chinese)
+
 Package: luci-i18n-homeproxy-zh-cn
 Version: 26.218.16504~0aec5b1
 Depends: libc, luci-app-homeproxy
@@ -1320,6 +1530,23 @@ Filename: x86_64/luci-theme-design_7.1-r20260801_all.ipk
 Size: 313494
 SHA256sum: e98b5db348346da13e2af44150cf05bb047a713cd7cee29563f60411c69e17c7
 Description:  Design Theme
+
+Package: luci-theme-fluent
+Version: 1.0.9-r1
+Depends: libc, luci-base
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent
+SourceName: luci-theme-fluent
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1787019032
+URL: https://github.com/openwrt/luci
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 962560
+Filename: x86_64/luci-theme-fluent_1.0.9-r1_all.ipk
+Size: 160930
+SHA256sum: 41fe8b88c2891e3c4b9a14b83e1796dde378ea71e10098928c902c211100fe03
+Description:  Fluent Theme for LuCI
 
 Package: luci-theme-kucat
 Version: 3.3.2-r20260329
