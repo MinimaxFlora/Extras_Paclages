@@ -338,16 +338,16 @@ Installed-Size: 81920
 Description:  Provides Web UI for Disk Manager
 
 Package: luci-app-homeproxy
-Version: 26.218.16504~0aec5b1
+Version: 26.306.13525~a90ec10
 Depends: libc, sing-box, firewall4, kmod-nft-tproxy, ucode-mod-digest
 Source: /feed/luci-app-homeproxy
 SourceName: luci-app-homeproxy
 Section: luci
-SourceDateEpoch: 1785990904
+SourceDateEpoch: 1793591125
 URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
-Installed-Size: 1863680
+Installed-Size: 1853440
 Description:  The modern ImmortalWrt proxy platform for ARM64/AMD64
 
 Package: luci-app-kucat-config
@@ -1006,15 +1006,15 @@ Installed-Size: 20480
 Description:  Translation for luci-theme-fluent - 正體中文 (Traditional Chinese)
 
 Package: luci-i18n-homeproxy-zh-cn
-Version: 26.218.16504~0aec5b1
+Version: 26.306.13525~a90ec10
 Depends: libc, luci-app-homeproxy
 Source: /feed/luci-app-homeproxy
 SourceName: luci-app-homeproxy
 Section: luci
-SourceDateEpoch: 1785990904
+SourceDateEpoch: 1793591125
 Architecture: all
 Installed-Size: 40960
-Description:  Translation for luci-app-homeproxy - 简体中文 (Chinese Simplified)
+Description:  Translation for luci-app-homeproxy - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-kucat-config-zh-cn
 Version: 26.217.50438~3881ac2
@@ -1768,6 +1768,25 @@ CPE-ID: cpe:/a:sagernet:sing-box
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_generic
 Installed-Size: 29747200
+Description:  Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
+ ShadowTLS, Tor, trojan, VLess, VMess, WireGuard and so on.
+
+Package: sing-box-tiny
+Version: 1.14.3-r1
+Depends: libc, ca-bundle, kmod-inet-diag
+Provides: sing-box
+Source: /feed/sing-box
+SourceName: sing-box
+License: GPL-3.0-or-later
+LicenseFiles: LICENSE
+Section: net
+Require-User: sing-box=5566:sing-box=5566
+SourceDateEpoch: 1793591126
+URL: https://sing-box.sagernet.org/
+CPE-ID: cpe:/a:sagernet:sing-box
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: aarch64_generic
+Installed-Size: 42598400
 Description:  Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
  ShadowTLS, Tor, trojan, VLess, VMess, WireGuard and so on.
 
