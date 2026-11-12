@@ -47,8 +47,14 @@ src/gz extras_packages https://raw.githubusercontent.com/MinimaxFlora/Extras_Pac
 
 ```sh
 # apk (25.x) — /etc/apk/repositories.d/ 下新建源文件
-https://raw.githubusercontent.com/MinimaxFlora/Extras_Paclages/apk/x86_64
+# 与官方 distfeeds.list 一致，直接指向 packages.adb（不是目录）
+https://raw.githubusercontent.com/MinimaxFlora/Extras_Paclages/apk/x86_64/packages.adb
 ```
+
+> 💡 国内访问 `raw.githubusercontent.com` 不稳时，可以把域名换成 jsDelivr
+> （`https://cdn.jsdelivr.net/gh/MinimaxFlora/Extras_Paclages@apk/x86_64/packages.adb`），
+> 或给 gh-action-imagebuilder 传 `feed_host` 参数让固件直接写 CDN 地址。
+> 注意 jsDelivr 对分支内容有缓存，索引更新后可能滞后十几分钟。
 
 ## 脚本使用
 
@@ -93,6 +99,18 @@ IB_PATH=/path/to/openwrt-imagebuilder-25.12.5-x86-64.Linux-x86_64 ./gen-index.sh
 **输出**：
 - ipk 架构目录：`Packages`、`Packages.gz`、`Packages.manifest`、`Packages.sig`
 - apk 架构目录：`packages.adb`、`index.json`
+
+**自检（生成后自动跑，失败即非零退出）**：
+
+- ipk：`Packages` 里每条 `Filename` 必须是**裸文件名**（opkg 下载地址 = `<源地址>/<Filename>`，
+  客户端源已经指到架构目录，带 `x86_64/` 前缀就会 404），并且文件必须在目录里真实存在
+- apk：目录里每个 `.apk` 都必须出现在 `packages.adb` 中（apk 按 `<name>-<version>.apk` 解析）
+- 签名：`Packages.sig` 用公钥验一遍，`packages.adb` 用 `apk verify` 验一遍
+
+> `Packages.gz` 用 `gzip -9n` 生成（不带时间戳），同样的包内容重复生成不会产生无意义 diff。
+
+CI（`.github/workflows/sync-packages.yml`）在推送后还会**回读分支内容**再校验一次
+`Filename` 格式与文件存在性，所以索引坏掉不会被静默推上去。
 
 ## 添加新插件
 

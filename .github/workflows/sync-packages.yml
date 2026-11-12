@@ -176,6 +176,45 @@ jobs:
             echo "apk 已推送"
           fi
 
+      # ---- 推送后回读校验：直接从 API 读分支内容，不走 CDN，立刻能判定 ----
+      - name: Verify pushed indexes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -uo pipefail
+          fail=0
+          for arch in $ARCHS; do
+            # --- ipk: Filename 必须是裸文件名，且文件真实存在 ---
+            if gh api "repos/$GITHUB_REPOSITORY/contents/$arch/Packages?ref=ipk" --jq '.content' > /tmp/c.b64 2>/dev/null; then
+              base64 -d /tmp/c.b64 > /tmp/Packages
+              if grep -qE '^Filename: .*/' /tmp/Packages; then
+                echo "::error::$arch/ipk Packages 的 Filename 仍带目录前缀"
+                grep -m3 -E '^Filename: .*/' /tmp/Packages
+                fail=1
+              fi
+              cnt=$(grep -c '^Package:' /tmp/Packages || true)
+              echo "$arch/ipk: $cnt 个包"
+              while IFS= read -r f; do
+                [ -n "$f" ] || continue
+                if ! gh api "repos/$GITHUB_REPOSITORY/contents/$arch/$f?ref=ipk" --jq '.size' >/dev/null 2>&1; then
+                  echo "::error::$arch/ipk 索引指向不存在的文件: $f"
+                  fail=1
+                fi
+              done < <(grep -m3 '^Filename: ' /tmp/Packages | sed 's/^Filename: //')
+            else
+              echo "::warning::$arch/ipk 没有 Packages（该架构无 ipk 包）"
+            fi
+
+            # --- apk: 索引必须存在且非空 ---
+            size=$(gh api "repos/$GITHUB_REPOSITORY/contents/$arch/packages.adb?ref=apk" --jq '.size' 2>/dev/null || echo 0)
+            if [ "${size:-0}" -gt 100 ]; then
+              echo "$arch/apk: packages.adb ${size} 字节"
+            else
+              echo "::warning::$arch/apk 没有 packages.adb（该架构无 apk 包）"
+            fi
+          done
+          [ "$fail" -eq 0 ] || exit 1
+
       - name: Summary
         run: |
           echo "===================="
