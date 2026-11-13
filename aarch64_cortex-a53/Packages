@@ -1697,8 +1697,8 @@ Maintainer: Joseph Mory <morytyann@gmail.com>
 Architecture: aarch64_cortex-a53
 Installed-Size: 56320000
 Filename: mihomo-meta_1.19.34_aarch64_cortex-a53.ipk
-Size: 20502952
-SHA256sum: 872b12974a129136d93894c510668654ae7d39671b8d02da3791045be6ba7c24
+Size: 20502858
+SHA256sum: 637511c11b323511e17f2a4d2bba8fd186daa10ad2a4c7cb206f9a75f33691cd
 Description:  A rule based proxy in Go.
 
 Package: mosdns
@@ -1768,8 +1768,8 @@ Maintainer: sbwml <admin@cooluc.com>
 Architecture: aarch64_cortex-a53
 Installed-Size: 108912640
 Filename: openlist2_4.2.9-r1_aarch64_cortex-a53.ipk
-Size: 35681594
-SHA256sum: 2af8dbc38efae2ecf7f30d986f411e700deecdce7e3628b37e36895572ec42d5
+Size: 35681469
+SHA256sum: 7a86ba78cb0b51cad36dba5b4f7860f93c48fc57beb21d57099243c54a52d3d6
 Description:  A file list program that supports multiple storage, powered by Gin and Solidjs.
 
 Package: quickfile
@@ -1828,8 +1828,8 @@ Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_cortex-a53
 Installed-Size: 7956480
 Filename: shadowsocks-rust-sslocal_1.25.0-r1_aarch64_cortex-a53.ipk
-Size: 3857728
-SHA256sum: a396c480f3d7dae470fab71ad83bc386dc53bac6c9b81234e11bc03889ee56a5
+Size: 3857690
+SHA256sum: b0e0c4e1a27d1d42caf650ed75a5be5fa5b15b4dce66f0c1e34224a858872411
 Description:  shadowsocks-rust sslocal
 
 Package: shadowsocks-rust-ssmanager
@@ -1846,8 +1846,8 @@ Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_cortex-a53
 Installed-Size: 6440960
 Filename: shadowsocks-rust-ssmanager_1.25.0-r1_aarch64_cortex-a53.ipk
-Size: 3111043
-SHA256sum: 8a0bcc7b7da2c6b6b97b69f1ca41975544001f066fc96342f7f2c9346c9f64cd
+Size: 3111045
+SHA256sum: ce25d5038e7ba9d7c85e882d0499caff1dbe08b42d40caf32f74595df7e0f360
 Description:  shadowsocks-rust ssmanager
 
 Package: shadowsocks-rust-ssserver
@@ -1864,8 +1864,8 @@ Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_cortex-a53
 Installed-Size: 6318080
 Filename: shadowsocks-rust-ssserver_1.25.0-r1_aarch64_cortex-a53.ipk
-Size: 3059518
-SHA256sum: 74d91be847e156b4e1fa1544e7ed67267ce2da7fb56b5c9019995f04ae1f01b9
+Size: 3059579
+SHA256sum: 95a53be686e67284864597366fb653cdad81d57d79d27cb1391ae0c913107e7e
 Description:  shadowsocks-rust ssserver
 
 Package: shadowsocks-rust-ssservice
@@ -1882,8 +1882,8 @@ Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_cortex-a53
 Installed-Size: 8284160
 Filename: shadowsocks-rust-ssservice_1.25.0-r1_aarch64_cortex-a53.ipk
-Size: 4043520
-SHA256sum: 03cc52210c490ac7dbea44ab664263d2e1def2f359b35ec2aa33ca64657a9f6f
+Size: 4043503
+SHA256sum: 24374e2cc5cc0a7e12229805d7ad5ec05ae1439894f157dabf7d9bf2faac544d
 Description:  shadowsocks-rust ssservice
 
 Package: shadowsocks-rust-ssurl

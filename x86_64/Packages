@@ -1697,8 +1697,8 @@ Maintainer: Joseph Mory <morytyann@gmail.com>
 Architecture: x86_64
 Installed-Size: 61173760
 Filename: mihomo-meta_1.19.34_x86_64.ipk
-Size: 22639944
-SHA256sum: 7a752ccc8ebd3613680ecb85a8c6b7bde07e890529ca9017bbed8334b7d0a625
+Size: 22639850
+SHA256sum: 171b7502b4907e33986ec5a47b00cd17d7659eb706d52b851fa0b438a2c0d0e6
 Description:  A rule based proxy in Go.
 
 Package: mosdns
@@ -1768,8 +1768,8 @@ Maintainer: sbwml <admin@cooluc.com>
 Architecture: x86_64
 Installed-Size: 115240960
 Filename: openlist2_4.2.9-r1_x86_64.ipk
-Size: 38771106
-SHA256sum: 91d1dce8b05b889a3e5ff3fd97ba25823b7f32d33bdddd228f83c6e5072e41bd
+Size: 38770893
+SHA256sum: 2eec2c08e09c81cc179eaeb644e332348a36d147c2cf6bd37bfdfd30b81ab9b2
 Description:  A file list program that supports multiple storage, powered by Gin and Solidjs.
 
 Package: quickfile
@@ -1828,8 +1828,8 @@ Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: x86_64
 Installed-Size: 9113600
 Filename: shadowsocks-rust-sslocal_1.25.0-r1_x86_64.ipk
-Size: 4067615
-SHA256sum: 95238309ec8c2d216b9b9452bffd1f803eed75156174142778ff06366cb7fa4e
+Size: 4067668
+SHA256sum: be9e6280e38de726dd0a5c88b0a09d676cc0eba38b24cfd8e1b000fdd57f9821
 Description:  shadowsocks-rust sslocal
 
 Package: shadowsocks-rust-ssmanager
@@ -1846,8 +1846,8 @@ Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: x86_64
 Installed-Size: 7403520
 Filename: shadowsocks-rust-ssmanager_1.25.0-r1_x86_64.ipk
-Size: 3321154
-SHA256sum: 16f9539a862560701570165a9346b031e5641c385ab03e93fb784426baaf6619
+Size: 3321175
+SHA256sum: 4c6a6c5c5e95adae35e2f1d08f413ea41fca7c7a8ca540bca218880913c495d5
 Description:  shadowsocks-rust ssmanager
 
 Package: shadowsocks-rust-ssserver
@@ -1864,8 +1864,8 @@ Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: x86_64
 Installed-Size: 7280640
 Filename: shadowsocks-rust-ssserver_1.25.0-r1_x86_64.ipk
-Size: 3266566
-SHA256sum: 6b79e9b9501fe876ffeda9e2a2adbdfffd08bccdb42b790aa922a1ed2dfbc30a
+Size: 3266551
+SHA256sum: ec08eb4d64f8c0df6ccc56f97c25247fb924175345aa948bf6ca2a3613d231e7
 Description:  shadowsocks-rust ssserver
 
 Package: shadowsocks-rust-ssservice
@@ -1882,8 +1882,8 @@ Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: x86_64
 Installed-Size: 9543680
 Filename: shadowsocks-rust-ssservice_1.25.0-r1_x86_64.ipk
-Size: 4253815
-SHA256sum: 80816016c0f52e2b6ae1415c59f884619b020ffd97e230948cba95006e56bb01
+Size: 4253811
+SHA256sum: aab15202033c6ced3dc7064a4825dac95dbbe8c644fa411d24738b8ccfd31d30
 Description:  shadowsocks-rust ssservice
 
 Package: shadowsocks-rust-ssurl
