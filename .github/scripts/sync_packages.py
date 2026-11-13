@@ -9,8 +9,12 @@
 下载目录结构: <下载目录>/<架构>/*.ipk|*.apk
   (架构: x86_64 / aarch64_generic / aarch64_cortex-a53)
 
-去重规则: 按插件名 (name) 去重 —— 目标目录中若存在同名插件（任意版本），
-先删除旧文件再放入新文件，保证每个插件只保留最新版本。
+规则:
+1. 按插件名去重: 目标目录里同名的旧版本先删再放新的
+2. 镜像清理: 目标目录里存在、但本次 release 里根本没有的插件包一律删除
+   （历史上从别的源混进来的 dae / kcptun / ssr-plus 之类，以及早就没人编的旧包）
+   如果某个架构本次一个包都没下载到（release 缺失），则跳过该架构的清理，
+   避免把整条 feed 清空。
 """
 import os
 import shutil
@@ -69,6 +73,8 @@ def sync_kind(kind, dl_dir, repo_dir):
                 continue
             new_files.append((fn, parsed))
 
+        expected = {name for _fn, (name, _ver) in new_files}
+
         # 按插件名去重：删除目标目录中的同名旧文件
         for fn, (name, ver) in new_files:
             for existing in list(os.listdir(dst)):
@@ -90,6 +96,22 @@ def sync_kind(kind, dl_dir, repo_dir):
             shutil.copy2(srcf, dstf)
             print(f'  [新增] {arch}/{fn}  (v{ver})')
             changed += 1
+
+        # 镜像清理：本次 release 里没有的插件包，全部删掉
+        if not expected:
+            print(f'  !! {arch}: 本次没有下载到任何 {kind}，跳过清理')
+            continue
+        for existing in sorted(os.listdir(dst)):
+            if not existing.endswith(ext):
+                continue
+            ep = parse(existing)
+            if ep is None:
+                print(f'  [警告] 无法解析、保留: {arch}/{existing}')
+                continue
+            if ep[0] not in expected:
+                os.remove(os.path.join(dst, existing))
+                print(f'  [清理] {arch}/{existing}（本次 release 里没有这个插件）')
+                changed += 1
 
     return changed
 
