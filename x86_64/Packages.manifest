@@ -12,6 +12,20 @@ Architecture: x86_64
 Installed-Size: 16209920
 Description:  Use AirPlay to stream to UPnP/Sonos & Chromecast devices
 
+Package: airconnect
+Version: 1.12.4-r1
+Depends: libc
+Source: /feed/airconnect
+SourceName: airconnect
+License: MIT
+Section: multimedia
+SourceDateEpoch: 1790814303
+URL: https://github.com/philippe44/AirConnect
+Maintainer: sbwml <admin@cooluc.com>
+Architecture: x86_64
+Installed-Size: 16220160
+Description:  Use AirPlay to stream to UPnP/Sonos & Chromecast devices
+
 Package: autocore-x86
 Version: 1.0.1-r1
 Depends: libc, lm-sensors, ethtool, luci-base
@@ -35,6 +49,19 @@ SourceDateEpoch: 1785992673
 Maintainer: timsaya
 Architecture: x86_64
 Installed-Size: 6123520
+Description:  Bandix Plus core service for network traffic monitoring
+
+Package: bandix-plus
+Version: 0.1.3-r1
+Depends: libc, zoneinfo-all, conntrack, iw
+Source: /feed/bandix-plus
+SourceName: bandix-plus
+License: Apache-2.0
+Section: net
+SourceDateEpoch: 1793591124
+Maintainer: timsaya
+Architecture: x86_64
+Installed-Size: 6154240
 Description:  Bandix Plus core service for network traffic monitoring
 
 Package: chinadns-ng
@@ -120,6 +147,21 @@ Installed-Size: 40960
 Description:  This is a command line utility to resolve DNS requests via
  a SOCKS tunnel like Tor or a HTTP proxy.
 
+Package: dns2socks
+Version: 2.1-r3
+Depends: libc, libpthread
+Source: /feed/dns2socks
+SourceName: dns2socks
+License: BSD-3-Clause
+Section: net
+SourceDateEpoch: 1793591125
+URL: http://dns2socks.sourceforge.net/
+Maintainer: ghostmaker
+Architecture: x86_64
+Installed-Size: 40960
+Description:  This is a command line utility to resolve DNS requests via
+ a SOCKS tunnel like Tor or a HTTP proxy.
+
 Package: dns2tcp
 Version: 1.1.2-r1
 Depends: libc
@@ -135,6 +177,20 @@ Architecture: x86_64
 Installed-Size: 40960
 Description:  utility to convert dns query from udp to tcp
 
+Package: geo2txt
+Version: 1.0.0-r1
+Depends: libc
+Source: /feed/geo2txt
+SourceName: geo2txt
+License: GPL-3.0
+Section: utils
+SourceDateEpoch: 1788278767
+URL: https://github.com/sbwml/geo2txt
+Maintainer: sbwml <admin@cooluc.com>
+Architecture: x86_64
+Installed-Size: 20480
+Description:  V2ray geosite & geoip unpacking CLI tool
+
 Package: geoview
 Version: 0.2.6-r1
 Depends: libc
@@ -148,6 +204,21 @@ URL: https://github.com/snowie2000/geoview
 Maintainer: snowie2000
 Architecture: x86_64
 Installed-Size: 7700480
+Description:  geoview is a handy tool to extract useful information from geo* files.
+
+Package: geoview
+Version: 0.2.9-r1
+Depends: libc
+Source: /feed/geoview
+SourceName: geoview
+License: Apache-2.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1793591125
+URL: https://github.com/snowie2000/geoview
+Maintainer: snowie2000
+Architecture: x86_64
+Installed-Size: 8345600
 Description:  geoview is a handy tool to extract useful information from geo* files.
 
 Package: hysteria
@@ -167,14 +238,31 @@ Description:  Hysteria is a feature-packed network utility optimized for network
  connecting from China to servers abroad) powered by a custom version
  of QUIC protocol.
 
+Package: hysteria
+Version: 2.13.0-r1
+Depends: libc, ca-bundle
+Source: /feed/hysteria
+SourceName: hysteria
+License: MIT
+Section: net
+SourceDateEpoch: 1793591125
+URL: https://github.com/apernet/hysteria
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: x86_64
+Installed-Size: 24442880
+Description:  Hysteria is a feature-packed network utility optimized for networks
+ of poor quality (e.g. satellite connections, congested public Wi-Fi,
+ connecting from China to servers abroad) powered by a custom version
+ of QUIC protocol.
+
 Package: ipt2socks
 Version: 1.1.4-r3
 Depends: libc, libpthread
-Source: /feed/helloworld/ipt2socks
+Source: /feed/ipt2socks
 SourceName: ipt2socks
 License: AGPL-3.0
 Section: net
-SourceDateEpoch: 1741242626
+SourceDateEpoch: 1786303034
 URL: https://github.com/zfl9/ipt2socks
 Architecture: x86_64
 Installed-Size: 81920
@@ -242,13 +330,26 @@ Installed-Size: 20480
 Description:  This small Lua library provides a few functions to parse URL with
  querystring and build new URL easily.
 
+Package: luci-app-adguardhome
+Version: 1.1.1-r1
+Depends: libc, ca-certs, curl
+Source: /feed/luci-app-adguardhome
+SourceName: luci-app-adguardhome
+Section: luci
+SourceDateEpoch: 1787280734
+URL: https://github.com/openwrt/luci
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 317440
+Description:  LuCI support for AdGuardHome
+
 Package: luci-app-airconnect
 Version: 1.0.3-r1
 Depends: libc, airconnect
 Source: /feed/luci-app-airconnect
 SourceName: luci-app-airconnect
 Section: luci
-SourceDateEpoch: 1785861107
+SourceDateEpoch: 1786303035
 URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
@@ -256,40 +357,41 @@ Installed-Size: 20480
 Description:  LuCI support for AirConnect
 
 Package: luci-app-argon-config
-Version: 1.0-r20230608
+Version: 3.1.3-r20261106
 Depends: libc, luci-theme-argon
-Source: /feed/luci-app-argon-config
+Source: /feed/luci-theme-argon/compat/luci-app-argon-config
 SourceName: luci-app-argon-config
+License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1785938438
+SourceDateEpoch: 1794494438
 URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
-Installed-Size: 30720
-Description:  LuCI app for Argon theme configuration
+Installed-Size: 10240
+Description:  Argon configuration compatibility package
 
 Package: luci-app-aurora-config
-Version: 1.1.14-r20260806
+Version: 1.2.5-r20260920
 Depends: libc, luci-base
 Source: /feed/luci-app-aurora-config
 SourceName: luci-app-aurora-config
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1786020053
+SourceDateEpoch: 1790814303
 URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
-Installed-Size: 378880
+Installed-Size: 471040
 Description:  LuCI configuration UI for the Aurora theme
 
 Package: luci-app-bandix-plus
-Version: 0.1.3-r1
+Version: 0.1.3-r2
 Depends: libc, luci-base, luci-lib-jsonc, curl, bandix-plus
 Source: /feed/luci-app-bandix-plus
 SourceName: luci-app-bandix-plus
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1785990758
+SourceDateEpoch: 1793591125
 URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
@@ -338,17 +440,17 @@ Installed-Size: 81920
 Description:  Provides Web UI for Disk Manager
 
 Package: luci-app-homeproxy
-Version: 26.306.13525~a90ec10
-Depends: libc, sing-box, firewall4, kmod-nft-tproxy, ucode-mod-digest
+Version: 20261111-r1
+Depends: sing-box (>=1.15.0_alpha10), libc, luci-base, sing-box, firewall4, kmod-tun, kmod-nft-queue, curl, flock, unzip, ucode-mod-digest, ucode-mod-math
 Source: /feed/luci-app-homeproxy
 SourceName: luci-app-homeproxy
 Section: luci
-SourceDateEpoch: 1793591125
+SourceDateEpoch: 1794545162
 URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
-Installed-Size: 1853440
-Description:  The modern ImmortalWrt proxy platform for ARM64/AMD64
+Installed-Size: 8642560
+Description:  The modern ImmortalWRT proxy platform for ARM64/AMD64. Powered by Sing-Box/TUN/AI Edition
 
 Package: luci-app-kucat-config
 Version: 2.2.1-r20260312
@@ -362,6 +464,19 @@ Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 112640
 Description:  LuCI support for Kucat theme setting by sirpdboy
+
+Package: luci-app-mentohust
+Version: 1.0.2-r1
+Depends: libc, mentohust
+Source: /feed/luci-app-mentohust
+SourceName: luci-app-mentohust
+Section: luci
+SourceDateEpoch: 1786303036
+URL: https://github.com/openwrt/luci
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 20480
+Description:  LuCI support for MentoHUST
 
 Package: luci-app-momo
 Version: 1.2.1-r1
@@ -377,25 +492,25 @@ Installed-Size: 51200
 Description:  LuCI Support for momo
 
 Package: luci-app-mosdns
-Version: 1.7.5-r1
-Depends: libc, mosdns, curl, v2ray-geoip, v2ray-geosite, v2dat, ucode
+Version: 1.7.15-r1
+Depends: libc, mosdns, uclient-fetch, v2ray-geoip, v2ray-geosite, geo2txt, ucode
 Source: /feed/luci-app-mosdns
 SourceName: luci-app-mosdns
 Section: luci
-SourceDateEpoch: 1786933378
+SourceDateEpoch: 1793591125
 URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
-Installed-Size: 399360
+Installed-Size: 440320
 Description:  LuCI Support for mosdns
 
 Package: luci-app-nikki
-Version: 1.26.1-r1
+Version: 1.26.2-r1
 Depends: libc, luci-base, nikki
-Source: /feed/helloworld/luci-app-nikki
+Source: /feed/luci-app-nikki
 SourceName: luci-app-nikki
 Section: luci
-SourceDateEpoch: 1785837665
+SourceDateEpoch: 1794507921
 URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
@@ -403,15 +518,15 @@ Installed-Size: 61440
 Description:  LuCI Support for nikki
 
 Package: luci-app-openclash
-Version: 0.47.133
+Version: 0.48.002
 Depends: libc, dnsmasq-full, bash, curl, ca-bundle, ip-full, ruby, ruby-yaml, kmod-tun, unzip
-Source: package/luci-app-openclash
+Source: /feed/luci-app-openclash
 SourceName: luci-app-openclash
 Section: opt
-SourceDateEpoch: 1662173734
+SourceDateEpoch: 1793591125
 Maintainer: vernesong
 Architecture: all
-Installed-Size: 9192796
+Installed-Size: 23326720
 Description:  A LuCI support for clash
 
 Package: luci-app-openlist2
@@ -420,7 +535,7 @@ Depends: libc, openlist2
 Source: /feed/luci-app-openlist2
 SourceName: luci-app-openlist2
 Section: luci
-SourceDateEpoch: 1785948329
+SourceDateEpoch: 1786303038
 URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
@@ -428,29 +543,29 @@ Installed-Size: 30720
 Description:  LuCI support for openlist
 
 Package: luci-app-passwall2
-Version: 26.7.16-r1
+Version: 26.11.11-r1
 Depends: libc, coreutils, coreutils-base64, coreutils-nohup, coreutils-timeout, curl, ip-full, libuci-lua, lua, luci-compat, luci-lib-jsonc, lyaml, resolveip, tcping, geoview, v2ray-geoip, v2ray-geosite, unzip, luci-lua-runtime
-Source: /feed/helloworld/luci-app-passwall2
+Source: /feed/luci-app-passwall2
 SourceName: luci-app-passwall2
 Section: luci
-SourceDateEpoch: 1785826896
+SourceDateEpoch: 1794507921
 URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
-Installed-Size: 1382400
+Installed-Size: 1474560
 Description:  LuCI support for PassWall 2
 
 Package: luci-app-passwall
-Version: 26.8.12-r1
+Version: 26.11.11-r1
 Depends: libc, coreutils, coreutils-base64, coreutils-nohup, coreutils-timeout, curl, chinadns-ng, dns2socks, dnsmasq-full, ip-full, libuci-lua, lua, luci-compat, luci-lib-jsonc, microsocks, resolveip, tcping, lyaml, luci-lua-runtime
 Source: /feed/luci-app-passwall
 SourceName: luci-app-passwall
 Section: luci
-SourceDateEpoch: 1786846049
+SourceDateEpoch: 1794507921
 URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
-Installed-Size: 3164160
+Installed-Size: 3256320
 Description:  LuCI support for PassWall
 
 Package: luci-app-quickfile
@@ -473,12 +588,25 @@ Depends: libc
 Source: /feed/luci-app-ramfree
 SourceName: luci-app-ramfree
 Section: luci
-SourceDateEpoch: 1785948940
+SourceDateEpoch: 1786303041
 URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 10240
 Description:  LuCI support for ramfree
+
+Package: luci-app-socat
+Version: 1.1-r1
+Depends: libc, socat
+Source: /feed/luci-app-socat
+SourceName: luci-app-socat
+Section: luci
+SourceDateEpoch: 1787145377
+URL: https://github.com/openwrt/luci
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 20480
+Description:  LuCI support for Socat
 
 Package: luci-app-ssr-plus
 Version: 196-r7
@@ -493,312 +621,482 @@ Architecture: all
 Installed-Size: 2488320
 Description:  SS/SSR/V2Ray/Trojan/NaiveProxy/Tuic/ShadowTLS/Hysteria/Socks5/Clash LuCI interface
 
+Package: luci-app-vantage
+Version: 1.0.20-r1
+Depends: libc, luci-base, rpcd, rpcd-mod-iwinfo, rpcd-mod-ucode, ucode-mod-uci, ucode-mod-ubus, ucode-mod-fs, ucode-mod-rtnl, ucode-mod-nl80211
+Source: /feed/luci-theme-vantage/luci-app-vantage
+SourceName: luci-app-vantage
+License: GPL-3.0-or-later
+Section: luci
+SourceDateEpoch: 1794494438
+URL: https://github.com/anothaDev/luci-theme-vantage
+Maintainer: anothaDev <10740588+anothaDev@users.noreply.github.com>
+Architecture: all
+Installed-Size: 450560
+Description:  Live network dashboard (landing page under admin/dashboard): device, uplink, radios, SSIDs and stations with health and experience scores. Read-only except for station names and stations set not to warn about their signal, which are kept in /etc/config/vantage.
+
+Package: luci-i18n-adguardhome-zh-cn
+Version: 26.233.10334~eca331c
+Depends: libc, luci-app-adguardhome
+Source: /feed/luci-app-adguardhome
+SourceName: luci-app-adguardhome
+Section: luci
+SourceDateEpoch: 1787280734
+Maintainer: <https://github.com/sirpdboy/luci-app-adguardhome>
+Architecture: all
+Installed-Size: 20480
+Description:  Translation for luci-app-adguardhome - 简体中文 (Simplified Chinese)
+
 Package: luci-i18n-airconnect-zh-cn
-Version: 26.216.59507~71e1bd6
+Version: 26.221.69435~c3b64e2
 Depends: libc, luci-app-airconnect
 Source: /feed/luci-app-airconnect
 SourceName: luci-app-airconnect
 Section: luci
-SourceDateEpoch: 1785861107
+SourceDateEpoch: 1786303035
 Maintainer: sbwml <admin@cooluc.com>
 Architecture: all
 Installed-Size: 10240
 Description:  Translation for luci-app-airconnect - 简体中文 (Simplified Chinese)
 
-Package: luci-i18n-argon-config-es
-Version: 26.217.50438~639f3a1
-Depends: libc, luci-app-argon-config
-Source: /feed/luci-app-argon-config
-SourceName: luci-app-argon-config
+Package: luci-i18n-argon-config-ar
+Version: v3.1.3
+Depends: libc, luci-theme-argon
+Source: /feed/luci-theme-argon
+SourceName: luci-theme-argon
+License: Apache-2.0 MIT
 Section: luci
-SourceDateEpoch: 1785938438
-Maintainer: jerrykuku <jerrykuku@qq.com>
+SourceDateEpoch: 1794542025
 Architecture: all
-Installed-Size: 10240
-Description:  Translation for luci-app-argon-config - Español (Spanish)
+Installed-Size: 20480
+Description:  Translation for luci-theme-argon - العربية (Arabic)
+
+Package: luci-i18n-argon-config-de
+Version: v3.1.3
+Depends: libc, luci-theme-argon
+Source: /feed/luci-theme-argon
+SourceName: luci-theme-argon
+License: Apache-2.0 MIT
+Section: luci
+SourceDateEpoch: 1794542025
+Architecture: all
+Installed-Size: 20480
+Description:  Translation for luci-theme-argon - Deutsch (German)
+
+Package: luci-i18n-argon-config-es
+Version: v3.1.3
+Depends: libc, luci-theme-argon
+Source: /feed/luci-theme-argon
+SourceName: luci-theme-argon
+License: Apache-2.0 MIT
+Section: luci
+SourceDateEpoch: 1794542025
+Architecture: all
+Installed-Size: 20480
+Description:  Translation for luci-theme-argon - Español (Spanish)
+
+Package: luci-i18n-argon-config-fr
+Version: v3.1.3
+Depends: libc, luci-theme-argon
+Source: /feed/luci-theme-argon
+SourceName: luci-theme-argon
+License: Apache-2.0 MIT
+Section: luci
+SourceDateEpoch: 1794542025
+Architecture: all
+Installed-Size: 20480
+Description:  Translation for luci-theme-argon - Français (French)
+
+Package: luci-i18n-argon-config-it
+Version: v3.1.3
+Depends: libc, luci-theme-argon
+Source: /feed/luci-theme-argon
+SourceName: luci-theme-argon
+License: Apache-2.0 MIT
+Section: luci
+SourceDateEpoch: 1794542025
+Architecture: all
+Installed-Size: 20480
+Description:  Translation for luci-theme-argon - Italiano (Italian)
+
+Package: luci-i18n-argon-config-ja
+Version: v3.1.3
+Depends: libc, luci-theme-argon
+Source: /feed/luci-theme-argon
+SourceName: luci-theme-argon
+License: Apache-2.0 MIT
+Section: luci
+SourceDateEpoch: 1794542025
+Architecture: all
+Installed-Size: 20480
+Description:  Translation for luci-theme-argon - 日本語 (Japanese)
+
+Package: luci-i18n-argon-config-ko
+Version: v3.1.3
+Depends: libc, luci-theme-argon
+Source: /feed/luci-theme-argon
+SourceName: luci-theme-argon
+License: Apache-2.0 MIT
+Section: luci
+SourceDateEpoch: 1794542025
+Architecture: all
+Installed-Size: 20480
+Description:  Translation for luci-theme-argon - 한국어 (Korean)
+
+Package: luci-i18n-argon-config-nl
+Version: v3.1.3
+Depends: libc, luci-theme-argon
+Source: /feed/luci-theme-argon
+SourceName: luci-theme-argon
+License: Apache-2.0 MIT
+Section: luci
+SourceDateEpoch: 1794542025
+Architecture: all
+Installed-Size: 20480
+Description:  Translation for luci-theme-argon - Nederlands (Dutch)
+
+Package: luci-i18n-argon-config-pl
+Version: v3.1.3
+Depends: libc, luci-theme-argon
+Source: /feed/luci-theme-argon
+SourceName: luci-theme-argon
+License: Apache-2.0 MIT
+Section: luci
+SourceDateEpoch: 1794542025
+Architecture: all
+Installed-Size: 20480
+Description:  Translation for luci-theme-argon - Polski (Polish)
+
+Package: luci-i18n-argon-config-pt-br
+Version: v3.1.3
+Depends: libc, luci-theme-argon
+Source: /feed/luci-theme-argon
+SourceName: luci-theme-argon
+License: Apache-2.0 MIT
+Section: luci
+SourceDateEpoch: 1794542025
+Architecture: all
+Installed-Size: 20480
+Description:  Translation for luci-theme-argon - Português do Brasil (Brazilian Portuguese)
 
 Package: luci-i18n-argon-config-ru
-Version: 26.217.50438~639f3a1
-Depends: libc, luci-app-argon-config
-Source: /feed/luci-app-argon-config
-SourceName: luci-app-argon-config
+Version: v3.1.3
+Depends: libc, luci-theme-argon
+Source: /feed/luci-theme-argon
+SourceName: luci-theme-argon
+License: Apache-2.0 MIT
 Section: luci
-SourceDateEpoch: 1785938438
-Maintainer: jerrykuku <jerrykuku@qq.com>
+SourceDateEpoch: 1794542025
 Architecture: all
-Installed-Size: 10240
-Description:  Translation for luci-app-argon-config - Русский (Russian)
+Installed-Size: 20480
+Description:  Translation for luci-theme-argon - Русский (Russian)
+
+Package: luci-i18n-argon-config-tr
+Version: v3.1.3
+Depends: libc, luci-theme-argon
+Source: /feed/luci-theme-argon
+SourceName: luci-theme-argon
+License: Apache-2.0 MIT
+Section: luci
+SourceDateEpoch: 1794542025
+Architecture: all
+Installed-Size: 20480
+Description:  Translation for luci-theme-argon - Türkçe (Turkish)
+
+Package: luci-i18n-argon-config-uk
+Version: v3.1.3
+Depends: libc, luci-theme-argon
+Source: /feed/luci-theme-argon
+SourceName: luci-theme-argon
+License: Apache-2.0 MIT
+Section: luci
+SourceDateEpoch: 1794542025
+Architecture: all
+Installed-Size: 20480
+Description:  Translation for luci-theme-argon - Українська (Ukrainian)
+
+Package: luci-i18n-argon-config-vi
+Version: v3.1.3
+Depends: libc, luci-theme-argon
+Source: /feed/luci-theme-argon
+SourceName: luci-theme-argon
+License: Apache-2.0 MIT
+Section: luci
+SourceDateEpoch: 1794542025
+Architecture: all
+Installed-Size: 20480
+Description:  Translation for luci-theme-argon - Tiếng Việt (Vietnamese)
 
 Package: luci-i18n-argon-config-zh-cn
-Version: 26.217.50438~639f3a1
-Depends: libc, luci-app-argon-config
-Source: /feed/luci-app-argon-config
-SourceName: luci-app-argon-config
+Version: v3.1.3
+Depends: libc, luci-theme-argon
+Source: /feed/luci-theme-argon
+SourceName: luci-theme-argon
+License: Apache-2.0 MIT
 Section: luci
-SourceDateEpoch: 1785938438
-Maintainer: jerrykuku <jerrykuku@qq.com>
+SourceDateEpoch: 1794542025
 Architecture: all
-Installed-Size: 10240
-Description:  Translation for luci-app-argon-config - 简体中文 (Chinese Simplified)
+Installed-Size: 20480
+Description:  Translation for luci-theme-argon - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-argon-config-zh-tw
-Version: 26.217.50438~639f3a1
-Depends: libc, luci-app-argon-config
-Source: /feed/luci-app-argon-config
-SourceName: luci-app-argon-config
+Version: v3.1.3
+Depends: libc, luci-theme-argon
+Source: /feed/luci-theme-argon
+SourceName: luci-theme-argon
+License: Apache-2.0 MIT
 Section: luci
-SourceDateEpoch: 1785938438
-Maintainer: jerrykuku <jerrykuku@qq.com>
+SourceDateEpoch: 1794542025
 Architecture: all
-Installed-Size: 10240
-Description:  Translation for luci-app-argon-config - 繁體中文 (Chinese Traditional)
+Installed-Size: 20480
+Description:  Translation for luci-theme-argon - 正體中文 (Traditional Chinese)
 
 Package: luci-i18n-aurora-config-de
-Version: 26.218.30578~bbcc773
+Version: 26.274.01503~2845498
 Depends: libc, luci-app-aurora-config
 Source: /feed/luci-app-aurora-config
 SourceName: luci-app-aurora-config
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1786004978
+SourceDateEpoch: 1790814303
 Architecture: all
-Installed-Size: 30720
+Installed-Size: 40960
 Description:  Translation for luci-app-aurora-config - Deutsch (German)
 
 Package: luci-i18n-aurora-config-es
-Version: 26.218.30578~bbcc773
+Version: 26.274.01503~2845498
 Depends: libc, luci-app-aurora-config
 Source: /feed/luci-app-aurora-config
 SourceName: luci-app-aurora-config
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1786004978
+SourceDateEpoch: 1790814303
 Architecture: all
-Installed-Size: 30720
+Installed-Size: 40960
 Description:  Translation for luci-app-aurora-config - Español (Spanish)
 
 Package: luci-i18n-aurora-config-fr
-Version: 26.218.30578~bbcc773
+Version: 26.274.01503~2845498
 Depends: libc, luci-app-aurora-config
 Source: /feed/luci-app-aurora-config
 SourceName: luci-app-aurora-config
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1786004978
+SourceDateEpoch: 1790814303
 Architecture: all
 Installed-Size: 40960
 Description:  Translation for luci-app-aurora-config - Français (French)
 
 Package: luci-i18n-aurora-config-it
-Version: 26.218.30578~bbcc773
+Version: 26.274.01503~2845498
 Depends: libc, luci-app-aurora-config
 Source: /feed/luci-app-aurora-config
 SourceName: luci-app-aurora-config
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1786004978
+SourceDateEpoch: 1790814303
 Architecture: all
-Installed-Size: 30720
+Installed-Size: 40960
 Description:  Translation for luci-app-aurora-config - Italiano (Italian)
 
 Package: luci-i18n-aurora-config-ja
-Version: 26.218.30578~bbcc773
+Version: 26.274.01503~2845498
 Depends: libc, luci-app-aurora-config
 Source: /feed/luci-app-aurora-config
 SourceName: luci-app-aurora-config
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1786004978
+SourceDateEpoch: 1790814303
 Architecture: all
-Installed-Size: 40960
+Installed-Size: 51200
 Description:  Translation for luci-app-aurora-config - 日本語 (Japanese)
 
 Package: luci-i18n-aurora-config-ko
-Version: 26.218.30578~bbcc773
+Version: 26.274.01503~2845498
 Depends: libc, luci-app-aurora-config
 Source: /feed/luci-app-aurora-config
 SourceName: luci-app-aurora-config
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1786004978
+SourceDateEpoch: 1790814303
 Architecture: all
 Installed-Size: 40960
 Description:  Translation for luci-app-aurora-config - 한국어 (Korean)
 
 Package: luci-i18n-aurora-config-nl
-Version: 26.218.30578~bbcc773
+Version: 26.274.01503~2845498
 Depends: libc, luci-app-aurora-config
 Source: /feed/luci-app-aurora-config
 SourceName: luci-app-aurora-config
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1786004978
+SourceDateEpoch: 1790814303
 Architecture: all
-Installed-Size: 30720
+Installed-Size: 40960
 Description:  Translation for luci-app-aurora-config - Nederlands (Dutch)
 
 Package: luci-i18n-aurora-config-pl
-Version: 26.218.30578~bbcc773
+Version: 26.274.01503~2845498
 Depends: libc, luci-app-aurora-config
 Source: /feed/luci-app-aurora-config
 SourceName: luci-app-aurora-config
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1786004978
+SourceDateEpoch: 1790814303
 Architecture: all
-Installed-Size: 30720
+Installed-Size: 40960
 Description:  Translation for luci-app-aurora-config - Polski (Polish)
 
 Package: luci-i18n-aurora-config-ru
-Version: 26.218.30578~bbcc773
+Version: 26.274.01503~2845498
 Depends: libc, luci-app-aurora-config
 Source: /feed/luci-app-aurora-config
 SourceName: luci-app-aurora-config
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1786004978
+SourceDateEpoch: 1790814303
 Architecture: all
 Installed-Size: 51200
 Description:  Translation for luci-app-aurora-config - Русский (Russian)
 
 Package: luci-i18n-aurora-config-tr
-Version: 26.218.30578~bbcc773
+Version: 26.274.01503~2845498
 Depends: libc, luci-app-aurora-config
 Source: /feed/luci-app-aurora-config
 SourceName: luci-app-aurora-config
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1786004978
+SourceDateEpoch: 1790814303
 Architecture: all
-Installed-Size: 30720
+Installed-Size: 40960
 Description:  Translation for luci-app-aurora-config - Türkçe (Turkish)
 
 Package: luci-i18n-aurora-config-uk
-Version: 26.218.30578~bbcc773
+Version: 26.274.01503~2845498
 Depends: libc, luci-app-aurora-config
 Source: /feed/luci-app-aurora-config
 SourceName: luci-app-aurora-config
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1786004978
+SourceDateEpoch: 1790814303
 Architecture: all
 Installed-Size: 51200
 Description:  Translation for luci-app-aurora-config - Українська (Ukrainian)
 
 Package: luci-i18n-aurora-config-zh-cn
-Version: 26.218.30578~bbcc773
+Version: 26.274.01503~2845498
 Depends: libc, luci-app-aurora-config
 Source: /feed/luci-app-aurora-config
 SourceName: luci-app-aurora-config
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1786004978
+SourceDateEpoch: 1790814303
 Architecture: all
-Installed-Size: 30720
-Description:  Translation for luci-app-aurora-config - 简体中文 (Chinese Simplified)
+Installed-Size: 40960
+Description:  Translation for luci-app-aurora-config - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-aurora-config-zh-tw
-Version: 26.218.30578~bbcc773
+Version: 26.274.01503~2845498
 Depends: libc, luci-app-aurora-config
 Source: /feed/luci-app-aurora-config
 SourceName: luci-app-aurora-config
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1786004978
+SourceDateEpoch: 1790814303
 Architecture: all
-Installed-Size: 30720
-Description:  Translation for luci-app-aurora-config - 繁體中文 (Chinese Traditional)
+Installed-Size: 40960
+Description:  Translation for luci-app-aurora-config - 正體中文 (Traditional Chinese)
 
 Package: luci-i18n-bandix-plus-es
-Version: 26.218.16358~9da3267
+Version: 26.274.01503~12a00e4
 Depends: libc, luci-app-bandix-plus
 Source: /feed/luci-app-bandix-plus
 SourceName: luci-app-bandix-plus
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1785990758
+SourceDateEpoch: 1793591125
 Maintainer: timsaya
 Architecture: all
 Installed-Size: 20480
 Description:  Translation for luci-app-bandix-plus - Español (Spanish)
 
 Package: luci-i18n-bandix-plus-fr
-Version: 26.218.16358~9da3267
+Version: 26.274.01503~12a00e4
 Depends: libc, luci-app-bandix-plus
 Source: /feed/luci-app-bandix-plus
 SourceName: luci-app-bandix-plus
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1785990758
+SourceDateEpoch: 1793591125
 Maintainer: timsaya
 Architecture: all
 Installed-Size: 20480
 Description:  Translation for luci-app-bandix-plus - Français (French)
 
 Package: luci-i18n-bandix-plus-ja
-Version: 26.218.16358~9da3267
+Version: 26.274.01503~12a00e4
 Depends: libc, luci-app-bandix-plus
 Source: /feed/luci-app-bandix-plus
 SourceName: luci-app-bandix-plus
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1785990758
+SourceDateEpoch: 1793591125
 Maintainer: timsaya
 Architecture: all
 Installed-Size: 20480
 Description:  Translation for luci-app-bandix-plus - 日本語 (Japanese)
 
 Package: luci-i18n-bandix-plus-pl
-Version: 26.218.16358~9da3267
+Version: 26.274.01503~12a00e4
 Depends: libc, luci-app-bandix-plus
 Source: /feed/luci-app-bandix-plus
 SourceName: luci-app-bandix-plus
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1785990758
+SourceDateEpoch: 1793591125
 Maintainer: timsaya
 Architecture: all
 Installed-Size: 20480
 Description:  Translation for luci-app-bandix-plus - Polski (Polish)
 
 Package: luci-i18n-bandix-plus-ru
-Version: 26.218.16358~9da3267
+Version: 26.274.01503~12a00e4
 Depends: libc, luci-app-bandix-plus
 Source: /feed/luci-app-bandix-plus
 SourceName: luci-app-bandix-plus
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1785990758
+SourceDateEpoch: 1793591125
 Maintainer: timsaya
 Architecture: all
 Installed-Size: 30720
 Description:  Translation for luci-app-bandix-plus - Русский (Russian)
 
 Package: luci-i18n-bandix-plus-zh-cn
-Version: 26.218.16358~9da3267
+Version: 26.274.01503~12a00e4
 Depends: libc, luci-app-bandix-plus
 Source: /feed/luci-app-bandix-plus
 SourceName: luci-app-bandix-plus
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1785990758
+SourceDateEpoch: 1793591125
 Maintainer: timsaya
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-app-bandix-plus - 简体中文 (Chinese Simplified)
+Description:  Translation for luci-app-bandix-plus - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-bandix-plus-zh-tw
-Version: 26.218.16358~9da3267
+Version: 26.274.01503~12a00e4
 Depends: libc, luci-app-bandix-plus
 Source: /feed/luci-app-bandix-plus
 SourceName: luci-app-bandix-plus
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1785990758
+SourceDateEpoch: 1793591125
 Maintainer: timsaya
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-app-bandix-plus - 繁體中文 (Chinese Traditional)
+Description:  Translation for luci-app-bandix-plus - 正體中文 (Traditional Chinese)
 
 Package: luci-i18n-dae-zh-cn
 Version: 26.074.18101~3304670
@@ -825,195 +1123,207 @@ Installed-Size: 10240
 Description:  Translation for luci-app-daed - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-diskman-zh-cn
-Version: 26.218.45653~8761094
+Version: 26.221.69435~380b92e
 Depends: libc, luci-app-diskman
 Source: /feed/luci-app-diskman
 SourceName: luci-app-diskman
 License: GPL-3.0-or-later
 Section: luci
-SourceDateEpoch: 1786020053
+SourceDateEpoch: 1786303035
 Maintainer: sbwml <admin@cooluc.com>
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-app-diskman - 简体中文 (Chinese Simplified)
+Description:  Translation for luci-app-diskman - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-fluent-de
-Version: 26.230.07832~d6fd5a9
+Version: 26.274.01504~41a9ab8
 Depends: libc, luci-theme-fluent
 Source: /feed/luci-theme-fluent/package/luci-theme-fluent
 SourceName: luci-theme-fluent
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1787019032
+SourceDateEpoch: 1794494438
 Architecture: all
 Installed-Size: 20480
 Description:  Translation for luci-theme-fluent - Deutsch (German)
 
 Package: luci-i18n-fluent-es
-Version: 26.230.07832~d6fd5a9
+Version: 26.274.01504~41a9ab8
 Depends: libc, luci-theme-fluent
 Source: /feed/luci-theme-fluent/package/luci-theme-fluent
 SourceName: luci-theme-fluent
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1787019032
+SourceDateEpoch: 1794494438
 Architecture: all
 Installed-Size: 20480
 Description:  Translation for luci-theme-fluent - Español (Spanish)
 
 Package: luci-i18n-fluent-fa
-Version: 26.230.07832~d6fd5a9
+Version: 26.274.01504~41a9ab8
 Depends: libc, luci-theme-fluent
 Source: /feed/luci-theme-fluent/package/luci-theme-fluent
 SourceName: luci-theme-fluent
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1787019032
+SourceDateEpoch: 1794494438
 Architecture: all
 Installed-Size: 30720
 Description:  Translation for luci-theme-fluent - Farsi (Persian)
 
 Package: luci-i18n-fluent-fr
-Version: 26.230.07832~d6fd5a9
+Version: 26.274.01504~41a9ab8
 Depends: libc, luci-theme-fluent
 Source: /feed/luci-theme-fluent/package/luci-theme-fluent
 SourceName: luci-theme-fluent
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1787019032
+SourceDateEpoch: 1794494438
 Architecture: all
 Installed-Size: 20480
 Description:  Translation for luci-theme-fluent - Français (French)
 
 Package: luci-i18n-fluent-it
-Version: 26.230.07832~d6fd5a9
+Version: 26.274.01504~41a9ab8
 Depends: libc, luci-theme-fluent
 Source: /feed/luci-theme-fluent/package/luci-theme-fluent
 SourceName: luci-theme-fluent
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1787019032
+SourceDateEpoch: 1794494438
 Architecture: all
 Installed-Size: 20480
 Description:  Translation for luci-theme-fluent - Italiano (Italian)
 
 Package: luci-i18n-fluent-ja
-Version: 26.230.07832~d6fd5a9
+Version: 26.274.01504~41a9ab8
 Depends: libc, luci-theme-fluent
 Source: /feed/luci-theme-fluent/package/luci-theme-fluent
 SourceName: luci-theme-fluent
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1787019032
+SourceDateEpoch: 1794494438
 Architecture: all
 Installed-Size: 30720
 Description:  Translation for luci-theme-fluent - 日本語 (Japanese)
 
 Package: luci-i18n-fluent-ko
-Version: 26.230.07832~d6fd5a9
+Version: 26.274.01504~41a9ab8
 Depends: libc, luci-theme-fluent
 Source: /feed/luci-theme-fluent/package/luci-theme-fluent
 SourceName: luci-theme-fluent
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1787019032
+SourceDateEpoch: 1794494438
 Architecture: all
 Installed-Size: 20480
 Description:  Translation for luci-theme-fluent - 한국어 (Korean)
 
 Package: luci-i18n-fluent-pl
-Version: 26.230.07832~d6fd5a9
+Version: 26.274.01504~41a9ab8
 Depends: libc, luci-theme-fluent
 Source: /feed/luci-theme-fluent/package/luci-theme-fluent
 SourceName: luci-theme-fluent
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1787019032
+SourceDateEpoch: 1794494438
 Architecture: all
 Installed-Size: 20480
 Description:  Translation for luci-theme-fluent - Polski (Polish)
 
 Package: luci-i18n-fluent-ru
-Version: 26.230.07832~d6fd5a9
+Version: 26.274.01504~41a9ab8
 Depends: libc, luci-theme-fluent
 Source: /feed/luci-theme-fluent/package/luci-theme-fluent
 SourceName: luci-theme-fluent
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1787019032
+SourceDateEpoch: 1794494438
 Architecture: all
 Installed-Size: 30720
 Description:  Translation for luci-theme-fluent - Русский (Russian)
 
 Package: luci-i18n-fluent-tr
-Version: 26.230.07832~d6fd5a9
+Version: 26.274.01504~41a9ab8
 Depends: libc, luci-theme-fluent
 Source: /feed/luci-theme-fluent/package/luci-theme-fluent
 SourceName: luci-theme-fluent
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1787019032
+SourceDateEpoch: 1794494438
 Architecture: all
 Installed-Size: 20480
 Description:  Translation for luci-theme-fluent - Türkçe (Turkish)
 
 Package: luci-i18n-fluent-uk
-Version: 26.230.07832~d6fd5a9
+Version: 26.274.01504~41a9ab8
 Depends: libc, luci-theme-fluent
 Source: /feed/luci-theme-fluent/package/luci-theme-fluent
 SourceName: luci-theme-fluent
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1787019032
+SourceDateEpoch: 1794494438
 Architecture: all
 Installed-Size: 30720
 Description:  Translation for luci-theme-fluent - Українська (Ukrainian)
 
 Package: luci-i18n-fluent-vi
-Version: 26.230.07832~d6fd5a9
+Version: 26.274.01504~41a9ab8
 Depends: libc, luci-theme-fluent
 Source: /feed/luci-theme-fluent/package/luci-theme-fluent
 SourceName: luci-theme-fluent
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1787019032
+SourceDateEpoch: 1794494438
 Architecture: all
-Installed-Size: 20480
+Installed-Size: 30720
 Description:  Translation for luci-theme-fluent - Tiếng Việt (Vietnamese)
 
 Package: luci-i18n-fluent-zh-cn
-Version: 26.230.07832~d6fd5a9
+Version: 26.274.01504~41a9ab8
 Depends: libc, luci-theme-fluent
 Source: /feed/luci-theme-fluent/package/luci-theme-fluent
 SourceName: luci-theme-fluent
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1787019032
+SourceDateEpoch: 1794494438
 Architecture: all
 Installed-Size: 20480
 Description:  Translation for luci-theme-fluent - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-fluent-zh-tw
-Version: 26.230.07832~d6fd5a9
+Version: 26.274.01504~41a9ab8
 Depends: libc, luci-theme-fluent
 Source: /feed/luci-theme-fluent/package/luci-theme-fluent
 SourceName: luci-theme-fluent
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1787019032
+SourceDateEpoch: 1794494438
 Architecture: all
 Installed-Size: 20480
 Description:  Translation for luci-theme-fluent - 正體中文 (Traditional Chinese)
 
+Package: luci-i18n-fluentdashboard-zh-cn
+Version: 26.236.32313~ed06501
+Depends: libc, luci-mod-fluentdashboard
+Source: /feed/luci-theme-fluent/package/luci-mod-fluentdashboard
+SourceName: luci-mod-fluentdashboard
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1794494438
+Architecture: all
+Installed-Size: 10240
+Description:  Translation for luci-mod-fluentdashboard - 简体中文 (Simplified Chinese)
+
 Package: luci-i18n-homeproxy-zh-cn
-Version: 26.306.13525~a90ec10
+Version: 20261111-r1
 Depends: libc, luci-app-homeproxy
 Source: /feed/luci-app-homeproxy
 SourceName: luci-app-homeproxy
 Section: luci
-SourceDateEpoch: 1793591125
+SourceDateEpoch: 1794545162
 Architecture: all
-Installed-Size: 40960
+Installed-Size: 30720
 Description:  Translation for luci-app-homeproxy - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-kucat-config-zh-cn
@@ -1028,6 +1338,18 @@ Architecture: all
 Installed-Size: 20480
 Description:  Translation for luci-app-kucat-config - 简体中文 (Chinese Simplified)
 
+Package: luci-i18n-mentohust-zh-cn
+Version: 26.221.69436~309c56f
+Depends: libc, luci-app-mentohust
+Source: /feed/luci-app-mentohust
+SourceName: luci-app-mentohust
+Section: luci
+SourceDateEpoch: 1786303036
+Maintainer: sbwml <admin@cooluc.com>
+Architecture: all
+Installed-Size: 10240
+Description:  Translation for luci-app-mentohust - 简体中文 (Simplified Chinese)
+
 Package: luci-i18n-momo-zh-cn
 Version: 26.154.54079~3cbcf4b
 Depends: libc, luci-app-momo
@@ -1040,114 +1362,114 @@ Installed-Size: 20480
 Description:  Translation for luci-app-momo - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-mosdns-zh-cn
-Version: 26.221.69436~5d579a0
+Version: 26.274.01503~0214433
 Depends: libc, luci-app-mosdns
 Source: /feed/luci-app-mosdns
 SourceName: luci-app-mosdns
 Section: luci
-SourceDateEpoch: 1786933378
+SourceDateEpoch: 1793591125
 Maintainer: sbwml <admin@cooluc.com>
 Architecture: all
 Installed-Size: 20480
 Description:  Translation for luci-app-mosdns - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-nikki-ru
-Version: 26.161.57678~7ea66de
+Version: 26.316.66321~5e3e206
 Depends: libc, luci-app-nikki
-Source: /feed/helloworld/luci-app-nikki
+Source: /feed/luci-app-nikki
 SourceName: luci-app-nikki
 Section: luci
-SourceDateEpoch: 1785837665
+SourceDateEpoch: 1794507921
 Architecture: all
 Installed-Size: 20480
 Description:  Translation for luci-app-nikki - Русский (Russian)
 
 Package: luci-i18n-nikki-zh-cn
-Version: 26.161.57678~7ea66de
+Version: 26.316.66321~5e3e206
 Depends: libc, luci-app-nikki
-Source: /feed/helloworld/luci-app-nikki
+Source: /feed/luci-app-nikki
 SourceName: luci-app-nikki
 Section: luci
-SourceDateEpoch: 1785837665
+SourceDateEpoch: 1794507921
 Architecture: all
 Installed-Size: 20480
 Description:  Translation for luci-app-nikki - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-nikki-zh-tw
-Version: 26.161.57678~7ea66de
+Version: 26.316.66321~5e3e206
 Depends: libc, luci-app-nikki
-Source: /feed/helloworld/luci-app-nikki
+Source: /feed/luci-app-nikki
 SourceName: luci-app-nikki
 Section: luci
-SourceDateEpoch: 1785837665
+SourceDateEpoch: 1794507921
 Architecture: all
 Installed-Size: 20480
 Description:  Translation for luci-app-nikki - 正體中文 (Traditional Chinese)
 
 Package: luci-i18n-openlist2-zh-cn
-Version: 26.217.60329~629eced
+Version: 26.221.69438~547a921
 Depends: libc, luci-app-openlist2
 Source: /feed/luci-app-openlist2
 SourceName: luci-app-openlist2
 Section: luci
-SourceDateEpoch: 1785948329
+SourceDateEpoch: 1786303038
 Architecture: all
 Installed-Size: 20480
-Description:  Translation for luci-app-openlist2 - 简体中文 (Chinese Simplified)
+Description:  Translation for luci-app-openlist2 - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-passwall-zh-cn
-Version: 26.8.12
+Version: 26.11.11
 Depends: libc, luci-app-passwall
 Source: /feed/luci-app-passwall
 SourceName: luci-app-passwall
 Section: luci
-SourceDateEpoch: 1786846049
+SourceDateEpoch: 1794507921
 Architecture: all
 Installed-Size: 51200
 Description:  Translation for luci-app-passwall - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-passwall2-fa
-Version: 26.7.16
+Version: 26.11.11
 Depends: libc, luci-app-passwall2
-Source: /feed/helloworld/luci-app-passwall2
+Source: /feed/luci-app-passwall2
 SourceName: luci-app-passwall2
 Section: luci
-SourceDateEpoch: 1785826896
+SourceDateEpoch: 1794507921
 Architecture: all
 Installed-Size: 81920
 Description:  Translation for luci-app-passwall2 - Farsi (Persian)
 
 Package: luci-i18n-passwall2-ru
-Version: 26.7.16
+Version: 26.11.11
 Depends: libc, luci-app-passwall2
-Source: /feed/helloworld/luci-app-passwall2
+Source: /feed/luci-app-passwall2
 SourceName: luci-app-passwall2
 Section: luci
-SourceDateEpoch: 1785826896
+SourceDateEpoch: 1794507921
 Architecture: all
-Installed-Size: 81920
+Installed-Size: 92160
 Description:  Translation for luci-app-passwall2 - Русский (Russian)
 
 Package: luci-i18n-passwall2-zh-cn
-Version: 26.7.16
+Version: 26.11.11
 Depends: libc, luci-app-passwall2
-Source: /feed/helloworld/luci-app-passwall2
+Source: /feed/luci-app-passwall2
 SourceName: luci-app-passwall2
 Section: luci
-SourceDateEpoch: 1785826896
+SourceDateEpoch: 1794507921
 Architecture: all
-Installed-Size: 51200
+Installed-Size: 61440
 Description:  Translation for luci-app-passwall2 - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-passwall2-zh-tw
-Version: 26.7.16
+Version: 26.11.11
 Depends: libc, luci-app-passwall2
-Source: /feed/helloworld/luci-app-passwall2
+Source: /feed/luci-app-passwall2
 SourceName: luci-app-passwall2
 Section: luci
-SourceDateEpoch: 1785826896
+SourceDateEpoch: 1794507921
 Architecture: all
-Installed-Size: 51200
+Installed-Size: 61440
 Description:  Translation for luci-app-passwall2 - 正體中文 (Traditional Chinese)
 
 Package: luci-i18n-quickfile-zh-cn
@@ -1164,15 +1486,27 @@ Installed-Size: 10240
 Description:  Translation for luci-app-quickfile - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-ramfree-zh-cn
-Version: 26.217.60940~fef2dc6
+Version: 26.221.69441~ed91d50
 Depends: libc, luci-app-ramfree
 Source: /feed/luci-app-ramfree
 SourceName: luci-app-ramfree
 Section: luci
-SourceDateEpoch: 1785948940
+SourceDateEpoch: 1786303041
 Architecture: all
 Installed-Size: 10240
-Description:  Translation for luci-app-ramfree - 简体中文 (Chinese Simplified)
+Description:  Translation for luci-app-ramfree - 简体中文 (Simplified Chinese)
+
+Package: luci-i18n-socat-zh-cn
+Version: 26.231.47777~b66202b
+Depends: libc, luci-app-socat
+Source: /feed/luci-app-socat
+SourceName: luci-app-socat
+Section: luci
+SourceDateEpoch: 1787145377
+Maintainer: Lienol <lawlienol@gmail.com> sbwml <admin@cooluc.com>
+Architecture: all
+Installed-Size: 10240
+Description:  Translation for luci-app-socat - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-ssr-plus-zh-cn
 Version: 26.199.57699~2e3d359
@@ -1184,6 +1518,30 @@ SourceDateEpoch: 1785603692
 Architecture: all
 Installed-Size: 40960
 Description:  Translation for luci-app-ssr-plus - 简体中文 (Simplified Chinese)
+
+Package: luci-i18n-vantage-theme-zh-cn
+Version: 1.0.20-r1
+Depends: libc, luci-theme-vantage
+Source: /feed/luci-theme-vantage/luci-theme-vantage
+SourceName: luci-theme-vantage
+License: GPL-3.0-or-later
+Section: luci
+SourceDateEpoch: 1794494438
+Architecture: all
+Installed-Size: 20480
+Description:  Translation for luci-theme-vantage - 简体中文 (Simplified Chinese)
+
+Package: luci-i18n-vantage-zh-cn
+Version: 1.0.20-r1
+Depends: libc, luci-app-vantage
+Source: /feed/luci-theme-vantage/luci-app-vantage
+SourceName: luci-app-vantage
+License: GPL-3.0-or-later
+Section: luci
+SourceDateEpoch: 1794494438
+Architecture: all
+Installed-Size: 30720
+Description:  Translation for luci-app-vantage - 简体中文 (Simplified Chinese)
 
 Package: luci-lua-runtime
 Version: 24.315.52043~d650688
@@ -1199,59 +1557,88 @@ Architecture: all
 Installed-Size: 10240
 Description:  LuCI Lua runtime libraries
 
+Package: luci-mod-fluentdashboard
+Version: 1.0.9-r5
+Depends: libc, luci-base, libiwinfo20230701, rpcd-mod-ucode, ucode-mod-fs, ucode-mod-uci
+Source: /feed/luci-theme-fluent/package/luci-mod-fluentdashboard
+SourceName: luci-mod-fluentdashboard
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1794494438
+URL: https://github.com/openwrt/luci
+Maintainer: LazuliKao
+Architecture: all
+Installed-Size: 430080
+Description:  A theme-independent configurable dashboard workbench with shared layouts and live system, network, wireless and client widgets.
+
 Package: luci-theme-argon
-Version: 2.4.6-r20260731
-Depends: libc, wget, jsonfilter
+Version: 3.1.3-r20261106
+Depends: libc, luci-base, wget-ssl, ca-bundle, jsonfilter, ucode-mod-math, flock, coreutils, coreutils-timeout
 Source: /feed/luci-theme-argon
 SourceName: luci-theme-argon
+License: Apache-2.0 MIT
 Section: luci
-SourceDateEpoch: 1785938438
+SourceDateEpoch: 1794542025
 URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
-Installed-Size: 4372480
+Installed-Size: 4567040
 Description:  Argon Theme
 
 Package: luci-theme-aurora
-Version: 1.1.13-r20260802
+Version: 1.4.3-r20261104
 Depends: libc, luci-base
 Source: /feed/luci-theme-aurora
 SourceName: luci-theme-aurora
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1785938438
+SourceDateEpoch: 1794494438
 URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
-Installed-Size: 450560
+Installed-Size: 471040
 Description:  Aurora Theme (A modern browser theme built with Vite and Tailwind CSS)
 
 Package: luci-theme-design
-Version: 7.1-r20260801
+Version: 7.1-r20261109
 Depends: libc
 Source: /feed/luci-theme-design
 SourceName: luci-theme-design
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1785976352
+SourceDateEpoch: 1794494438
 URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
-Installed-Size: 624640
+Installed-Size: 645120
 Description:  Design Theme
+
+Package: luci-theme-fluent-lite
+Version: 1.0.9-r1
+Depends: libc, luci-base
+Source: /feed/luci-theme-fluent/package/luci-theme-fluent-lite
+SourceName: luci-theme-fluent-lite
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1790814304
+URL: https://github.com/openwrt/luci
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 870400
+Description:  Core FluentUI theme styling for LuCI without optional menu, updater, log, and application enhancements.
 
 Package: luci-theme-fluent
 Version: 1.0.9-r1
-Depends: libc, luci-base
+Depends: libc, luci-base, flock
 Source: /feed/luci-theme-fluent/package/luci-theme-fluent
 SourceName: luci-theme-fluent
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1787019032
+SourceDateEpoch: 1794494438
 URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
-Installed-Size: 962560
+Installed-Size: 972800
 Description:  Fluent Theme for LuCI
 
 Package: luci-theme-kucat
@@ -1268,18 +1655,45 @@ Installed-Size: 1228800
 Description:  Kucat Theme by sirpdboy
 
 Package: luci-theme-shadcn
-Version: 0.3.13-r20260802
+Version: 0.6.3-r20261104
 Depends: libc, luci-base
 Source: /feed/luci-theme-shadcn
 SourceName: luci-theme-shadcn
 License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1785938438
+SourceDateEpoch: 1794494438
 URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
-Installed-Size: 778240
+Installed-Size: 768000
 Description:  A modern sidebar LuCI theme for OpenWrt, built with shadcn/ui design language.
+
+Package: luci-theme-vantage
+Version: 1.0.20-r1
+Depends: libc, luci-base
+Source: /feed/luci-theme-vantage/luci-theme-vantage
+SourceName: luci-theme-vantage
+License: GPL-3.0-or-later
+Section: luci
+SourceDateEpoch: 1794494438
+URL: https://github.com/anothaDev/luci-theme-vantage
+Maintainer: anothaDev <10740588+anothaDev@users.noreply.github.com>
+Architecture: all
+Installed-Size: 430080
+Description:  A console-style LuCI theme: icon rail with flyouts, breadcrumb, page tabs, Ctrl+K command palette, light and dark modes.
+
+Package: mentohust
+Version: 0.3.1-r2
+Depends: libc, libpcap1
+Source: /feed/mentohust
+SourceName: mentohust
+Section: net
+SourceDateEpoch: 1786303049
+URL: https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk.git
+Architecture: x86_64
+Installed-Size: 122880
+Description:  A Ruijie Client Daemon,
+ Most usually used in Chinese universities.
 
 Package: microsocks
 Version: 1.0.5-r1
@@ -1305,7 +1719,7 @@ SourceName: microsocks
 License: MIT
 LicenseFiles: COPYING
 Section: net
-SourceDateEpoch: 1786303049
+SourceDateEpoch: 1793591125
 URL: https://github.com/rofl0r/microsocks
 Maintainer: lean
 Architecture: x86_64
@@ -1348,6 +1762,23 @@ Architecture: x86_64
 Installed-Size: 48240640
 Description:  A rule based proxy in Go.
 
+Package: mihomo-meta
+Version: 1.19.34
+Depends: libc, ca-bundle, ip-full, kmod-inet-diag, kmod-tun
+Conflicts: mihomo-alpha
+Provides: mihomo
+Alternatives: 300:/usr/bin/mihomo:/usr/libexec/mihomo
+Source: /feed/mihomo-meta
+SourceName: mihomo-meta
+License: GPL3.0+
+Section: net
+SourceDateEpoch: 1794507921
+URL: https://wiki.metacubex.one
+Maintainer: Joseph Mory <morytyann@gmail.com>
+Architecture: x86_64
+Installed-Size: 61173760
+Description:  A rule based proxy in Go.
+
 Package: momo
 Version: 2026.06.03-r1
 Depends: libc, ca-bundle, curl, firewall4, ip-full, kmod-inet-diag, kmod-nft-socket, kmod-nft-tproxy, kmod-tun, kmod-dummy, sing-box
@@ -1361,6 +1792,20 @@ Maintainer: Joseph Mory <morytyann@gmail.com>
 Architecture: x86_64
 Installed-Size: 286720
 Description:  Transparent Proxy with sing-box on OpenWrt.
+
+Package: mosdns
+Version: 5.3.4-r15
+Depends: libc, ca-bundle
+Source: /feed/mosdns
+SourceName: mosdns
+License: GPL-3.0
+Section: net
+SourceDateEpoch: 1793591125
+URL: https://github.com/IrineSistiana/mosdns
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: x86_64
+Installed-Size: 17090560
+Description:  A plug-in DNS forwarder/splitter
 
 Package: mosdns
 Version: 5.3.4-r6
@@ -1393,6 +1838,23 @@ Description:  NaïveProxy uses Chrome's network stack to camouflage traffic with
  censorship resistance and low detectability. Reusing Chrome's stack also
  ensures best practices in performance and security.
 
+Package: naiveproxy
+Version: 154.0.8037.49-r5
+Depends: libc, libatomic1
+Source: /feed/naiveproxy
+SourceName: naiveproxy
+License: BSD 3-Clause
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1793591126
+URL: https://github.com/klzgrad/naiveproxy
+Maintainer: sbwml <admin@cooluc.com>
+Architecture: x86_64
+Installed-Size: 8724480
+Description:  NaïveProxy uses Chrome's network stack to camouflage traffic with strong
+ censorship resistance and low detectability. Reusing Chrome's stack also
+ ensures best practices in performance and security.
+
 Package: nikki
 Version: 2026.04.08-r1
 Depends: libc, ca-bundle, curl, yq, firewall4, ip-full, kmod-inet-diag, kmod-nft-socket, kmod-nft-tproxy, kmod-tun, kmod-dummy, mihomo
@@ -1401,6 +1863,20 @@ SourceName: nikki
 License: GPL3.0+
 Section: net
 SourceDateEpoch: 1781107278
+URL: https://github.com/nikkinikki-org
+Maintainer: Joseph Mory <morytyann@gmail.com>
+Architecture: x86_64
+Installed-Size: 307200
+Description:  Transparent Proxy with Mihomo on OpenWrt.
+
+Package: nikki
+Version: 2026.10.10-r1
+Depends: libc, ca-bundle, curl, yq, firewall4, ip-full, kmod-inet-diag, kmod-nft-socket, kmod-nft-tproxy, kmod-tun, kmod-dummy, mihomo
+Source: /feed/nikki
+SourceName: nikki
+License: GPL3.0+
+Section: net
+SourceDateEpoch: 1794507921
 URL: https://github.com/nikkinikki-org
 Maintainer: Joseph Mory <morytyann@gmail.com>
 Architecture: x86_64
@@ -1419,6 +1895,20 @@ URL: https://openlist.team/
 Maintainer: sbwml <admin@cooluc.com>
 Architecture: x86_64
 Installed-Size: 91299840
+Description:  A file list program that supports multiple storage, powered by Gin and Solidjs.
+
+Package: openlist2
+Version: 4.2.9-r1
+Depends: libc, ca-bundle
+Source: /feed/openlist2
+SourceName: openlist2
+License: GPL-3.0
+Section: net
+SourceDateEpoch: 1793591126
+URL: https://openlist.team/
+Maintainer: sbwml <admin@cooluc.com>
+Architecture: x86_64
+Installed-Size: 115240960
 Description:  A file list program that supports multiple storage, powered by Gin and Solidjs.
 
 Package: pdnsd-alt
@@ -1451,6 +1941,23 @@ Architecture: x86_64
 Installed-Size: 5580800
 Description:  Lightweight web-based file manager for OpenWrt/LuCI with minimal resource usage.
 
+Package: quickfile
+Version: 2.0.9-r1
+Depends: libc, liblzma
+Source: /feed/quickfile
+SourceName: quickfile
+License: Apache-2.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1793591126
+URL: https://git.cooluc.com/sbwml/quickfile
+Maintainer: sbwml <admin@cooluc.com>
+Architecture: x86_64
+Installed-Size: 13936640
+Description:  A high-performance, lightweight web file manager built with Rust (Axum) and Vue 3,
+ featuring an integrated terminal and multimedia preview, tailored for embeddedsystems
+ and the OpenWrt ecosystem.
+
 Package: redsocks2
 Version: 0.71-r1
 Depends: libc, libevent2-7, libopenssl3
@@ -1469,16 +1976,21 @@ Description:  This is a modified version of original redsocks.
 Package: shadow-tls
 Version: 0.2.25-r1
 Depends: libc
-Source: /feed/helloworld/shadow-tls
+Source: /feed/shadow-tls
 SourceName: shadow-tls
+License: MIT
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1704981439
+SourceDateEpoch: 1786303051
 URL: https://github.com/ihciah/shadow-tls
-Maintainer: FluffyTigerFear
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: x86_64
-Installed-Size: 4689920
+Installed-Size: 3379200
 Description:  A proxy to expose real tls handshake to the firewall.
+ 
+ It works like trojan but it does not require signing certificate.
+ The firewall will see real tls handshake with valid certificate
+ that you choose.
 
 Package: shadowsocks-libev-config
 Version: 3.3.5-r12
@@ -1591,6 +2103,21 @@ Architecture: x86_64
 Installed-Size: 10700800
 Description:  shadowsocks-rust sslocal
 
+Package: shadowsocks-rust-sslocal
+Version: 1.25.0-r1
+Depends: libc
+Source: /feed/shadowsocks-rust
+SourceName: shadowsocks-rust
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1788278767
+URL: https://github.com/shadowsocks/shadowsocks-rust
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: x86_64
+Installed-Size: 9113600
+Description:  shadowsocks-rust sslocal
+
 Package: shadowsocks-rust-ssmanager
 Version: 1.24.0-r1
 Depends: libc
@@ -1604,6 +2131,21 @@ URL: https://github.com/shadowsocks/shadowsocks-rust
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: x86_64
 Installed-Size: 8734720
+Description:  shadowsocks-rust ssmanager
+
+Package: shadowsocks-rust-ssmanager
+Version: 1.25.0-r1
+Depends: libc
+Source: /feed/shadowsocks-rust
+SourceName: shadowsocks-rust
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1788278767
+URL: https://github.com/shadowsocks/shadowsocks-rust
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: x86_64
+Installed-Size: 7403520
 Description:  shadowsocks-rust ssmanager
 
 Package: shadowsocks-rust-ssserver
@@ -1621,6 +2163,21 @@ Architecture: x86_64
 Installed-Size: 8560640
 Description:  shadowsocks-rust ssserver
 
+Package: shadowsocks-rust-ssserver
+Version: 1.25.0-r1
+Depends: libc
+Source: /feed/shadowsocks-rust
+SourceName: shadowsocks-rust
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1788278767
+URL: https://github.com/shadowsocks/shadowsocks-rust
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: x86_64
+Installed-Size: 7280640
+Description:  shadowsocks-rust ssserver
+
 Package: shadowsocks-rust-ssservice
 Version: 1.24.0-r1
 Depends: libc
@@ -1634,6 +2191,21 @@ URL: https://github.com/shadowsocks/shadowsocks-rust
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: x86_64
 Installed-Size: 11704320
+Description:  shadowsocks-rust ssservice
+
+Package: shadowsocks-rust-ssservice
+Version: 1.25.0-r1
+Depends: libc
+Source: /feed/shadowsocks-rust
+SourceName: shadowsocks-rust
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1788278767
+URL: https://github.com/shadowsocks/shadowsocks-rust
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: x86_64
+Installed-Size: 9543680
 Description:  shadowsocks-rust ssservice
 
 Package: shadowsocks-rust-ssurl
@@ -1651,6 +2223,21 @@ Architecture: x86_64
 Installed-Size: 2734080
 Description:  shadowsocks-rust ssurl
 
+Package: shadowsocks-rust-ssurl
+Version: 1.25.0-r1
+Depends: libc
+Source: /feed/shadowsocks-rust
+SourceName: shadowsocks-rust
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1788278767
+URL: https://github.com/shadowsocks/shadowsocks-rust
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: x86_64
+Installed-Size: 2129920
+Description:  shadowsocks-rust ssurl
+
 Package: shadowsocksr-libev-ssr-check
 Version: 2.5.6-r11
 Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib, libopenssl-legacy
@@ -1660,6 +2247,20 @@ License: GPL-3.0
 LicenseFiles: LICENSE
 Section: net
 SourceDateEpoch: 1778746523
+URL: https://github.com/shadowsocksrr/shadowsocksr-libev
+Architecture: x86_64
+Installed-Size: 20480
+Description:  shadowsocksr-libev ssr-check
+
+Package: shadowsocksr-libev-ssr-check
+Version: 2.5.6-r13
+Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib
+Source: /feed/shadowsocksr-libev
+SourceName: shadowsocksr-libev
+License: GPL-3.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1790814304
 URL: https://github.com/shadowsocksrr/shadowsocksr-libev
 Architecture: x86_64
 Installed-Size: 20480
@@ -1679,6 +2280,20 @@ Architecture: x86_64
 Installed-Size: 143360
 Description:  shadowsocksr-libev ssr-local
 
+Package: shadowsocksr-libev-ssr-local
+Version: 2.5.6-r13
+Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib
+Source: /feed/shadowsocksr-libev
+SourceName: shadowsocksr-libev
+License: GPL-3.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1790814304
+URL: https://github.com/shadowsocksrr/shadowsocksr-libev
+Architecture: x86_64
+Installed-Size: 143360
+Description:  shadowsocksr-libev ssr-local
+
 Package: shadowsocksr-libev-ssr-nat
 Version: 2.5.6-r11
 Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib, libopenssl-legacy
@@ -1688,6 +2303,20 @@ License: GPL-3.0
 LicenseFiles: LICENSE
 Section: net
 SourceDateEpoch: 1778746523
+URL: https://github.com/shadowsocksrr/shadowsocksr-libev
+Architecture: x86_64
+Installed-Size: 10240
+Description:  shadowsocksr-libev ssr-nat
+
+Package: shadowsocksr-libev-ssr-nat
+Version: 2.5.6-r13
+Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib
+Source: /feed/shadowsocksr-libev
+SourceName: shadowsocksr-libev
+License: GPL-3.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1790814304
 URL: https://github.com/shadowsocksrr/shadowsocksr-libev
 Architecture: x86_64
 Installed-Size: 10240
@@ -1707,6 +2336,20 @@ Architecture: x86_64
 Installed-Size: 133120
 Description:  shadowsocksr-libev ssr-redir
 
+Package: shadowsocksr-libev-ssr-redir
+Version: 2.5.6-r13
+Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib
+Source: /feed/shadowsocksr-libev
+SourceName: shadowsocksr-libev
+License: GPL-3.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1790814304
+URL: https://github.com/shadowsocksrr/shadowsocksr-libev
+Architecture: x86_64
+Installed-Size: 133120
+Description:  shadowsocksr-libev ssr-redir
+
 Package: shadowsocksr-libev-ssr-server
 Version: 2.5.6-r11
 Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib, libopenssl-legacy
@@ -1716,6 +2359,20 @@ License: GPL-3.0
 LicenseFiles: LICENSE
 Section: net
 SourceDateEpoch: 1778746523
+URL: https://github.com/shadowsocksrr/shadowsocksr-libev
+Architecture: x86_64
+Installed-Size: 153600
+Description:  shadowsocksr-libev ssr-server
+
+Package: shadowsocksr-libev-ssr-server
+Version: 2.5.6-r13
+Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre2, libudns, zlib
+Source: /feed/shadowsocksr-libev
+SourceName: shadowsocksr-libev
+License: GPL-3.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1790814304
 URL: https://github.com/shadowsocksrr/shadowsocksr-libev
 Architecture: x86_64
 Installed-Size: 153600
@@ -1737,6 +2394,22 @@ Architecture: x86_64
 Installed-Size: 81920
 Description:  Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
 
+Package: simple-obfs-client
+Version: 0.0.5-r3
+Depends: libc, libpthread, libev
+Provides: simple-obfs
+Source: /feed/simple-obfs
+SourceName: simple-obfs
+License: GPL-3.0-or-later
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1786303066
+URL: https://github.com/shadowsocks/simple-obfs
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: x86_64
+Installed-Size: 81920
+Description:  Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
+
 Package: simple-obfs-server
 Version: 0.0.5-r1
 Depends: libc, libpthread, libev
@@ -1746,6 +2419,21 @@ License: GPL-3.0-or-later
 LicenseFiles: LICENSE
 Section: net
 SourceDateEpoch: 1766505229
+URL: https://github.com/shadowsocks/simple-obfs
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: x86_64
+Installed-Size: 81920
+Description:  Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
+
+Package: simple-obfs-server
+Version: 0.0.5-r3
+Depends: libc, libpthread, libev
+Source: /feed/simple-obfs
+SourceName: simple-obfs
+License: GPL-3.0-or-later
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1786303066
 URL: https://github.com/shadowsocks/simple-obfs
 Maintainer: Jian Chang <aa65535@live.com>
 Architecture: x86_64
@@ -1790,6 +2478,25 @@ Installed-Size: 45608960
 Description:  Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
  ShadowTLS, Tor, trojan, VLess, VMess, WireGuard and so on.
 
+Package: sing-box-tiny
+Version: 1.15.0_alpha13-r1
+Depends: libc, ca-bundle, kmod-inet-diag
+Provides: sing-box
+Source: /feed/sing-box
+SourceName: sing-box
+License: GPL-3.0-or-later
+LicenseFiles: LICENSE
+Section: net
+Require-User: sing-box=5566:sing-box=5566
+SourceDateEpoch: 1794545162
+URL: https://sing-box.sagernet.org/
+CPE-ID: cpe:/a:sagernet:sing-box
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: x86_64
+Installed-Size: 46991360
+Description:  Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
+ ShadowTLS, Tor, trojan, VLess, VMess, WireGuard and so on.
+
 Package: sing-box
 Version: 1.12.25-r1
 Depends: libc, ca-bundle, kmod-inet-diag, kmod-netlink-diag, kmod-tun
@@ -1806,6 +2513,25 @@ CPE-ID: cpe:/a:sagernet:sing-box
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: x86_64
 Installed-Size: 45158400
+Description:  Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
+ ShadowTLS, Tor, trojan, VLess, VMess, WireGuard and so on.
+
+Package: sing-box
+Version: 1.15.0_alpha13-r1
+Depends: libc, ca-bundle, kmod-inet-diag, kmod-netlink-diag, kmod-tun
+Conflicts: sing-box-tiny
+Source: /feed/sing-box
+SourceName: sing-box
+License: GPL-3.0-or-later
+LicenseFiles: LICENSE
+Section: net
+Require-User: sing-box=5566:sing-box=5566
+SourceDateEpoch: 1794545162
+URL: https://sing-box.sagernet.org/
+CPE-ID: cpe:/a:sagernet:sing-box
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: x86_64
+Installed-Size: 62064640
 Description:  Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
  ShadowTLS, Tor, trojan, VLess, VMess, WireGuard and so on.
 
@@ -1927,48 +2653,48 @@ Description:  Project V is a set of network tools that help you to build your ow
  This includes extra resources for v2ray-core.
 
 Package: v2ray-geoip
-Version: 202608060031.1
+Version: 202611050019.1
 Depends: libc
 Source: /feed/v2ray-geodata
 SourceName: v2ray-geodata
 License: CC-BY-SA-4.0
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1786303067
+SourceDateEpoch: 1794494438
 URL: https://www.v2fly.org
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: all
-Installed-Size: 17438720
+Installed-Size: 16486400
 Description:  GeoIP List for V2Ray
 
 Package: v2ray-geosite
-Version: 202608082221.1
+Version: 202611082203.1
 Depends: libc
 Source: /feed/v2ray-geodata
 SourceName: v2ray-geodata
 License: MIT
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1786303067
+SourceDateEpoch: 1794494438
 URL: https://www.v2fly.org
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: all
-Installed-Size: 10598400
+Installed-Size: 11448320
 Description:  Geosite List for V2Ray
 
 Package: v2ray-plugin
 Version: 5.49.0-r1
 Depends: libc, ca-bundle
-Source: /feed/helloworld/v2ray-plugin
+Source: /feed/v2ray-plugin
 SourceName: v2ray-plugin
 License: MIT
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1777607063
+SourceDateEpoch: 1786303067
 URL: https://github.com/teddysun/v2ray-plugin
 Maintainer: madeye <max.c.lv@gmail.com>
 Architecture: x86_64
-Installed-Size: 17356800
+Installed-Size: 18001920
 Description:  SIP003 plugin for shadowsocks, based on v2ray
 
 Package: vmlinux-btf
@@ -1986,6 +2712,22 @@ Description:  BPF CO-RE stand for Compile Once - Run Everywhere It's a concept t
  compiler.
 
 Package: xray-core
+Version: 26.11.9-r1
+Depends: libc, ca-bundle
+Source: /feed/xray-core
+SourceName: Xray-core
+License: MPL-2.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1794494438
+URL: https://xtls.github.io
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: x86_64
+Installed-Size: 32399360
+Description:  Xray, Penetrates Everything. It helps you to build your own computer network.
+ It secures your network connections and thus protects your privacy.
+
+Package: xray-core
 Version: 26.3.27-r1
 Depends: libc, ca-bundle
 Source: /feed/helloworld/xray-core
@@ -2000,6 +2742,21 @@ Architecture: x86_64
 Installed-Size: 32481280
 Description:  Xray, Penetrates Everything. It helps you to build your own computer network.
  It secures your network connections and thus protects your privacy.
+
+Package: xray-plugin
+Version: 1.8.24-r1
+Depends: libc, ca-bundle
+Source: /feed/xray-plugin
+SourceName: xray-plugin
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1786303068
+URL: https://github.com/teddysun/xray-plugin
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: x86_64
+Installed-Size: 20531200
+Description:  SIP003 plugin for Shadowsocks, based on Xray
 
 Package: xray-plugin
 Version: 26.2.6-r1
